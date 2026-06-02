@@ -9,18 +9,17 @@ const FontLink = () => (
 );
 
 const c = {
-  // Palette calda vacanza — nocciola, mastice, sabbia
-  cream:   "#faf6ef",   // avorio caldo — sfondo app
+  // Palette Casa Pintadera — Pierre de Nod + Bianco Calibrato + Wengé
+  cream:   "#faf7f2",   // avorio caldo — sfondo app
   sand:    "#e8dcc8",   // sabbia — bordi, separatori
-  hazel:   "#c4956a",   // nocciola — accento principale (ex terra)
-  hazelL:  "#d4aa85",   // nocciola chiaro
-  mastic:  "#8a7d6e",   // mastice — testi secondari (ex muted)
-  warm:    "#4a3728",   // caldo scuro — testi (ex dark) — meno cupo
+  hazel:   "#CEAD85",   // Pierre de Nod — accento principale
+  hazelL:  "#d4b896",   // Pierre de Nod chiaro
+  mastic:  "#8a7d6e",   // mastice — testi secondari
+  warm:    "#3D1F10",   // wengé — testi scuri (colore serramenti)
   white:   "#fdfaf5",   // bianco avorio — card
   sage:    "#6b8f71",   // verde salvia — pulsanti Maps
-  // Banner colorati → ora caldi e tenui invece di scuro
-  bannerBg:"#f0e6d6",   // nocciola pallido — sfondo banner "welcome"
-  bannerAccent:"#c4956a",
+  bannerBg:"#f0e6d6",
+  bannerAccent:"#CEAD85",
 };
 
 // Placeholder colorato quando non ci sono foto reali
@@ -32,20 +31,20 @@ const Foto = ({ src, alt, style, onClick }) => (
 
 const s = {
   app: { minHeight:"100vh", fontFamily:"'Jost', sans-serif", fontWeight:300, color:c.warm, background:c.cream, maxWidth:480, margin:"0 auto" },
-  hero: { background:`linear-gradient(160deg, #2e1f12 0%, #4a3020 100%)`, textAlign:"center", padding:"52px 24px 40px", borderRadius:"0 0 28px 28px", position:"relative", overflow:"hidden" },
-  heroTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontWeight:300, fontSize:58, lineHeight:1.0, color:"#faf6ef", margin:0, letterSpacing:1 },
+  hero: { background:`linear-gradient(160deg, #3D1F10 0%, #5a3020 100%)`, textAlign:"center", padding:"52px 24px 40px", borderRadius:"0 0 28px 28px", position:"relative", overflow:"hidden" },
+  heroTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontWeight:300, fontSize:58, lineHeight:1.0, color:"#faf7f2", margin:0, letterSpacing:1 },
   heroSub: { fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:"rgba(245,240,232,0.4)", marginTop:14 },
-  eye: { fontSize:10, letterSpacing:"4px", textTransform:"uppercase", color:"#d4aa85", fontWeight:500, marginBottom:12 },
+  eye: { fontSize:10, letterSpacing:"4px", textTransform:"uppercase", color:"#CEAD85", fontWeight:500, marginBottom:12 },
   sectionLabel: { fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:c.mastic, margin:"24px 0 16px", textAlign:"center" },
   grid: { display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:12, padding:"0 20px", maxWidth:400, margin:"0 auto" },
   card: { background:c.white, borderRadius:20, padding:"22px 8px 16px", display:"flex", flexDirection:"column", alignItems:"center", gap:8, cursor:"pointer", border:`1px solid ${c.hazel}20` },
   cardLabel: { fontSize:8.5, letterSpacing:"1.5px", textTransform:"uppercase", textAlign:"center", fontWeight:500, color:c.warm, lineHeight:1.4 },
-  pageHead: { background:`linear-gradient(160deg, #7a5840 0%, #96704e 100%)`, padding:"50px 24px 28px", borderRadius:"0 0 24px 24px" },
-  pageTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontWeight:300, fontSize:38, color:c.cream, lineHeight:1.1, margin:0 },
-  back: { display:"flex", alignItems:"center", gap:6, background:"none", border:"none", color:"rgba(245,240,232,0.6)", fontSize:10, letterSpacing:"2px", textTransform:"uppercase", cursor:"pointer", marginBottom:18, padding:0, fontFamily:"'Jost', sans-serif" },
+  pageHead: { background:`linear-gradient(160deg, #CEAD85 0%, #d4b896 100%)`, padding:"50px 24px 28px", borderRadius:"0 0 24px 24px" },
+  pageTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontWeight:300, fontSize:38, color:c.warm, lineHeight:1.1, margin:0 },
+  back: { display:"flex", alignItems:"center", gap:6, background:"none", border:"none", color:"rgba(61,31,16,0.55)", fontSize:10, letterSpacing:"2px", textTransform:"uppercase", cursor:"pointer", marginBottom:18, padding:0, fontFamily:"'Jost', sans-serif" },
   content: { padding:"24px 20px 60px" },
   infoCard: { background:c.white, borderRadius:18, padding:"20px 18px", marginBottom:12, border:`1px solid ${c.hazel}15` },
-  cardTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontSize:21, fontWeight:400, marginBottom:10, display:"flex", alignItems:"center", gap:8 },
+  cardTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontSize:21, fontWeight:400, marginBottom:10, display:"flex", alignItems:"center", gap:8, color:c.warm },
   row: { display:"flex", alignItems:"center", justifyContent:"space-between", padding:"11px 0", borderBottom:`1px solid ${c.sand}` },
   rowLast: { display:"flex", alignItems:"center", justifyContent:"space-between", padding:"11px 0" },
   rowLabel: { fontSize:13.5, color:c.warm },
@@ -53,55 +52,44 @@ const s = {
   rule: { display:"flex", gap:12, padding:"11px 0", borderBottom:`1px solid ${c.sand}`, fontSize:13.5, lineHeight:1.5, alignItems:"flex-start" },
   ruleLast: { display:"flex", gap:12, padding:"11px 0", fontSize:13.5, lineHeight:1.5, alignItems:"flex-start" },
   dot: { width:6, height:6, borderRadius:"50%", background:c.hazel, flexShrink:0, marginTop:6 },
-  hlBox: { background:`linear-gradient(135deg, ${c.hazel}, ${c.hazelL})`, borderRadius:18, padding:"20px 18px", color:"white", marginBottom:12 },
-  hlTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontSize:22, fontWeight:300, marginBottom:8 },
-  darkBox: { background:`linear-gradient(135deg, #7a5840, #96704e)`, borderRadius:14, padding:"16px 18px", marginBottom:12 },
+  hlBox: { background:`linear-gradient(135deg, ${c.hazel}, ${c.hazelL})`, borderRadius:18, padding:"20px 18px", color:c.warm, marginBottom:12 },
+  hlTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontSize:22, fontWeight:300, marginBottom:8, color:c.warm },
+  darkBox: { background:`linear-gradient(135deg, #3D1F10, #5a3020)`, borderRadius:14, padding:"16px 18px", marginBottom:12 },
   mapBtn: { display:"flex", alignItems:"center", gap:10, background:c.sage, color:"white", borderRadius:14, padding:"14px 16px", textDecoration:"none", fontSize:13, marginTop:10 },
-  pdfBtn: { display:"flex", alignItems:"center", gap:10, background:c.hazel, color:"white", borderRadius:14, padding:"14px 16px", textDecoration:"none", fontSize:13, marginTop:10, cursor:"pointer", border:"none", width:"100%", justifyContent:"flex-start" },
+  pdfBtn: { display:"flex", alignItems:"center", gap:10, background:c.hazel, color:c.warm, borderRadius:14, padding:"14px 16px", textDecoration:"none", fontSize:13, marginTop:10, cursor:"pointer", border:"none", width:"100%", justifyContent:"flex-start" },
   tel: { display:"flex", alignItems:"center", justifyContent:"space-between", padding:"12px 0", borderBottom:`1px solid ${c.sand}`, textDecoration:"none" },
   telLast: { display:"flex", alignItems:"center", justifyContent:"space-between", padding:"12px 0", textDecoration:"none" },
   gallery: { display:"flex", gap:10, overflowX:"auto", scrollbarWidth:"none", marginBottom:16 },
-  wifiBox: { background:`linear-gradient(135deg, #7a5840, #96704e)`, borderRadius:14, padding:18, textAlign:"center", marginTop:10 },
+  wifiBox: { background:`linear-gradient(135deg, #3D1F10, #5a3020)`, borderRadius:14, padding:18, textAlign:"center", marginTop:10 },
   tag: { background:c.sand, borderRadius:20, padding:"5px 13px", fontSize:11, color:c.warm },
-  tagA: { background:c.hazel, borderRadius:20, padding:"5px 13px", fontSize:11, color:"white" },
+  tagA: { background:c.hazel, borderRadius:20, padding:"5px 13px", fontSize:11, color:c.warm },
 };
 
 const Ic = {
   back:     ()=><svg viewBox="0 0 24 24" style={{width:16,height:16,stroke:"currentColor",fill:"none",strokeWidth:1.5}}><polyline points="15 18 9 12 15 6"/></svg>,
-  // ♥ Cuore — benvenuto, calore, accoglienza
   home:     ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.4,strokeLinecap:"round",strokeLinejoin:"round"}}><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>,
-  // 🧳 Valigia check-in
   lock:     ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="12" strokeWidth="3" strokeLinecap="round"/><path d="M8 12h8"/></svg>,
   wifi:     ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><circle cx="12" cy="20" r="1" fill={c.warm}/></svg>,
-  // 🏠 Chiave di casa per appartamento
   building: ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
-  // ✓ Lista regole
   check:    ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><polyline points="3 6 4 7 6 5"/><polyline points="3 12 4 13 6 11"/><polyline points="3 18 4 19 6 17"/></svg>,
   pin:      ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>,
-  // 🧭 Bussola per "Da scoprire"
   compass:  ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill={c.warm} fillOpacity="0.15"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>,
-  // 🍽️ Forchetta + coltello — minimal, leggibile
   pasta:    ()=>(
     <svg viewBox="0 0 24 24" style={{width:28,height:28,fill:"none",strokeLinecap:"round",strokeLinejoin:"round"}}>
-      {/* Forchetta sinistra */}
       <line x1="7" y1="2" x2="7" y2="22" stroke={c.warm} strokeWidth="1.5"/>
       <line x1="4" y1="2" x2="4" y2="8" stroke={c.warm} strokeWidth="1.5"/>
       <line x1="10" y1="2" x2="10" y2="8" stroke={c.warm} strokeWidth="1.5"/>
       <path d="M4 8 Q7 11 10 8" stroke={c.warm} strokeWidth="1.5" fill="none"/>
-      {/* Coltello destra */}
       <path d="M17 2 L20 8 L17 11 L17 22" stroke={c.warm} strokeWidth="1.5" fill="none"/>
     </svg>
   ),
   cal:      ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>,
   star:     ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>,
-  // 🛒 Carrello della spesa
   bag:      ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>,
-  // ⚙️ Ingranaggio per servizi
   faq:      ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>,
-  // ❓ punto interrogativo per FAQ
   help:     ()=><svg viewBox="0 0 24 24" style={{width:28,height:28,stroke:c.warm,fill:"none",strokeWidth:1.3}}><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17" strokeWidth="2" strokeLinecap="round"/></svg>,
   mapW:     ()=><svg viewBox="0 0 24 24" style={{width:20,height:20,stroke:"white",fill:"none",strokeWidth:1.5}}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>,
-  docW:     ()=><svg viewBox="0 0 24 24" style={{width:20,height:20,stroke:"white",fill:"none",strokeWidth:1.5}}><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>,
+  docW:     ()=><svg viewBox="0 0 24 24" style={{width:20,height:20,stroke:c.warm,fill:"none",strokeWidth:1.5}}><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>,
   phone:    ()=><svg viewBox="0 0 24 24" style={{width:18,height:18,stroke:c.hazel,fill:"none",strokeWidth:1.5}}><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.22 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.07-1.07a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>,
   trash:    ()=><svg viewBox="0 0 24 24" style={{width:18,height:18,stroke:c.hazel,fill:"none",strokeWidth:1.5}}><path d="M3 6h18"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a1 1 0 011-1h4a1 1 0 011 1v2"/></svg>,
 };
@@ -125,13 +113,12 @@ function PH({go}) {
         <div style={{position:"absolute",top:-40,left:-40,width:140,height:140,background:`radial-gradient(circle, ${c.hazel}20 0%, transparent 70%)`,pointerEvents:"none"}}/>
         <div style={s.eye}>Uta · Cagliari · Sardegna</div>
         <h1 style={s.heroTitle}>
-          Ben<em style={{fontStyle:"italic", color:"#f0e0c8"}}>venuti</em>
+          Ben<em style={{fontStyle:"italic", color:"#CEAD85"}}>venuti</em>
         </h1>
         <div style={{fontSize:11, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.75)", marginTop:14, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Casa Uta — Via Cimitero 38</div>
         <div style={{width:32,height:1,background:c.hazel,margin:"16px auto 0"}}/>
       </div>
 
-      {/* Sezione urgente per chi arriva */}
       <div style={{fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:c.mastic,
         margin:"22px 0 10px", textAlign:"center"}}>All'arrivo</div>
       <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:10, padding:"0 20px", maxWidth:400, margin:"0 auto 4px"}}>
@@ -184,7 +171,7 @@ function PageHead({title, sub, back, icon}) {
         <button style={s.back} onClick={back}><Ic.back/> Home</button>
         <div style={{marginBottom:8}}>{icon}</div>
         <h2 style={s.pageTitle}>{title}</h2>
-        {sub && <div style={{fontSize:11,color:"rgba(245,240,232,0.5)",marginTop:6,letterSpacing:"1px",fontFamily:"'Jost',sans-serif"}}>{sub}</div>}
+        {sub && <div style={{fontSize:11,color:"rgba(61,31,16,0.5)",marginTop:6,letterSpacing:"1px",fontFamily:"'Jost',sans-serif"}}>{sub}</div>}
       </div>
     </>
   );
@@ -204,31 +191,27 @@ function Benvenuto({go}) {
     <PageHead title="Benvenuti a Casa Uta" back={()=>go("home")} icon={<Ic.home/>}/>
     <div style={s.content}>
 
-      {/* Banner benvenuto — font a mano */}
       <div style={{...s.hlBox, textAlign:"center", padding:"28px 20px"}}>
         <div style={{fontFamily:"'Dancing Script', 'Caveat', cursive", fontSize:32, fontWeight:700,
-          color:"white", lineHeight:1.2, marginBottom:10}}>
+          color:c.warm, lineHeight:1.2, marginBottom:10}}>
           Siamo felici di ospitarvi
         </div>
-        <p style={{fontSize:13.5, lineHeight:1.75, opacity:0.95, margin:0}}>
+        <p style={{fontSize:13.5, lineHeight:1.75, opacity:0.85, margin:0, color:c.warm}}>
           Questa guida vi aiuterà a vivere al meglio il soggiorno.<br/>
           Per qualsiasi necessità non esitate a contattarci.
         </p>
       </div>
-      {/* Carica font corsivo da Google */}
       <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet"/>
 
-      {/* Dove siamo + anteprima mappa */}
       <Card>
         <CT icon={<Ic.pin/>} text="Dove siamo"/>
         <p style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:20,margin:"4px 0 12px",color:c.warm}}>
           Via Cimitero 38<br/>Uta (CA) — Sardegna
         </p>
-        {/* Anteprima mappa statica via Google Maps embed */}
         <a href="https://maps.google.com/?q=Via+Cimitero+38+Uta+Cagliari" target="_blank" rel="noreferrer"
           style={{display:"block", borderRadius:12, overflow:"hidden", marginBottom:12, textDecoration:"none"}}>
           <img
-            src="https://maps.googleapis.com/maps/api/staticmap?center=39.2929,8.9621&zoom=15&size=400x160&scale=2&markers=color:0xc4956a%7C39.2929,8.9621&style=feature:all%7Celement:geometry%7Ccolor:0xf0e6d6&style=feature:road%7Celement:geometry%7Ccolor:0xd4aa85&key=AIzaSyD-placeholder"
+            src="https://maps.googleapis.com/maps/api/staticmap?center=39.2929,8.9621&zoom=15&size=400x160&scale=2&markers=color:0xCEAD85%7C39.2929,8.9621&style=feature:all%7Celement:geometry%7Ccolor:0xf0e6d6&style=feature:road%7Celement:geometry%7Ccolor:0xd4b896&key=AIzaSyD-placeholder"
             alt="Mappa Casa Uta"
             style={{width:"100%", height:140, objectFit:"cover", display:"block"}}
             onError={e=>{
@@ -248,7 +231,6 @@ function Benvenuto({go}) {
         </a>
       </Card>
 
-      {/* Come arrivare — ordine: aereo/nave, da altre città, mezzi pubblici */}
       <Card>
         <CT icon={<Ic.pin/>} text="Come arrivare"/>
 
@@ -287,7 +269,6 @@ function Benvenuto({go}) {
         </div>
       </Card>
 
-      {/* Contatti — versione più curata */}
       <div style={{background:`linear-gradient(135deg, ${c.hazel}20, ${c.hazelL}30)`,
         borderRadius:18, padding:"20px 18px", border:`1px solid ${c.hazel}40`}}>
         <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:19, fontWeight:400,
@@ -323,14 +304,13 @@ function Checkin({go}) {
     <PageHead title="Check-in / out" back={()=>go("home")} icon={<Ic.lock/>}/>
     <div style={s.content}>
 
-      {/* Orari in evidenza */}
       <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:10, marginBottom:12}}>
-        <div style={{background:`linear-gradient(135deg, #7a5840, #b08060)`, borderRadius:18, padding:"20px 16px", textAlign:"center"}}>
+        <div style={{background:`linear-gradient(135deg, #3D1F10, #5a3020)`, borderRadius:18, padding:"20px 16px", textAlign:"center"}}>
           <div style={{fontSize:9, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.4)", marginBottom:8}}>Arrivo</div>
           <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:36, color:c.cream, lineHeight:1}}>15:00</div>
           <div style={{fontSize:11, color:c.hazel, marginTop:6}}>dalle ore</div>
         </div>
-        <div style={{background:`linear-gradient(135deg, #7a5840, #b08060)`, borderRadius:18, padding:"20px 16px", textAlign:"center"}}>
+        <div style={{background:`linear-gradient(135deg, #3D1F10, #5a3020)`, borderRadius:18, padding:"20px 16px", textAlign:"center"}}>
           <div style={{fontSize:9, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.4)", marginBottom:8}}>Partenza</div>
           <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:36, color:c.cream, lineHeight:1}}>10:30</div>
           <div style={{fontSize:11, color:c.hazel, marginTop:6}}>entro le ore</div>
@@ -420,10 +400,8 @@ function Appartamento({go}) {
     <PageHead title="L'Appartamento" sub="50 m² interno · 40 m² veranda" back={()=>go("home")} icon={<Ic.building/>}/>
     <div style={s.content}>
 
-      {/* Hero gallery ingresso/esterno */}
       <FotoSlide imgs={[FOTO.cancello, FOTO.ingresso, FOTO.veranda1, FOTO.veranda2]} height={220}/>
 
-      {/* Panoramica rapida */}
       <div style={{display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:8, marginBottom:14}}>
         {[["~50 m²","Interno"],["~40 m²","Veranda"],["2×","Clima Wi-Fi"]].map(([val,label])=>(
           <div key={label} style={{background:c.white, borderRadius:14, padding:"14px 8px", textAlign:"center", border:`1px solid ${c.hazel}20`}}>
@@ -433,7 +411,6 @@ function Appartamento({go}) {
         ))}
       </div>
 
-      {/* Cucina */}
       <Card>
         <CT text="🍳 Cucina"/>
         <FotoSlide imgs={[FOTO.cucina]} height={180}/>
@@ -449,7 +426,6 @@ function Appartamento({go}) {
         </div>
       </Card>
 
-      {/* Camera */}
       <Card>
         <CT text="🛏️ Camera da letto"/>
         <FotoSlide imgs={[FOTO.camera]} height={180}/>
@@ -465,7 +441,6 @@ function Appartamento({go}) {
         </div>
       </Card>
 
-      {/* Bagno */}
       <Card>
         <CT text="🚿 Bagno"/>
         <FotoSlide imgs={[FOTO.bagno]} height={160}/>
@@ -474,7 +449,6 @@ function Appartamento({go}) {
         ))}
       </Card>
 
-      {/* Veranda */}
       <Card>
         <CT text="🌿 Veranda e giardino"/>
         <FotoSlide imgs={[FOTO.veranda1, FOTO.veranda2]} height={160}/>
@@ -483,14 +457,12 @@ function Appartamento({go}) {
         </p>
       </Card>
 
-      {/* Tag dotazioni */}
       <div style={{display:"flex",flexWrap:"wrap",gap:8, marginTop:4}}>
         {["Wi-Fi fibra","2 Climatizzatori","Parcheggio libero","Giardino privato","Lavastoviglie","Forno"].map((t,i)=>(
           <span key={t} style={i===0?s.tagA:s.tag}>{t}</span>
         ))}
       </div>
 
-      {/* Banner Ladiri */}
       <div style={{background:`linear-gradient(135deg,${c.hazel}18,${c.hazelL}28)`,
         borderRadius:16, padding:"16px 18px", marginTop:14,
         border:`1px solid ${c.hazel}35`, display:"flex", gap:14, alignItems:"flex-start"}}>
@@ -540,7 +512,7 @@ function Posizione({go}) {
     <PageHead title="Come arrivare" back={()=>go("home")} icon={<Ic.pin/>}/>
     <div style={s.content}>
       <Card><CT icon={<Ic.pin/>} text="Indirizzo"/>
-        <p style={{fontFamily:"Georgia,serif",fontSize:19,marginBottom:12}}>Via Cimitero 38<br/>Uta (CA) — Sardegna</p>
+        <p style={{fontFamily:"Georgia,serif",fontSize:19,marginBottom:12,color:c.warm}}>Via Cimitero 38<br/>Uta (CA) — Sardegna</p>
         <a href="https://maps.google.com/?q=Via+Cimitero+38+Uta+Cagliari" target="_blank" rel="noreferrer" style={s.mapBtn}><Ic.mapW/> Apri in Google Maps</a>
       </Card>
       <Card><CT text="🚌 Mezzi pubblici"/>
@@ -561,7 +533,6 @@ function Posizione({go}) {
   </div>;
 }
 
-// ── ESPLORARE ─────────────────────────────────────────────
 function Esplorare({go}) {
   const [tab, setTab] = useState(0);
 
@@ -715,7 +686,7 @@ function Esplorare({go}) {
         { title:"Dune di Piscinas", dist:"1h 20min", emoji:"🏜️",
           mood:"Il deserto d'Europa",
           desc:"Le dune più alte d'Europa — fino a 60 metri — si affacciano su un mare spettacolare. Un paesaggio da Sahara nel cuore della Sardegna.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/piscinas_srxqdj.webp",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/piscinas_srqqdj.webp",
           link:"https://maps.google.com/?q=Dune+di+Piscinas+Sardegna"},
         { title:"Golfo di Orosei & Cala Goloritzé", dist:"~3h", emoji:"🌊",
           mood:"Top 10 spiagge al mondo",
@@ -737,7 +708,6 @@ function Esplorare({go}) {
   const fetchMeteo = async () => {
     setMeteoLoad(true);
     try {
-      // Open-Meteo: dati orari attuali + forecast 3 giorni per Uta (CA)
       const url = "https://api.open-meteo.com/v1/forecast?latitude=39.29&longitude=8.96" +
         "&current=temperature_2m,apparent_temperature,weathercode,windspeed_10m,relativehumidity_2m" +
         "&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum" +
@@ -779,7 +749,6 @@ function Esplorare({go}) {
     setMeteoLoad(false);
   };
 
-  // Carica meteo automaticamente al mount
   useEffect(()=>{ fetchMeteo(); }, []);
 
   const t = tabs[tab];
@@ -788,14 +757,12 @@ function Esplorare({go}) {
     <PageHead title="Da scoprire" back={()=>go("home")} icon={<Ic.compass/>}/>
     <div style={s.content}>
 
-      {/* Banner meteo: condizioni attuali + 3 giorni */}
-      <div style={{background:`linear-gradient(160deg, #7a5840, #96704e)`, borderRadius:18, padding:"16px 18px", marginBottom:16, overflow:"hidden", position:"relative"}}>
-        <div style={{position:"absolute",top:-30,right:-30,width:120,height:120,background:"radial-gradient(circle,#6aaee040,transparent 70%)",pointerEvents:"none"}}/>
+      <div style={{background:`linear-gradient(160deg, #3D1F10, #5a3020)`, borderRadius:18, padding:"16px 18px", marginBottom:16, overflow:"hidden", position:"relative"}}>
+        <div style={{position:"absolute",top:-30,right:-30,width:120,height:120,background:"radial-gradient(circle,#CEAD8540,transparent 70%)",pointerEvents:"none"}}/>
         <div style={{fontSize:9, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.4)", marginBottom:12}}>📍 Uta · Meteo in tempo reale</div>
         {meteoLoad && <div style={{color:"rgba(245,240,232,0.5)",fontSize:13,textAlign:"center",padding:"16px 0"}}>⏳ Caricamento meteo…</div>}
         {!meteoLoad && meteo && (
           <>
-            {/* Condizioni ora */}
             <div style={{display:"flex", alignItems:"center", gap:16, marginBottom:14, paddingBottom:14, borderBottom:"1px solid rgba(255,255,255,0.08)"}}>
               <span style={{fontSize:44, lineHeight:1}}>{meteo.current.ico}</span>
               <div>
@@ -808,7 +775,6 @@ function Esplorare({go}) {
                 </div>
               </div>
             </div>
-            {/* Previsioni 3 giorni */}
             <div style={{display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:8}}>
               {meteo.forecast.map((g,i)=>(
                 <div key={i} style={{textAlign:"center", background:"rgba(255,255,255,0.05)", borderRadius:12, padding:"10px 6px"}}>
@@ -816,7 +782,7 @@ function Esplorare({go}) {
                   <div style={{fontSize:24, lineHeight:1, marginBottom:4}}>{g.ico}</div>
                   <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:18, color:"white", fontWeight:600}}>{g.max}°</div>
                   <div style={{fontSize:10, color:"rgba(245,240,232,0.4)"}}>{g.min}° min</div>
-                  {g.rain > 0 && <div style={{fontSize:10, color:"#6aaee0", marginTop:3}}>💧{g.rain}mm</div>}
+                  {g.rain > 0 && <div style={{fontSize:10, color:c.hazel, marginTop:3}}>💧{g.rain}mm</div>}
                 </div>
               ))}
             </div>
@@ -830,7 +796,6 @@ function Esplorare({go}) {
         )}
       </div>
 
-      {/* Tab visivi a blocchi colorati */}
       <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:10, marginBottom:20}}>
         {tabs.map(({id,label,emoji,color,accent,tagline},i)=>(
           <button key={id} onClick={()=>setTab(i)} style={{
@@ -848,7 +813,6 @@ function Esplorare({go}) {
         ))}
       </div>
 
-      {/* Header categoria attiva */}
       <div style={{background:t.color, borderRadius:16, padding:"16px 18px", marginBottom:14,
         borderLeft:`4px solid ${t.accent}`}}>
         <span style={{fontSize:28}}>{t.emoji}</span>
@@ -860,19 +824,17 @@ function Esplorare({go}) {
         </div>
       </div>
 
-      {/* Card esperienze con foto */}
       {t.data.map((p,i)=>(
         <a key={i} href={p.link} target="_blank" rel="noreferrer" style={{
           display:"block", textDecoration:"none",
           background:c.white, borderRadius:18, marginBottom:12,
           border:`1px solid ${c.hazel}20`, overflow:"hidden",
-          boxShadow:"0 2px 8px rgba(74,55,40,0.07)",
+          boxShadow:"0 2px 8px rgba(61,31,16,0.07)",
           transition:"transform .15s, box-shadow .15s",
         }}
-          onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-2px)";e.currentTarget.style.boxShadow=`0 6px 16px rgba(74,55,40,0.14)`;}}
-          onMouseLeave={e=>{e.currentTarget.style.transform="";e.currentTarget.style.boxShadow="0 2px 8px rgba(74,55,40,0.07)";}}>
+          onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-2px)";e.currentTarget.style.boxShadow=`0 6px 16px rgba(61,31,16,0.14)`;}}
+          onMouseLeave={e=>{e.currentTarget.style.transform="";e.currentTarget.style.boxShadow="0 2px 8px rgba(61,31,16,0.07)";}}>
 
-          {/* Foto — se fallisce mostra gradiente colorato tematico */}
           {p.photo && (
             <div style={{height:140, overflow:"hidden",
               background:`linear-gradient(135deg, ${t.color}, ${t.accent}40)`}}>
@@ -885,10 +847,8 @@ function Esplorare({go}) {
             </div>
           )}
 
-          {/* Striscia colorata — sempre visibile */}
           <div style={{height:3, background:`linear-gradient(90deg, ${t.color}, ${t.accent})`}}/>
 
-          {/* Contenuto testuale — SEMPRE visibile indipendentemente dalla foto */}
           <div style={{padding:"12px 14px"}}>
             <div style={{display:"flex", alignItems:"flex-start", justifyContent:"space-between", marginBottom:6}}>
               <div style={{display:"flex", alignItems:"center", gap:9, flex:1, minWidth:0}}>
@@ -912,6 +872,7 @@ function Esplorare({go}) {
     </div>
   </div>;
 }
+
 function Servizi({go}) {
   return <div style={s.app}>
     <PageHead title="Servizi utili" back={()=>go("home")} icon={<Ic.faq/>}/>
@@ -995,7 +956,7 @@ function RCard({emoji, nome, stelle, dist, tipo, piatti, link, highlight}) {
               <div style={{display:"flex", alignItems:"center", gap:6, flexWrap:"wrap"}}>
                 <span style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:17, fontWeight:400, color:c.warm, lineHeight:1.2}}>{nome}</span>
                 {stelle && <span style={{fontSize:11, color:"#a07820", fontWeight:700, flexShrink:0}}>⭐{stelle}</span>}
-                {highlight && <span style={{fontSize:9, background:c.hazel, color:"white", borderRadius:8, padding:"2px 7px", letterSpacing:"0.5px", flexShrink:0}}>CONSIGLIATO</span>}
+                {highlight && <span style={{fontSize:9, background:c.hazel, color:c.warm, borderRadius:8, padding:"2px 7px", letterSpacing:"0.5px", flexShrink:0}}>CONSIGLIATO</span>}
               </div>
               <div style={{fontSize:10.5, color:c.mastic, marginTop:2}}>{tipo} · <span style={{color:c.hazel}}>{dist}</span></div>
             </div>
@@ -1008,7 +969,6 @@ function RCard({emoji, nome, stelle, dist, tipo, piatti, link, highlight}) {
   );
 }
 
-// Separatore di sezione ristoranti
 function RSection({title, children}) {
   return (
     <div style={{marginBottom:20}}>
@@ -1027,8 +987,7 @@ function Ristoranti({go}) {
     <PageHead title="Dove mangiare" back={()=>go("home")} icon={<Ic.pasta/>}/>
     <div style={s.content}>
 
-      {/* Highlight card consigliato */}
-      <div style={{background:`linear-gradient(135deg,#2d1a0e,#4a2e18)`, borderRadius:18, padding:"16px 18px", marginBottom:20}}>
+      <div style={{background:`linear-gradient(135deg,#3D1F10,#5a3020)`, borderRadius:18, padding:"16px 18px", marginBottom:20}}>
         <div style={{fontSize:9,letterSpacing:"3px",textTransform:"uppercase",color:"rgba(245,240,232,0.45)",marginBottom:8}}>⭐ da non perdere</div>
         <div style={{display:"flex",flexDirection:"column",gap:6}}>
           {[
@@ -1042,7 +1001,7 @@ function Ristoranti({go}) {
                 <span style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:15,color:"white"}}>{n}</span>
                 <span style={{fontSize:10,color:"rgba(245,240,232,0.5)",marginLeft:8}}>{d}</span>
               </div>
-              <span style={{fontSize:11,color:"#d4aa85",fontWeight:700}}>⭐{s}</span>
+              <span style={{fontSize:11,color:c.hazel,fontWeight:700}}>⭐{s}</span>
             </div>
           ))}
         </div>
@@ -1120,8 +1079,7 @@ function Ristoranti({go}) {
           link="https://maps.google.com/?q=Mondo+e+Luca+Cagliari"/>
       </RSection>
 
-      {/* Banner cultura cucina sarda */}
-      <div style={{background:`linear-gradient(160deg, #7a5840, #96704e)`, borderRadius:18, overflow:"hidden", marginTop:4}}>
+      <div style={{background:`linear-gradient(160deg, #3D1F10, #5a3020)`, borderRadius:18, overflow:"hidden", marginTop:4}}>
         <div style={{background:"linear-gradient(135deg,#1a2e1a,#2d4a2d)", padding:"20px 18px"}}>
           <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:22, color:c.cream, fontWeight:300, marginBottom:4}}>
             La cucina sarda
@@ -1159,7 +1117,7 @@ function Ristoranti({go}) {
 
 function Eventi({go}) {
   const oggi = new Date();
-  const meseCorrente = oggi.getMonth() + 1; // 1-12
+  const meseCorrente = oggi.getMonth() + 1;
 
   const tuttiEvs = [
     {mese:1, m:"Gennaio", evs:[{d:"12 gennaio",t:"🕯️ Festa di Santa Greca (Decimomannu)"}]},
@@ -1185,13 +1143,11 @@ function Eventi({go}) {
     {mese:12, m:"Dicembre", evs:[{d:"13 dicembre",t:"🕯️ Santa Lucia (Uta)"}]},
   ];
 
-  // Ordina: dal mese corrente in poi, poi quelli già passati
   const evs = [
     ...tuttiEvs.filter(e => e.mese >= meseCorrente).sort((a,b) => a.mese - b.mese),
     ...tuttiEvs.filter(e => e.mese < meseCorrente).sort((a,b) => a.mese - b.mese),
   ];
 
-  // Calcola imminenti (entro 7 giorni)
   const eventiFissi = [
     {mese:1,giorno:12,titolo:"Festa di Santa Greca",luogo:"Decimomannu",emoji:"🕯️"},
     {mese:5,giorno:1,titolo:"Festa di Sant'Efisio",luogo:"Cagliari",emoji:"🎖️"},
@@ -1210,7 +1166,6 @@ function Eventi({go}) {
     return diff >= 0 && diff <= 7;
   });
 
-  // Sezione eventi live
   const [liveEvents, setLiveEvents] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -1256,28 +1211,26 @@ Max 10 eventi. SOLO JSON.`}]
     <PageHead title="Feste ed eventi" back={()=>go("home")} icon={<Ic.cal/>}/>
     <div style={s.content}>
 
-      {/* Banner imminenti */}
       {imminenti.length > 0 && (
-        <div style={{background:"linear-gradient(135deg,#b8673f,#d4845f)",borderRadius:18,padding:"18px 18px 14px",marginBottom:14}}>
-          <div style={{fontSize:9,letterSpacing:"3px",textTransform:"uppercase",color:"rgba(255,255,255,0.6)",marginBottom:10}}>🔔 Questa settimana</div>
+        <div style={{background:`linear-gradient(135deg,${c.hazel},${c.hazelL})`,borderRadius:18,padding:"18px 18px 14px",marginBottom:14}}>
+          <div style={{fontSize:9,letterSpacing:"3px",textTransform:"uppercase",color:"rgba(61,31,16,0.6)",marginBottom:10}}>🔔 Questa settimana</div>
           {imminenti.map((e,i)=>(
-            <div key={i} style={{display:"flex",alignItems:"center",gap:12,padding:"8px 0",borderBottom:i<imminenti.length-1?"1px solid rgba(255,255,255,0.2)":"none"}}>
+            <div key={i} style={{display:"flex",alignItems:"center",gap:12,padding:"8px 0",borderBottom:i<imminenti.length-1?`1px solid rgba(61,31,16,0.15)`:"none"}}>
               <span style={{fontSize:22}}>{e.emoji}</span>
               <div>
-                <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:17,color:"white",fontWeight:400}}>{e.titolo}</div>
-                <div style={{fontSize:11,color:"rgba(255,255,255,0.7)",marginTop:2}}>{e.luogo}</div>
+                <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:17,color:c.warm,fontWeight:400}}>{e.titolo}</div>
+                <div style={{fontSize:11,color:"rgba(61,31,16,0.6)",marginTop:2}}>{e.luogo}</div>
               </div>
             </div>
           ))}
         </div>
       )}
 
-      {/* Sezione live + feste del calendario come fallback */}
       <div style={{background:c.white,borderRadius:18,padding:"18px",marginBottom:14,border:`1px solid ${c.hazel}15`}}>
-        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:19,fontWeight:400,marginBottom:4}}>🔍 Cosa c'è questa settimana</div>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:19,fontWeight:400,marginBottom:4,color:c.warm}}>🔍 Cosa c'è questa settimana</div>
         <p style={{fontSize:12.5,color:c.mastic,lineHeight:1.6,marginBottom:14}}>Concerti, teatro, cinema, sagre e feste nell'area di Cagliari e Sulcis.</p>
         {!liveEvents && !loading && (
-          <button onClick={fetchLiveEvents} style={{width:"100%",background:c.hazel,color:"white",border:"none",borderRadius:12,padding:"13px",fontSize:13,fontFamily:"'Jost',sans-serif",cursor:"pointer"}}>
+          <button onClick={fetchLiveEvents} style={{width:"100%",background:c.hazel,color:c.warm,border:"none",borderRadius:12,padding:"13px",fontSize:13,fontFamily:"'Jost',sans-serif",cursor:"pointer"}}>
             ✨ Cerca eventi in programma
           </button>
         )}
@@ -1310,13 +1263,12 @@ Max 10 eventi. SOLO JSON.`}]
         )}
       </div>
 
-      {/* Calendario cronologico dal mese corrente */}
       <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.mastic,margin:"4px 0 14px",textAlign:"center"}}>Calendario tradizioni locali</div>
       {evs.map(({m,evs:ee},idx)=>(
         <Card key={m} style={idx===0 ? {border:`1px solid ${c.hazel}50`} : {}}>
           <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:10}}>
             <div style={s.cardTitle}>{m}</div>
-            {idx===0 && <span style={{fontSize:10,background:c.hazel,color:"white",borderRadius:10,padding:"2px 8px"}}>In corso</span>}
+            {idx===0 && <span style={{fontSize:10,background:c.hazel,color:c.warm,borderRadius:10,padding:"2px 8px"}}>In corso</span>}
           </div>
           {ee.map((e,i)=>(
             <div key={i} style={i===ee.length-1?s.ruleLast:s.rule}><div style={s.dot}/>
@@ -1337,10 +1289,10 @@ function Recensioni({go}) {
   return <div style={s.app}>
     <PageHead title="Le vostre recensioni" back={()=>go("home")} icon={<Ic.star/>}/>
     <div style={s.content}>
-      <div style={s.hlBox}><div style={s.hlTitle}>La vostra opinione conta</div><p style={{fontSize:14,lineHeight:1.7,opacity:0.92,margin:0}}>Speriamo che il soggiorno sia stato di vostro gradimento. Una recensione su Google ci aiuta a far conoscere Casa Uta!</p></div>
+      <div style={s.hlBox}><div style={s.hlTitle}>La vostra opinione conta</div><p style={{fontSize:14,lineHeight:1.7,opacity:0.85,margin:0,color:c.warm}}>Speriamo che il soggiorno sia stato di vostro gradimento. Una recensione su Google ci aiuta a far conoscere Casa Uta!</p></div>
       <Card style={{textAlign:"center",padding:"28px 18px"}}>
         <div style={{fontSize:40,marginBottom:10}}>⭐⭐⭐⭐⭐</div>
-        <p style={{fontFamily:"Georgia,serif",fontSize:20,marginBottom:8}}>Lascia una recensione su Google</p>
+        <p style={{fontFamily:"Georgia,serif",fontSize:20,marginBottom:8,color:c.warm}}>Lascia una recensione su Google</p>
         <p style={{fontSize:13,color:c.mastic,marginBottom:20,lineHeight:1.6}}>Bastano 2 minuti e ci aiuti enormemente.<br/>Grazie di cuore! 🙏</p>
         <a href="https://search.google.com/local/writereview?placeid=GOOGLE_PLACE_ID" target="_blank" rel="noreferrer" style={s.mapBtn}><span>⭐</span> Scrivi una recensione</a>
       </Card>
@@ -1393,7 +1345,7 @@ function FAQ({go}) {
           {rifiuti.map(({n,g,s:sc},i)=>(
             <div key={n} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"10px 0",borderBottom:i<rifiuti.length-1?`1px solid rgba(255,255,255,0.1)`:"none"}}>
               <div><div style={{fontSize:13,color:c.cream,fontWeight:400}}>{n}</div><div style={{fontSize:11,color:"rgba(245,240,232,0.55)",marginTop:2}}>{g}</div></div>
-              <span style={{fontSize:11,color:c.hazel,background:"rgba(184,103,63,0.2)",borderRadius:8,padding:"3px 8px"}}>{sc}</span>
+              <span style={{fontSize:11,color:c.hazel,background:"rgba(206,173,133,0.2)",borderRadius:8,padding:"3px 8px"}}>{sc}</span>
             </div>
           ))}
         </div>
