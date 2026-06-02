@@ -41,7 +41,7 @@ const s = {
   cardLabel: { fontSize:8.5, letterSpacing:"1.5px", textTransform:"uppercase", textAlign:"center", fontWeight:500, color:c.warm, lineHeight:1.4 },
   pageHead: { background:`linear-gradient(160deg, #CEAD85 0%, #d4b896 100%)`, padding:"50px 24px 28px", borderRadius:"0 0 24px 24px" },
   pageTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontWeight:300, fontSize:38, color:c.warm, lineHeight:1.1, margin:0 },
-  back: { display:"flex", alignItems:"center", gap:6, background:"none", border:"none", color:"rgba(61,31,16,0.55)", fontSize:10, letterSpacing:"2px", textTransform:"uppercase", cursor:"pointer", marginBottom:18, padding:0, fontFamily:"'Jost', sans-serif" },
+  back: { display:"inline-flex", alignItems:"center", gap:7, background:"rgba(255,255,255,0.18)", border:"1px solid rgba(255,255,255,0.25)", borderRadius:20, color:"rgba(253,250,245,0.9)", fontSize:11, letterSpacing:"1.5px", textTransform:"uppercase", cursor:"pointer", marginBottom:20, padding:"7px 14px", fontFamily:"'Jost', sans-serif", backdropFilter:"blur(4px)" },
   content: { padding:"24px 20px 60px" },
   infoCard: { background:c.white, borderRadius:18, padding:"20px 18px", marginBottom:12, border:`1px solid ${c.hazel}15` },
   cardTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontSize:21, fontWeight:400, marginBottom:10, display:"flex", alignItems:"center", gap:8, color:c.warm },
@@ -534,7 +534,7 @@ function Posizione({go}) {
 }
 
 function Esplorare({go}) {
-  const [tab, setTab] = useState(0);
+  const [tab, setTab] = useState(null);
 
   const tabs = [
     {
@@ -751,7 +751,7 @@ function Esplorare({go}) {
 
   useEffect(()=>{ fetchMeteo(); }, []);
 
-  const t = tabs[tab];
+  const t = tab !== null ? tabs[tab] : tabs[0];
 
   return <div style={s.app}>
     <PageHead title="Da scoprire" back={()=>go("home")} icon={<Ic.compass/>}/>
@@ -796,35 +796,75 @@ function Esplorare({go}) {
         )}
       </div>
 
-      <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:10, marginBottom:20}}>
+      {/* Call to action contestuale — appare solo se il meteo è caricato */}
+      <div style={{textAlign:"center", padding:"4px 0 20px"}}>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:22,
+          fontWeight:300, color:c.warm, lineHeight:1.3, marginBottom:6}}>
+          {meteo
+            ? meteo.current.ico === "☀️" || meteo.current.ico === "⛅"
+              ? <>Con questo sole,<br/><em style={{fontStyle:"italic",color:c.hazel}}>cosa ti va di scoprire?</em></>
+              : meteo.current.ico === "🌧️" || meteo.current.ico === "⛈️"
+              ? <>Giornata di pioggia?<br/><em style={{fontStyle:"italic",color:c.hazel}}>Cultura & storia ti aspettano.</em></>
+              : <>Con questo clima,<br/><em style={{fontStyle:"italic",color:c.hazel}}>cosa ti va di scoprire?</em></>
+            : <>Scegli la tua<br/><em style={{fontStyle:"italic",color:c.hazel}}>prossima avventura.</em></>
+          }
+        </div>
+        <div style={{fontSize:11, color:c.mastic, letterSpacing:"0.5px"}}>
+          Scegli una categoria ↓
+        </div>
+      </div>
+
+      {/* Tab come scelta primaria — 2×2 grandi e cliccabili */}
+      <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:12, marginBottom:tab !== null ? 20 : 0}}>
         {tabs.map(({id,label,emoji,color,accent,tagline},i)=>(
-          <button key={id} onClick={()=>setTab(i)} style={{
+          <button key={id} onClick={()=>setTab(i===tab ? null : i)} style={{
             background: i===tab ? color : c.white,
             border: i===tab ? `2px solid ${accent}` : `1px solid ${c.sand}`,
-            borderRadius:16, padding:"14px 12px", cursor:"pointer",
+            borderRadius:18, padding:"18px 14px", cursor:"pointer",
             textAlign:"left", transition:"all .2s",
+            boxShadow: i===tab ? `0 4px 16px ${color}60` : "0 1px 4px rgba(61,31,16,0.06)",
+            position:"relative",
           }}>
-            <div style={{fontSize:22, marginBottom:4}}>{emoji}</div>
-            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:15,
+            {/* Freccia indicatore */}
+            <div style={{position:"absolute", top:12, right:14,
+              fontSize:14, color: i===tab ? "rgba(255,255,255,0.6)" : c.mastic,
+              transform: i===tab ? "rotate(180deg)" : "rotate(0deg)",
+              transition:"transform .2s"}}>▼</div>
+            <div style={{fontSize:28, marginBottom:8, lineHeight:1}}>{emoji}</div>
+            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:16,
               color: i===tab ? "white" : c.warm, fontWeight:400, lineHeight:1.2, marginBottom:4}}>{label}</div>
             <div style={{fontSize:10, color: i===tab ? `${accent}` : c.mastic,
-              lineHeight:1.4, letterSpacing:"0.2px"}}>{tagline}</div>
+              lineHeight:1.4}}>{tagline}</div>
+            {i !== tab && (
+              <div style={{marginTop:8, display:"inline-flex", alignItems:"center", gap:4,
+                background:`${c.hazel}18`, borderRadius:10, padding:"3px 10px"}}>
+                <span style={{fontSize:10, color:c.hazel, fontWeight:500}}>
+                  {tabs[i].data.length} esperienze
+                </span>
+              </div>
+            )}
           </button>
         ))}
       </div>
 
-      <div style={{background:t.color, borderRadius:16, padding:"16px 18px", marginBottom:14,
-        borderLeft:`4px solid ${t.accent}`}}>
-        <span style={{fontSize:28}}>{t.emoji}</span>
-        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:22,
-          color:"white", fontWeight:300, marginTop:4}}>{t.label}</div>
-        <div style={{fontSize:12, color:t.accent, marginTop:4, letterSpacing:"0.5px"}}>{t.tagline}</div>
-        <div style={{fontSize:11, color:"rgba(255,255,255,0.4)", marginTop:6}}>
-          {t.data.length} esperienze · tocca per aprire in Maps
-        </div>
-      </div>
+      {/* Contenuto tab — si espande sotto i pulsanti */}
+      {tab !== null && (
+        <div>
+          <div style={{background:t.color, borderRadius:16, padding:"14px 18px", marginBottom:14,
+            borderLeft:`4px solid ${t.accent}`, display:"flex", alignItems:"center", justifyContent:"space-between"}}>
+            <div>
+              <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:20,
+                color:"white", fontWeight:300}}>{t.emoji} {t.label}</div>
+              <div style={{fontSize:11, color:t.accent, marginTop:3}}>
+                {t.data.length} esperienze · tocca per aprire in Maps
+              </div>
+            </div>
+            <button onClick={()=>setTab(null)} style={{background:"rgba(255,255,255,0.15)",
+              border:"none", borderRadius:20, padding:"6px 12px", color:"white",
+              fontSize:11, cursor:"pointer", flexShrink:0}}>Chiudi ✕</button>
+          </div>
 
-      {t.data.map((p,i)=>(
+          {t.data.map((p,i)=>(
         <a key={i} href={p.link} target="_blank" rel="noreferrer" style={{
           display:"block", textDecoration:"none",
           background:c.white, borderRadius:18, marginBottom:12,
@@ -868,7 +908,9 @@ function Esplorare({go}) {
               paddingLeft:31}}>{p.desc}</p>
           </div>
         </a>
-      ))}
+          ))}
+        </div>
+      )}
     </div>
   </div>;
 }
