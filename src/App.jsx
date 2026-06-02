@@ -814,103 +814,41 @@ function Esplorare({go}) {
         </div>
       </div>
 
-      {/* Tab come scelta primaria — 2×2 grandi e cliccabili */}
-      <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:12, marginBottom:tab !== null ? 20 : 0}}>
-        {tabs.map(({id,label,emoji,color,accent,tagline},i)=>(
-          <button key={id} onClick={()=>setTab(i===tab ? null : i)} style={{
-            background: i===tab ? color : c.white,
-            border: i===tab ? `2px solid ${accent}` : `1px solid ${c.sand}`,
-            borderRadius:18, padding:"18px 14px", cursor:"pointer",
+      {/* Tab come card rettangolari full-width */}
+      <div style={{display:"flex", flexDirection:"column", gap:12}}>
+        {tabs.map(({id,label,emoji,color,accent,tagline,data},i)=>(
+          <button key={id} onClick={()=>go(`esplorare_${id}`)} style={{
+            background: c.white,
+            border: `1px solid ${c.sand}`,
+            borderRadius:18, padding:"18px 20px", cursor:"pointer",
             textAlign:"left", transition:"all .2s",
-            boxShadow: i===tab ? `0 4px 16px ${color}60` : "0 1px 4px rgba(61,31,16,0.06)",
-            position:"relative",
-          }}>
-            {/* Freccia indicatore */}
-            <div style={{position:"absolute", top:12, right:14,
-              fontSize:14, color: i===tab ? "rgba(255,255,255,0.6)" : c.mastic,
-              transform: i===tab ? "rotate(180deg)" : "rotate(0deg)",
-              transition:"transform .2s"}}>▼</div>
-            <div style={{fontSize:28, marginBottom:8, lineHeight:1}}>{emoji}</div>
-            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:16,
-              color: i===tab ? "white" : c.warm, fontWeight:400, lineHeight:1.2, marginBottom:4}}>{label}</div>
-            <div style={{fontSize:10, color: i===tab ? `${accent}` : c.mastic,
-              lineHeight:1.4}}>{tagline}</div>
-            {i !== tab && (
-              <div style={{marginTop:8, display:"inline-flex", alignItems:"center", gap:4,
-                background:`${c.hazel}18`, borderRadius:10, padding:"3px 10px"}}>
-                <span style={{fontSize:10, color:c.hazel, fontWeight:500}}>
-                  {tabs[i].data.length} esperienze
-                </span>
+            boxShadow:"0 1px 4px rgba(61,31,16,0.06)",
+            display:"flex", alignItems:"center", gap:18,
+            width:"100%",
+          }}
+            onMouseEnter={e=>{e.currentTarget.style.borderColor=accent;e.currentTarget.style.boxShadow=`0 4px 14px ${color}30`;}}
+            onMouseLeave={e=>{e.currentTarget.style.borderColor=c.sand;e.currentTarget.style.boxShadow="0 1px 4px rgba(61,31,16,0.06)";}}>
+            {/* Emoji con sfondo colorato */}
+            <div style={{width:56, height:56, borderRadius:16, flexShrink:0,
+              background:`linear-gradient(135deg, ${color}, ${color}cc)`,
+              display:"flex", alignItems:"center", justifyContent:"center", fontSize:26}}>
+              {emoji}
+            </div>
+            {/* Testo */}
+            <div style={{flex:1, minWidth:0}}>
+              <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:18,
+                color:c.warm, fontWeight:400, lineHeight:1.2, marginBottom:3}}>{label}</div>
+              <div style={{fontSize:11, color:c.mastic, lineHeight:1.4, marginBottom:6}}>{tagline}</div>
+              <div style={{display:"inline-flex", alignItems:"center", gap:4,
+                background:`${accent}18`, borderRadius:10, padding:"3px 10px"}}>
+                <span style={{fontSize:10, color:accent, fontWeight:600}}>{data.length} esperienze</span>
               </div>
-            )}
+            </div>
+            {/* Freccia */}
+            <div style={{fontSize:18, color:c.mastic, flexShrink:0}}>›</div>
           </button>
         ))}
       </div>
-
-      {/* Contenuto tab — si espande sotto i pulsanti */}
-      {tab !== null && (
-        <div>
-          <div style={{background:t.color, borderRadius:16, padding:"14px 18px", marginBottom:14,
-            borderLeft:`4px solid ${t.accent}`, display:"flex", alignItems:"center", justifyContent:"space-between"}}>
-            <div>
-              <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:20,
-                color:"white", fontWeight:300}}>{t.emoji} {t.label}</div>
-              <div style={{fontSize:11, color:t.accent, marginTop:3}}>
-                {t.data.length} esperienze · tocca per aprire in Maps
-              </div>
-            </div>
-            <button onClick={()=>setTab(null)} style={{background:"rgba(255,255,255,0.15)",
-              border:"none", borderRadius:20, padding:"6px 12px", color:"white",
-              fontSize:11, cursor:"pointer", flexShrink:0}}>Chiudi ✕</button>
-          </div>
-
-          {t.data.map((p,i)=>(
-        <a key={i} href={p.link} target="_blank" rel="noreferrer" style={{
-          display:"block", textDecoration:"none",
-          background:c.white, borderRadius:18, marginBottom:12,
-          border:`1px solid ${c.hazel}20`, overflow:"hidden",
-          boxShadow:"0 2px 8px rgba(61,31,16,0.07)",
-          transition:"transform .15s, box-shadow .15s",
-        }}
-          onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-2px)";e.currentTarget.style.boxShadow=`0 6px 16px rgba(61,31,16,0.14)`;}}
-          onMouseLeave={e=>{e.currentTarget.style.transform="";e.currentTarget.style.boxShadow="0 2px 8px rgba(61,31,16,0.07)";}}>
-
-          {p.photo && (
-            <div style={{height:140, overflow:"hidden",
-              background:`linear-gradient(135deg, ${t.color}, ${t.accent}40)`}}>
-              <img src={p.photo} alt=""
-                style={{width:"100%", height:"100%", objectFit:"cover", display:"block",
-                  opacity:0, transition:"opacity .3s"}}
-                onLoad={e=>{e.target.style.opacity="1";}}
-                onError={e=>{e.target.style.display="none";}}
-              />
-            </div>
-          )}
-
-          <div style={{height:3, background:`linear-gradient(90deg, ${t.color}, ${t.accent})`}}/>
-
-          <div style={{padding:"12px 14px"}}>
-            <div style={{display:"flex", alignItems:"flex-start", justifyContent:"space-between", marginBottom:6}}>
-              <div style={{display:"flex", alignItems:"center", gap:9, flex:1, minWidth:0}}>
-                <span style={{fontSize:22, flexShrink:0}}>{p.emoji}</span>
-                <div style={{minWidth:0}}>
-                  <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:17,
-                    fontWeight:400, color:c.warm, lineHeight:1.25}}>{p.title}</div>
-                  <div style={{fontSize:9, color:t.accent, marginTop:3, fontWeight:600,
-                    letterSpacing:"1px", textTransform:"uppercase"}}>{p.mood}</div>
-                </div>
-              </div>
-              <span style={{fontSize:10, color:c.hazel, background:`${c.hazel}15`,
-                borderRadius:20, padding:"3px 9px", flexShrink:0, marginLeft:8,
-                whiteSpace:"nowrap"}}>{p.dist}</span>
-            </div>
-            <p style={{fontSize:12.5, color:c.mastic, lineHeight:1.7, margin:0,
-              paddingLeft:31}}>{p.desc}</p>
-          </div>
-        </a>
-          ))}
-        </div>
-      )}
     </div>
   </div>;
 }
@@ -1412,6 +1350,120 @@ function FAQ({go}) {
   </div>;
 }
 
+// ── PAGINE CATEGORIA DA SCOPRIRE ─────────────────
+const TABS_DATA = [
+  {
+    id:"vicino", label:"A due passi", emoji:"🌿",
+    color:"#2d4a2d", accent:"#6db86d",
+    tagline:"Tutto raggiungibile a piedi o in 15 minuti",
+    data:[
+      { title:"Chiesa romanica di Santa Maria", dist:"5 min", emoji:"⛪", mood:"Patrimonio del XII sec.", desc:"Pietra calcarea, volte basse e luce filtrata. Una delle chiese medievali più integre del Campidano — vale dieci minuti di sosta.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744886/Santa_Maria_xtazex.jpg", link:"https://maps.google.com/?q=Chiesa+Santa+Maria+Uta"},
+      { title:"Parco S'Ollivariu", dist:"5 min", emoji:"🌳", mood:"Mattinata tranquilla", desc:"Lecci, sentieri ombreggiati e silenzio. Il posto giusto per iniziare la giornata prima che il paese si svegli.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/parcom_uta_xnujth.jpg", link:"https://maps.google.com/?q=Parco+S+Ollivariu+Uta"},
+      { title:"Cinema Vittoria", dist:"a piedi", emoji:"🎬", mood:"Sala storica anni '50", desc:"Una piccola sala cinematografica storica nel cuore di Uta. Programmazione mista, atmosfera d'altri tempi. Un'esperienza autentica e rara.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747029/cinema_vittoria_mgdibo.jpg", link:"https://maps.google.com/?q=Cinema+Vittoria+Uta+Sardegna"},
+      { title:"Laguna di Santa Gilla — uccelli migratori", dist:"10 min", emoji:"🦩", mood:"Spettacolo naturale gratuito", desc:"Laguna costiera dove svernano fenicotteri rosa, aironi, cormorani e migliaia di uccelli migratori. Non serve una riserva — basta affacciarsi dalla strada panoramica.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747029/santa_gilla_hnx9nk.jpg", link:"https://maps.google.com/?q=Laguna+Santa+Gilla+Cagliari"},
+      { title:"Saline di Conti Vecchi", dist:"10 min", emoji:"🧂", mood:"Foto imperdibili", desc:"Ex saline industriali con vasche che cambiano colore dal bianco candido al rosa acceso. Un paesaggio surreale e fotogenico a due passi.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744896/conti_vecchi_xdy4by.jpg", link:"https://maps.google.com/?q=Saline+Conti+Vecchi+Assemini"},
+      { title:"Oasi del Cervo e della Luna — Monte Arcosu", dist:"20 min", emoji:"🦌", mood:"Foresta primordiale · WWF", desc:"La più grande foresta mediterranea privata d'Europa, gestita dal WWF. Sede del rarissimo Cervo sardo. All'interno si trova La Locanda dei Buoni e Cattivi: cucina sarda autentica nel bosco.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747199/wwf_xq90yh.webp", link:"https://maps.google.com/?q=Oasi+WWF+Monte+Arcosu+Uta+Sardegna"},
+      { title:"Parco Naturale di Gutturu Mannu", dist:"25 min", emoji:"🏞️", mood:"Wilderness del Sulcis", desc:"Uno dei parchi più estesi e meno frequentati della Sardegna. Boschi di lecci, torrenti, fauna selvatica. Quasi sconosciuto ai turisti.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/gutturu_mannu_bomtbd.jpg", link:"https://maps.google.com/?q=Gutturu+Mannu+Sardegna"},
+    ]
+  },
+  {
+    id:"cagliari", label:"Cagliari", emoji:"🏙️",
+    color:"#1e2d40", accent:"#6aaee0",
+    tagline:"Il capoluogo in 20 minuti — mare, storia, vita",
+    data:[
+      { title:"Poetto — 11 km di sabbia fine", dist:"15 min", emoji:"🏖️", mood:"Mare & relax", desc:"La spiaggia urbana più lunga della Sardegna. D'estate chioschi e movida, in primavera solo vento e orizzonte. Entrambi validi.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/poetto_hefkna.jpg", link:"https://maps.google.com/?q=Spiaggia+Poetto+Cagliari"},
+      { title:"Sella del Diavolo", dist:"20 min", emoji:"🥾", mood:"Tramonto da ricordare", desc:"Il promontorio tra Poetto e Calamosca. Il sentiero sale tra mirto e lentisco: in cima, il Golfo di Cagliari si apre tutto insieme.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/sella_del_diavolo_xmwacr.jpg", link:"https://maps.google.com/?q=Sella+del+Diavolo+Cagliari"},
+      { title:"Molentargius — fenicotteri & bici fino al Poetto", dist:"15 min", emoji:"🦩", mood:"Esperienza unica da non perdere", desc:"Colonie di fenicotteri rosa che nidificano tutto l'anno. Il percorso in bici attraverso le saline fino al Poetto è indimenticabile. Noleggio bici all'ingresso del parco.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/Molentargius_tl1ctr.jpg", link:"https://maps.google.com/?q=Parco+Molentargius+Cagliari"},
+      { title:"Parco di Monte Claro", dist:"20 min", emoji:"🌳", mood:"Verde nel cuore di Cagliari", desc:"Il grande parco storico di Cagliari con villa ottocentesca, laghetto e alberi centenari. Perfetto per una mattinata rilassante.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/monte_claro_syefhj.jpg", link:"https://maps.google.com/?q=Parco+Monte+Claro+Cagliari"},
+      { title:"Marina, Castello & Su Siccu", dist:"20 min", emoji:"🏙️", mood:"Aperitivo & storia", desc:"Il quartiere Marina per i tapas sardi; Castello per i panorami sul golfo; Su Siccu per una serata sul lungomare.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744881/cagliari_vqtn9u.jpg", link:"https://maps.google.com/?q=Cagliari+centro+storico"},
+    ]
+  },
+  {
+    id:"cultura", label:"Cultura & Storia", emoji:"🏛️",
+    color:"#3a2510", accent:"#d4845f",
+    tagline:"Romani, aragonesi, artigiani e minatori",
+    data:[
+      { title:"San Sperate — Pinuccio Sciola", dist:"15 min", emoji:"🎨", mood:"Da non perdere", desc:"Il paese museo: ogni vicolo è una galleria. Le sculture sonore di Sciola — pietre che suonano al vento — sono un'esperienza unica al mondo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/Pinuccio_sciola_lj3opa.jpg", link:"https://maps.google.com/?q=Murales+San+Sperate+Sardegna"},
+      { title:"Scavi di Nora", dist:"25 min", emoji:"🏛️", mood:"2.800 anni di storia", desc:"Teatro romano, terme puniche, mosaici affacciati sul mare. Una delle città antiche più scenografiche d'Italia.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/nora_ertuqj.jpg", link:"https://maps.google.com/?q=Nora+sito+romano+Pula"},
+      { title:"Villa d'Orri", dist:"25 min", emoji:"🏰", mood:"Eleganza ottocentesca", desc:"Dimora nobiliare immersa in un parco di lecci centenari. Architettura neoclassica e atmosfera sospesa nel tempo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744886/Villa_d_orri_taitht.avif", link:"https://maps.google.com/?q=Villa+d+Orri+Sarroch"},
+      { title:"Miniere & Geoparco di Iglesias", dist:"50 min", emoji:"⛏️", mood:"Patrimonio UNESCO", desc:"Gallerie, laverie e paesaggi industriali trasformati in musei. Il Museo del Carbone di Serbariu è il punto di partenza ideale.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/geoparco_etvg6s.jpg", link:"https://maps.google.com/?q=Miniere+Iglesias+Sardegna"},
+    ]
+  },
+  {
+    id:"natura", label:"Natura & Sapori", emoji:"🌊",
+    color:"#0e2a35", accent:"#4ab8c8",
+    tagline:"Spiagge, cammini, vini e isole",
+    data:[
+      { title:"Cantine Argiolas, Mesa, Audarya", dist:"20–40 min", emoji:"🍷", mood:"Degustazione", desc:"Vermentino, Cannonau, Carignano. Le cantine del Campidano aprono le porte per visite e degustazioni in paesaggi da cartolina.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744882/cantine_n27jpi.jpg", link:"https://maps.google.com/?q=Cantine+Argiolas+Serdiana"},
+      { title:"Cammini — Sant'Efisio, 100 Torri, Santa Barbara", dist:"vari", emoji:"🚶", mood:"Pellegrinaggio & trekking", desc:"Antichi percorsi a piedi. Il Cammino dei 100 Torri costiero è tra i più scenografici; Sant'Efisio il più spirituale.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/cammino_santa_barbara_jmtavj.jpg", link:"https://maps.google.com/?q=Cammino+Sant+Efisio+Sardegna"},
+      { title:"Chia — dune e torri", dist:"45 min", emoji:"🏖️", mood:"Spiaggia da sogno", desc:"Acqua caraibica, dune di sabbia bianca e torre aragonese. Tra le spiagge più belle d'Europa. Arrivate presto.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/chia_a9gzlt.jpg", link:"https://maps.google.com/?q=Spiaggia+Chia+Sardegna"},
+      { title:"Belvedere Nebida & Pan di Zucchero", dist:"1h 10min", emoji:"🗼", mood:"Panorama mozzafiato", desc:"Lo scoglio più alto del Mediterraneo. Al tramonto la luce arancione sulla roccia bianca è inarrivabile.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744882/belvedere-di-nebida_phr0o8.webp", link:"https://maps.google.com/?q=Belvedere+Nebida+Sardegna"},
+      { title:"Spiaggia di Scivu & Torre dei Corsari", dist:"1h 10min", emoji:"🏖️", mood:"Selvaggia e incontaminata", desc:"Due spiagge rimaste intatte, senza strade asfaltate. Sabbia finissima e mare verde smeraldo tra le dune del Sulcis.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747342/scivu_iqjmjj.jpg", link:"https://maps.google.com/?q=Spiaggia+Scivu+Sardegna"},
+      { title:"Dune di Piscinas", dist:"1h 20min", emoji:"🏜️", mood:"Il deserto d'Europa", desc:"Le dune più alte d'Europa affacciate su un mare spettacolare. Un paesaggio da Sahara nel cuore della Sardegna.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/piscinas_srxqdj.webp", link:"https://maps.google.com/?q=Dune+di+Piscinas+Sardegna"},
+      { title:"Golfo di Orosei & Cala Goloritzé", dist:"~3h", emoji:"🌊", mood:"Top 10 spiagge al mondo", desc:"Cala Goloritzé, Cala Luna, Cala Mariolu — le calette compaiono ogni anno tra le spiagge più belle del mondo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/goloritze_gkcup9.jpg", link:"https://maps.google.com/?q=Golfo+di+Orosei+Sardegna"},
+      { title:"Arcipelago della Maddalena", dist:"~3h", emoji:"⛵", mood:"Parco Nazionale marino", desc:"Sette isole, acque trasparenti e graniti rosa. Traghetto da Palau. Una delle aree marine protette più belle del Mediterraneo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/maddalena_mgxpth.jpg", link:"https://maps.google.com/?q=Arcipelago+della+Maddalena+Sardegna"},
+    ]
+  },
+];
+
+function EsploraCategoria({tabId, go}) {
+  const t = TABS_DATA.find(t=>t.id===tabId);
+  if (!t) return null;
+  return (
+    <div style={s.app}>
+      {/* Header con colore della categoria */}
+      <div style={{background:`linear-gradient(160deg, ${t.color}, ${t.color}dd)`,
+        padding:"50px 24px 28px", borderRadius:"0 0 24px 24px"}}>
+        <button style={s.back} onClick={()=>go("esplorare")}>
+          <Ic.back/> Da scoprire
+        </button>
+        <div style={{fontSize:36, marginBottom:8}}>{t.emoji}</div>
+        <h2 style={{...s.pageTitle, color:"white"}}>{t.label}</h2>
+        <div style={{fontSize:12, color:t.accent, marginTop:6, letterSpacing:"0.5px"}}>{t.tagline}</div>
+        <div style={{fontSize:11, color:"rgba(255,255,255,0.4)", marginTop:4}}>
+          {t.data.length} esperienze · tocca per aprire in Maps
+        </div>
+      </div>
+
+      <div style={s.content}>
+        {t.data.map((p,i)=>(
+          <a key={i} href={p.link} target="_blank" rel="noreferrer" style={{
+            display:"block", textDecoration:"none",
+            background:c.white, borderRadius:18, marginBottom:12,
+            border:`1px solid ${c.hazel}20`, overflow:"hidden",
+            boxShadow:"0 2px 8px rgba(61,31,16,0.07)",
+            transition:"transform .15s, box-shadow .15s",
+          }}
+            onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-2px)";e.currentTarget.style.boxShadow=`0 6px 16px rgba(61,31,16,0.14)`;}}
+            onMouseLeave={e=>{e.currentTarget.style.transform="";e.currentTarget.style.boxShadow="0 2px 8px rgba(61,31,16,0.07)";}}>
+            {p.photo && (
+              <div style={{height:160, overflow:"hidden", background:`linear-gradient(135deg,${t.color},${t.accent}40)`}}>
+                <img src={p.photo} alt="" style={{width:"100%",height:"100%",objectFit:"cover",display:"block",opacity:0,transition:"opacity .3s"}}
+                  onLoad={e=>e.target.style.opacity="1"}
+                  onError={e=>e.target.style.display="none"}/>
+              </div>
+            )}
+            <div style={{height:3, background:`linear-gradient(90deg,${t.color},${t.accent})`}}/>
+            <div style={{padding:"12px 14px"}}>
+              <div style={{display:"flex",alignItems:"flex-start",justifyContent:"space-between",marginBottom:6}}>
+                <div style={{display:"flex",alignItems:"center",gap:9,flex:1,minWidth:0}}>
+                  <span style={{fontSize:22,flexShrink:0}}>{p.emoji}</span>
+                  <div style={{minWidth:0}}>
+                    <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:17,fontWeight:400,color:c.warm,lineHeight:1.25}}>{p.title}</div>
+                    <div style={{fontSize:9,color:t.accent,marginTop:3,fontWeight:600,letterSpacing:"1px",textTransform:"uppercase"}}>{p.mood}</div>
+                  </div>
+                </div>
+                <span style={{fontSize:10,color:c.hazel,background:`${c.hazel}15`,borderRadius:20,padding:"3px 9px",flexShrink:0,marginLeft:8,whiteSpace:"nowrap"}}>{p.dist}</span>
+              </div>
+              <p style={{fontSize:12.5,color:c.mastic,lineHeight:1.7,margin:0,paddingLeft:31}}>{p.desc}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ── MAIN APP ──────────────────────────────────
 export default function CasaUta() {
   const [screen, setScreen] = useState("home");
@@ -1422,6 +1474,10 @@ export default function CasaUta() {
     posizione:<Posizione go={go}/>, esplorare:<Esplorare go={go}/>, ristoranti:<Ristoranti go={go}/>,
     eventi:<Eventi go={go}/>, recensioni:<Recensioni go={go}/>, spesa:<Spesa go={go}/>,
     servizi:<Servizi go={go}/>, faq:<FAQ go={go}/>,
+    esplorare_vicino:   <EsploraCategoria tabId="vicino"   go={go}/>,
+    esplorare_cagliari: <EsploraCategoria tabId="cagliari" go={go}/>,
+    esplorare_cultura:  <EsploraCategoria tabId="cultura"  go={go}/>,
+    esplorare_natura:   <EsploraCategoria tabId="natura"   go={go}/>,
   };
   return screens[screen] || <PH go={go}/>;
 }
