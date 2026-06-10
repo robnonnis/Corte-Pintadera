@@ -109,14 +109,16 @@ function PH({go}) {
     <div style={s.app}>
       <FontLink/>
       <div style={s.hero}>
-        <img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_600/v1781124478/IMG_0212_s1qsxy.jpg" alt="" aria-hidden="true" style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-50%)",width:260,maxWidth:"80%",opacity:0.13,pointerEvents:"none",filter:"sepia(1) brightness(2.4)"}}/>
         <div style={{position:"absolute",top:-60,right:-60,width:220,height:220,background:`radial-gradient(circle, ${c.hazel}40 0%, transparent 70%)`,pointerEvents:"none"}}/>
         <div style={{position:"absolute",top:-40,left:-40,width:140,height:140,background:`radial-gradient(circle, ${c.hazel}20 0%, transparent 70%)`,pointerEvents:"none"}}/>
-        <div style={s.eye}>Uta · Cagliari · Sardegna</div>
-        <h1 style={s.heroTitle}>
+        <img src="https://res.cloudinary.com/dovpg47yh/image/upload/e_make_transparent:20,f_png,q_auto,w_500/v1781124478/IMG_0212_s1qsxy.png" alt="Corte Pintadera"
+          style={{width:170,maxWidth:"60%",display:"block",margin:"0 auto 14px",
+          filter:"brightness(0) invert(1)",opacity:0.95}}/>
+        <h1 style={{...s.heroTitle,marginTop:0}}>
           Ben<em style={{fontStyle:"italic", color:"#CEAD85"}}>venuti</em>
         </h1>
-        <div style={{fontSize:11, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.75)", marginTop:14, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Corte Pintadera — Via Cimitero 38</div>
+        <div style={{fontSize:12, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.85)", marginTop:14, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Via Cimitero 38/A</div>
+        <div style={{fontSize:10, letterSpacing:"4px", textTransform:"uppercase", color:"rgba(206,173,133,0.8)", marginTop:8, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Uta · Cagliari · Sardegna</div>
         <div style={{width:32,height:1,background:c.hazel,margin:"16px auto 0"}}/>
       </div>
 
@@ -207,7 +209,7 @@ function Benvenuto({go}) {
       <Card>
         <CT icon={<Ic.pin/>} text="Dove siamo"/>
         <p style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:20,margin:"4px 0 12px",color:c.warm}}>
-          Via Cimitero 38<br/>Uta (CA) — Sardegna
+          Via Cimitero 38/A<br/>Uta (CA) — Sardegna
         </p>
         <a href="https://maps.google.com/?q=Via+Cimitero+38+Uta+Cagliari" target="_blank" rel="noreferrer"
           style={{display:"block", borderRadius:12, overflow:"hidden", marginBottom:12, textDecoration:"none"}}>
@@ -225,7 +227,7 @@ function Benvenuto({go}) {
             height:140, borderRadius:12, alignItems:"center", justifyContent:"center",
             flexDirection:"column", gap:8}}>
             <span style={{fontSize:32}}>🗺️</span>
-            <span style={{fontSize:12, color:c.mastic}}>Via Cimitero 38, Uta</span>
+            <span style={{fontSize:12, color:c.mastic}}>Via Cimitero 38/A, Uta</span>
           </div>
         </a>
         <a href="https://maps.google.com/?q=Via+Cimitero+38+Uta+Cagliari" target="_blank" rel="noreferrer" style={s.mapBtn}>
@@ -514,7 +516,7 @@ function Posizione({go}) {
     <PageHead title="Come arrivare" back={()=>go("home")} icon={<Ic.pin/>}/>
     <div style={s.content}>
       <Card><CT icon={<Ic.pin/>} text="Indirizzo"/>
-        <p style={{fontFamily:"Georgia,serif",fontSize:19,marginBottom:12,color:c.warm}}>Via Cimitero 38<br/>Uta (CA) — Sardegna</p>
+        <p style={{fontFamily:"Georgia,serif",fontSize:19,marginBottom:12,color:c.warm}}>Via Cimitero 38/A<br/>Uta (CA) — Sardegna</p>
         <a href="https://maps.google.com/?q=Via+Cimitero+38+Uta+Cagliari" target="_blank" rel="noreferrer" style={s.mapBtn}><Ic.mapW/> Apri in Google Maps</a>
       </Card>
       <Card><CT text="🚌 Mezzi pubblici"/>
