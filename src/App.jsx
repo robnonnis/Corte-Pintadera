@@ -109,13 +109,14 @@ function PH({go}) {
     <div style={s.app}>
       <FontLink/>
       <div style={s.hero}>
+        <img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_600/v1781124478/IMG_0212_s1qsxy.jpg" alt="" aria-hidden="true" style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-50%)",width:260,maxWidth:"80%",opacity:0.13,pointerEvents:"none",filter:"sepia(1) brightness(2.4)"}}/>
         <div style={{position:"absolute",top:-60,right:-60,width:220,height:220,background:`radial-gradient(circle, ${c.hazel}40 0%, transparent 70%)`,pointerEvents:"none"}}/>
         <div style={{position:"absolute",top:-40,left:-40,width:140,height:140,background:`radial-gradient(circle, ${c.hazel}20 0%, transparent 70%)`,pointerEvents:"none"}}/>
         <div style={s.eye}>Uta · Cagliari · Sardegna</div>
         <h1 style={s.heroTitle}>
           Ben<em style={{fontStyle:"italic", color:"#CEAD85"}}>venuti</em>
         </h1>
-        <div style={{fontSize:11, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.75)", marginTop:14, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Casa Uta — Via Cimitero 38</div>
+        <div style={{fontSize:11, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.75)", marginTop:14, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Corte Pintadera — Via Cimitero 38</div>
         <div style={{width:32,height:1,background:c.hazel,margin:"16px auto 0"}}/>
       </div>
 
@@ -188,7 +189,7 @@ function CT({icon,text}) {
 
 function Benvenuto({go}) {
   return <div style={s.app}>
-    <PageHead title="Benvenuti a Casa Uta" back={()=>go("home")} icon={<Ic.home/>}/>
+    <PageHead title="Benvenuti a Corte Pintadera" back={()=>go("home")} icon={<Ic.home/>}/>
     <div style={s.content}>
 
       <div style={{...s.hlBox, textAlign:"center", padding:"28px 20px"}}>
@@ -212,7 +213,7 @@ function Benvenuto({go}) {
           style={{display:"block", borderRadius:12, overflow:"hidden", marginBottom:12, textDecoration:"none"}}>
           <img
             src="https://staticmap.openstreetmap.de/staticmap.php?center=39.2929,8.9621&zoom=15&size=800x320&markers=39.2929,8.9621,red-pushpin"
-            alt="Mappa Casa Uta"
+            alt="Mappa Corte Pintadera"
             loading="lazy"
             style={{width:"100%", height:140, objectFit:"cover", display:"block"}}
             onError={e=>{
@@ -610,8 +611,8 @@ function Esplorare({go}) {
           desc:"Il quartiere Marina per i tapas sardi e i vicoli animati; Castello per i panorami sul golfo; Su Siccu per una serata sul lungomare.",
           photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744881/cagliari_vqtn9u.jpg",
           link:"https://maps.google.com/?q=Cagliari+centro+storico"},
-        { title:"Mercato di San Benedetto", dist:"20 min", emoji:"🐟", mood:"Esperienza autentica",
-          desc:"Uno dei mercati coperti più grandi d'Europa: il piano del pesce è uno spettacolo. Andate la mattina (chiude alle 14) e assaggiate ricci e bottarga. Solo contanti in molti banchi.",
+        { title:"Mercato di San Benedetto", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781124439/San_benedetto_gwtodd.jpg", dist:"20 min", emoji:"🐟", mood:"Esperienza autentica",
+          desc:"Uno dei mercati coperti più grandi d'Europa. ⚠️ La sede storica è al momento chiusa per ristrutturazione: i banchi sono trasferiti nella struttura temporanea in Piazza Nazzari, a pochi passi. Il piano del pesce resta uno spettacolo — andate la mattina.",
           link:"https://maps.google.com/?q=Mercato+San+Benedetto+Cagliari"},
       ]
     },
@@ -630,10 +631,10 @@ function Esplorare({go}) {
           desc:"Teatro romano, terme puniche, mosaici e colonne — tutto affacciato sul mare. Una delle città antiche più scenografiche d'Italia.",
           photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/nora_ertuqj.jpg",
           link:"https://maps.google.com/?q=Nora+sito+romano+Pula"},
-        { title:"Su Nuraxi di Barumini — UNESCO", dist:"50 min", emoji:"🗿", mood:"Patrimonio dell'umanità",
+        { title:"Su Nuraxi di Barumini — UNESCO", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781124439/su_nuraxi_xaetjk.webp", dist:"50 min", emoji:"🗿", mood:"Patrimonio dell'umanità",
           desc:"L'unico sito UNESCO della Sardegna: il villaggio nuragico più importante dell'isola, con la torre centrale del 1500 a.C. Visite guidate ogni 30 minuti. Imperdibile.",
           link:"https://maps.google.com/?q=Su+Nuraxi+Barumini"},
-        { title:"Grotte Is Zuddas", dist:"50 min", emoji:"💎", mood:"Meraviglia sotterranea",
+        { title:"Grotte Is Zuddas", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781124439/Grotte_is_zuddas_mdgf28.jpg", dist:"50 min", emoji:"💎", mood:"Meraviglia sotterranea",
           desc:"A Santadi, grotte con rarissime aragoniti eccentriche che sfidano la gravità. Visita guidata di ~1 ora a temperatura costante di 16° — perfetta anche nelle giornate più calde.",
           link:"https://maps.google.com/?q=Grotte+Is+Zuddas+Santadi"},
         { title:"Villa d'Orri", dist:"25 min", emoji:"🏰",
@@ -673,7 +674,7 @@ function Esplorare({go}) {
           desc:"Acqua caraibica, dune di sabbia bianca e una torre aragonese sul promontorio. Tra le spiagge più belle d'Europa. Arrivate presto.",
           photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/chia_a9gzlt.jpg",
           link:"https://maps.google.com/?q=Spiaggia+Chia+Sardegna"},
-        { title:"Spiaggia di Tuerredda", dist:"55 min", emoji:"🏝️", mood:"Caraibi sardi",
+        { title:"Spiaggia di Tuerredda", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781124439/Tuerredda_ealwbe.webp", dist:"55 min", emoji:"🏝️", mood:"Caraibi sardi",
           desc:"Sabbia bianchissima e acqua turchese poco profonda, con l'isolotto raggiungibile a nuoto. Tra le spiagge più belle d'Italia. In alta stagione arrivate entro le 9:30.",
           link:"https://maps.google.com/?q=Spiaggia+Tuerredda"},
         { title:"Belvedere Nebida & Pan di Zucchero", dist:"1h 10min", emoji:"🗼",
@@ -1231,7 +1232,7 @@ function Recensioni({go}) {
   return <div style={s.app}>
     <PageHead title="Le vostre recensioni" back={()=>go("home")} icon={<Ic.star/>}/>
     <div style={s.content}>
-      <div style={s.hlBox}><div style={s.hlTitle}>La vostra opinione conta</div><p style={{fontSize:14,lineHeight:1.7,opacity:0.85,margin:0,color:c.warm}}>Speriamo che il soggiorno sia stato di vostro gradimento. Una recensione su Google ci aiuta a far conoscere Casa Uta!</p></div>
+      <div style={s.hlBox}><div style={s.hlTitle}>La vostra opinione conta</div><p style={{fontSize:14,lineHeight:1.7,opacity:0.85,margin:0,color:c.warm}}>Speriamo che il soggiorno sia stato di vostro gradimento. Una recensione su Google ci aiuta a far conoscere Corte Pintadera!</p></div>
       <Card style={{textAlign:"center",padding:"28px 18px"}}>
         <div style={{fontSize:40,marginBottom:10}}>⭐⭐⭐⭐⭐</div>
         <p style={{fontFamily:"Georgia,serif",fontSize:20,marginBottom:8,color:c.warm}}>Lascia una recensione su Google</p>
@@ -1338,7 +1339,7 @@ const TABS_DATA = [
       { title:"Molentargius — fenicotteri & bici fino al Poetto", dist:"15 min", emoji:"🦩", mood:"Esperienza unica da non perdere", desc:"Colonie di fenicotteri rosa che nidificano tutto l'anno. Il percorso in bici attraverso le saline fino al Poetto è indimenticabile. Noleggio bici all'ingresso del parco.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/Molentargius_tl1ctr.jpg", link:"https://maps.google.com/?q=Parco+Molentargius+Cagliari"},
       { title:"Parco di Monte Claro", dist:"20 min", emoji:"🌳", mood:"Verde nel cuore di Cagliari", desc:"Il grande parco storico di Cagliari con villa ottocentesca, laghetto e alberi centenari. Perfetto per una mattinata rilassante.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/monte_claro_syefhj.jpg", link:"https://maps.google.com/?q=Parco+Monte+Claro+Cagliari"},
       { title:"Marina, Castello & Su Siccu", dist:"20 min", emoji:"🏙️", mood:"Aperitivo & storia", desc:"Il quartiere Marina per i tapas sardi; Castello per i panorami sul golfo; Su Siccu per una serata sul lungomare.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744881/cagliari_vqtn9u.jpg", link:"https://maps.google.com/?q=Cagliari+centro+storico"},
-      { title:"Mercato di San Benedetto", dist:"20 min", emoji:"🐟", mood:"Esperienza autentica", desc:"Uno dei mercati coperti più grandi d'Europa: il piano del pesce è uno spettacolo. Andate la mattina (chiude alle 14) e assaggiate ricci e bottarga. Solo contanti in molti banchi.", link:"https://maps.google.com/?q=Mercato+San+Benedetto+Cagliari"},
+      { title:"Mercato di San Benedetto", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781124439/San_benedetto_gwtodd.jpg", dist:"20 min", emoji:"🐟", mood:"Esperienza autentica", desc:"Uno dei mercati coperti più grandi d'Europa. ⚠️ La sede storica è al momento chiusa per ristrutturazione: i banchi sono trasferiti nella struttura temporanea in Piazza Nazzari, a pochi passi. Il piano del pesce resta uno spettacolo — andate la mattina.", link:"https://maps.google.com/?q=Mercato+San+Benedetto+Cagliari"},
     ]
   },
   {
@@ -1348,8 +1349,8 @@ const TABS_DATA = [
     data:[
       { title:"San Sperate — Pinuccio Sciola", dist:"15 min", emoji:"🎨", mood:"Da non perdere", desc:"Il paese museo: ogni vicolo è una galleria. Le sculture sonore di Sciola — pietre che suonano al vento — sono un'esperienza unica al mondo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/Pinuccio_sciola_lj3opa.jpg", link:"https://maps.google.com/?q=Murales+San+Sperate+Sardegna"},
       { title:"Scavi di Nora", dist:"25 min", emoji:"🏛️", mood:"2.800 anni di storia", desc:"Teatro romano, terme puniche, mosaici affacciati sul mare. Una delle città antiche più scenografiche d'Italia.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/nora_ertuqj.jpg", link:"https://maps.google.com/?q=Nora+sito+romano+Pula"},
-      { title:"Su Nuraxi di Barumini — UNESCO", dist:"50 min", emoji:"🗿", mood:"Patrimonio dell'umanità", desc:"L'unico sito UNESCO della Sardegna: il villaggio nuragico più importante dell'isola, con la torre centrale del 1500 a.C. Visite guidate ogni 30 minuti. Imperdibile.", link:"https://maps.google.com/?q=Su+Nuraxi+Barumini"},
-      { title:"Grotte Is Zuddas", dist:"50 min", emoji:"💎", mood:"Meraviglia sotterranea", desc:"A Santadi, grotte con rarissime aragoniti eccentriche che sfidano la gravità. Visita guidata di ~1 ora a 16° costanti — perfetta anche nelle giornate più calde.", link:"https://maps.google.com/?q=Grotte+Is+Zuddas+Santadi"},
+      { title:"Su Nuraxi di Barumini — UNESCO", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781124439/su_nuraxi_xaetjk.webp", dist:"50 min", emoji:"🗿", mood:"Patrimonio dell'umanità", desc:"L'unico sito UNESCO della Sardegna: il villaggio nuragico più importante dell'isola, con la torre centrale del 1500 a.C. Visite guidate ogni 30 minuti. Imperdibile.", link:"https://maps.google.com/?q=Su+Nuraxi+Barumini"},
+      { title:"Grotte Is Zuddas", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781124439/Grotte_is_zuddas_mdgf28.jpg", dist:"50 min", emoji:"💎", mood:"Meraviglia sotterranea", desc:"A Santadi, grotte con rarissime aragoniti eccentriche che sfidano la gravità. Visita guidata di ~1 ora a 16° costanti — perfetta anche nelle giornate più calde.", link:"https://maps.google.com/?q=Grotte+Is+Zuddas+Santadi"},
       { title:"Villa d'Orri", dist:"25 min", emoji:"🏰", mood:"Eleganza ottocentesca", desc:"Dimora nobiliare immersa in un parco di lecci centenari. Architettura neoclassica e atmosfera sospesa nel tempo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744886/Villa_d_orri_taitht.avif", link:"https://maps.google.com/?q=Villa+d+Orri+Sarroch"},
       { title:"Miniere & Geoparco di Iglesias", dist:"50 min", emoji:"⛏️", mood:"Patrimonio UNESCO", desc:"Gallerie, laverie e paesaggi industriali trasformati in musei. Il Museo del Carbone di Serbariu è il punto di partenza ideale.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/geoparco_etvg6s.jpg", link:"https://maps.google.com/?q=Miniere+Iglesias+Sardegna"},
     ]
@@ -1362,7 +1363,7 @@ const TABS_DATA = [
       { title:"Cantine Argiolas, Mesa, Audarya", dist:"20–40 min", emoji:"🍷", mood:"Degustazione", desc:"Vermentino, Cannonau, Carignano. Le cantine del Campidano aprono le porte per visite e degustazioni in paesaggi da cartolina.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744882/cantine_n27jpi.jpg", link:"https://maps.google.com/?q=Cantine+Argiolas+Serdiana"},
       { title:"Cammini — Sant'Efisio, 100 Torri, Santa Barbara", dist:"vari", emoji:"🚶", mood:"Pellegrinaggio & trekking", desc:"Antichi percorsi a piedi. Il Cammino dei 100 Torri costiero è tra i più scenografici; Sant'Efisio il più spirituale.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/cammino_santa_barbara_jmtavj.jpg", link:"https://maps.google.com/?q=Cammino+Sant+Efisio+Sardegna"},
       { title:"Chia — dune e torri", dist:"45 min", emoji:"🏖️", mood:"Spiaggia da sogno", desc:"Acqua caraibica, dune di sabbia bianca e torre aragonese. Tra le spiagge più belle d'Europa. Arrivate presto.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/chia_a9gzlt.jpg", link:"https://maps.google.com/?q=Spiaggia+Chia+Sardegna"},
-      { title:"Spiaggia di Tuerredda", dist:"55 min", emoji:"🏝️", mood:"Caraibi sardi", desc:"Sabbia bianchissima e acqua turchese poco profonda, con l'isolotto raggiungibile a nuoto. Tra le spiagge più belle d'Italia. In alta stagione arrivate entro le 9:30.", link:"https://maps.google.com/?q=Spiaggia+Tuerredda"},
+      { title:"Spiaggia di Tuerredda", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781124439/Tuerredda_ealwbe.webp", dist:"55 min", emoji:"🏝️", mood:"Caraibi sardi", desc:"Sabbia bianchissima e acqua turchese poco profonda, con l'isolotto raggiungibile a nuoto. Tra le spiagge più belle d'Italia. In alta stagione arrivate entro le 9:30.", link:"https://maps.google.com/?q=Spiaggia+Tuerredda"},
       { title:"Belvedere Nebida & Pan di Zucchero", dist:"1h 10min", emoji:"🗼", mood:"Panorama mozzafiato", desc:"Lo scoglio più alto del Mediterraneo. Al tramonto la luce arancione sulla roccia bianca è inarrivabile.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744882/belvedere-di-nebida_phr0o8.webp", link:"https://maps.google.com/?q=Belvedere+Nebida+Sardegna"},
       { title:"Spiaggia di Scivu & Torre dei Corsari", dist:"1h 10min", emoji:"🏖️", mood:"Selvaggia e incontaminata", desc:"Due spiagge rimaste intatte, senza strade asfaltate. Sabbia finissima e mare verde smeraldo tra le dune del Sulcis.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747342/scivu_iqjmjj.jpg", link:"https://maps.google.com/?q=Spiaggia+Scivu+Sardegna"},
       { title:"Dune di Piscinas", dist:"1h 20min", emoji:"🏜️", mood:"Il deserto d'Europa", desc:"Le dune più alte d'Europa affacciate su un mare spettacolare. Un paesaggio da Sahara nel cuore della Sardegna.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/piscinas_srxqdj.webp", link:"https://maps.google.com/?q=Dune+di+Piscinas+Sardegna"},
@@ -1431,7 +1432,7 @@ function EsploraCategoria({tabId, go}) {
 }
 
 // ── MAIN APP ──────────────────────────────────
-export default function CasaUta() {
+export default function CortePintadera() {
   const getHash = () => (window.location.hash || "#home").slice(1);
   const [screen, setScreen] = useState(getHash());
   const go = (id) => { window.location.hash = id; };
