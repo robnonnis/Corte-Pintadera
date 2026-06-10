@@ -112,7 +112,7 @@ function PH({go}) {
         <div style={{position:"absolute",top:-60,right:-60,width:220,height:220,background:`radial-gradient(circle, ${c.hazel}40 0%, transparent 70%)`,pointerEvents:"none"}}/>
         <div style={{position:"absolute",top:-40,left:-40,width:140,height:140,background:`radial-gradient(circle, ${c.hazel}20 0%, transparent 70%)`,pointerEvents:"none"}}/>
         <img src="https://res.cloudinary.com/dovpg47yh/image/upload/e_make_transparent:20,f_png,q_auto,w_500/v1781124478/IMG_0212_s1qsxy.png" alt="Corte Pintadera"
-          style={{width:170,maxWidth:"60%",display:"block",margin:"0 auto 14px",
+          style={{width:250,maxWidth:"78%",display:"block",margin:"-6px auto 16px",
           filter:"brightness(0) invert(1)",opacity:0.95}}/>
         <h1 style={{...s.heroTitle,marginTop:0}}>
           Ben<em style={{fontStyle:"italic", color:"#CEAD85"}}>venuti</em>
