@@ -211,8 +211,9 @@ function Benvenuto({go}) {
         <a href="https://maps.google.com/?q=Via+Cimitero+38+Uta+Cagliari" target="_blank" rel="noreferrer"
           style={{display:"block", borderRadius:12, overflow:"hidden", marginBottom:12, textDecoration:"none"}}>
           <img
-            src="https://maps.googleapis.com/maps/api/staticmap?center=39.2929,8.9621&zoom=15&size=400x160&scale=2&markers=color:0xCEAD85%7C39.2929,8.9621&style=feature:all%7Celement:geometry%7Ccolor:0xf0e6d6&style=feature:road%7Celement:geometry%7Ccolor:0xd4b896&key=AIzaSyD-placeholder"
+            src="https://staticmap.openstreetmap.de/staticmap.php?center=39.2929,8.9621&zoom=15&size=800x320&markers=39.2929,8.9621,red-pushpin"
             alt="Mappa Casa Uta"
+            loading="lazy"
             style={{width:"100%", height:140, objectFit:"cover", display:"block"}}
             onError={e=>{
               e.target.style.display="none";
@@ -357,13 +358,13 @@ function Wifi({go}) {
 }
 
 const FOTO = {
-  cucina:    "https://res.cloudinary.com/dovpg47yh/image/upload/v1777653108/IMG_9577_xhquge.png",
-  camera:    "https://res.cloudinary.com/dovpg47yh/image/upload/v1777653099/IMG_9578_zsnug5.png",
-  veranda1:  "https://res.cloudinary.com/dovpg47yh/image/upload/v1777734588/IMG_9647_sdz159.png",
-  veranda2:  "https://res.cloudinary.com/dovpg47yh/image/upload/v1777734588/IMG_9650_ipg8kw.png",
-  ingresso:  "https://res.cloudinary.com/dovpg47yh/image/upload/v1777734589/IMG_9649_gyjnyf.png",
-  bagno:     "https://res.cloudinary.com/dovpg47yh/image/upload/v1777734584/IMG_9645_wvvvpr.png",
-  cancello:  "https://res.cloudinary.com/dovpg47yh/image/upload/v1777734586/IMG_9646_onqx6z.png",
+  cucina:    "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777653108/IMG_9577_xhquge.png",
+  camera:    "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777653099/IMG_9578_zsnug5.png",
+  veranda1:  "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734588/IMG_9647_sdz159.png",
+  veranda2:  "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734588/IMG_9650_ipg8kw.png",
+  ingresso:  "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734589/IMG_9649_gyjnyf.png",
+  bagno:     "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734584/IMG_9645_wvvvpr.png",
+  cancello:  "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734586/IMG_9646_onqx6z.png",
 };
 
 function FotoSlide({imgs, height=200}) {
@@ -545,37 +546,37 @@ function Esplorare({go}) {
         { title:"Chiesa romanica di Santa Maria", dist:"5 min", emoji:"⛪",
           mood:"Patrimonio del XII sec.",
           desc:"Pietra calcarea, volte basse e luce filtrata. Una delle chiese medievali più integre del Campidano — vale dieci minuti di sosta.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744886/Santa_Maria_xtazex.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744886/Santa_Maria_xtazex.jpg",
           link:"https://maps.google.com/?q=Chiesa+Santa+Maria+Uta"},
         { title:"Parco S'Ollivariu", dist:"5 min", emoji:"🌳",
           mood:"Mattinata tranquilla",
           desc:"Lecci, sentieri ombreggiati e silenzio. Il posto giusto per iniziare la giornata prima che il paese si svegli.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/parcom_uta_xnujth.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/parcom_uta_xnujth.jpg",
           link:"https://maps.google.com/?q=Parco+S+Ollivariu+Uta"},
         { title:"Cinema Vittoria", dist:"a piedi", emoji:"🎬",
           mood:"Sala storica anni '50",
           desc:"Una piccola sala cinematografica storica nel cuore di Uta. Programmazione mista, atmosfera d'altri tempi. Un'esperienza autentica e rara.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747029/cinema_vittoria_mgdibo.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747029/cinema_vittoria_mgdibo.jpg",
           link:"https://maps.google.com/?q=Cinema+Vittoria+Uta+Sardegna"},
         { title:"Laguna di Santa Gilla — uccelli migratori", dist:"10 min", emoji:"🦩",
           mood:"Spettacolo naturale gratuito",
           desc:"Laguna costiera dove svernano fenicotteri rosa, aironi, cormorani e migliaia di uccelli migratori. Non serve una riserva — basta affacciarsi dalla strada panoramica per uno spettacolo unico.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747029/santa_gilla_hnx9nk.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747029/santa_gilla_hnx9nk.jpg",
           link:"https://maps.google.com/?q=Laguna+Santa+Gilla+Cagliari"},
         { title:"Saline di Conti Vecchi", dist:"10 min", emoji:"🧂",
           mood:"Foto imperdibili",
           desc:"Ex saline industriali con vasche che cambiano colore dal bianco candido al rosa acceso. Un paesaggio surreale e fotogenico a due passi.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744896/conti_vecchi_xdy4by.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744896/conti_vecchi_xdy4by.jpg",
           link:"https://maps.google.com/?q=Saline+Conti+Vecchi+Assemini"},
         { title:"Oasi del Cervo e della Luna — Monte Arcosu", dist:"20 min", emoji:"🦌",
           mood:"Foresta primordiale · WWF",
           desc:"La più grande foresta mediterranea privata d'Europa, gestita dal WWF. Sede del rarissimo Cervo sardo. Trekking tra lecci e sughere. All'interno dell'oasi si trova La Locanda dei Buoni e Cattivi: cucina sarda autentica nel bosco — da non perdere.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747199/wwf_xq90yh.webp",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747199/wwf_xq90yh.webp",
           link:"https://maps.google.com/?q=Oasi+WWF+Monte+Arcosu+Uta+Sardegna"},
         { title:"Parco Naturale di Gutturu Mannu", dist:"25 min", emoji:"🏞️",
           mood:"Wilderness del Sulcis",
           desc:"Uno dei parchi più estesi e meno frequentati della Sardegna. Boschi di lecci, torrenti, fauna selvatica. Sentieri per tutti i livelli — quasi sconosciuto ai turisti.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/gutturu_mannu_bomtbd.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/gutturu_mannu_bomtbd.jpg",
           link:"https://maps.google.com/?q=Gutturu+Mannu+Sardegna"},
       ]
     },
@@ -587,28 +588,31 @@ function Esplorare({go}) {
         { title:"Poetto — 11 km di sabbia fine", dist:"15 min", emoji:"🏖️",
           mood:"Mare & relax",
           desc:"La spiaggia urbana più lunga della Sardegna. D'estate chioschi e movida, in primavera solo vento e orizzonte. Entrami validi.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/poetto_hefkna.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/poetto_hefkna.jpg",
           link:"https://maps.google.com/?q=Spiaggia+Poetto+Cagliari"},
         { title:"Sella del Diavolo", dist:"20 min", emoji:"🥾",
           mood:"Tramonto da ricordare",
           desc:"Il promontorio tra Poetto e Calamosca. Il sentiero sale tra mirto e lentisco: in cima, il Golfo di Cagliari si apre tutto insieme.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/sella_del_diavolo_xmwacr.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/sella_del_diavolo_xmwacr.jpg",
           link:"https://maps.google.com/?q=Sella+del+Diavolo+Cagliari"},
         { title:"Molentargius — fenicotteri & bici fino al Poetto", dist:"15 min", emoji:"🦩",
           mood:"Esperienza unica da non perdere",
           desc:"Parco naturale con colonie di fenicotteri rosa che nidificano tutto l'anno — fenomeno rarissimo in Europa. Il percorso in bici attraverso le saline e lo stagno fino alla spiaggia del Poetto è un'esperienza indimenticabile: natura selvatica e mare nello stesso giro. Noleggio bici disponibile all'ingresso del parco.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/Molentargius_tl1ctr.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/Molentargius_tl1ctr.jpg",
           link:"https://maps.google.com/?q=Parco+Molentargius+Cagliari"},
         { title:"Parco di Monte Claro", dist:"20 min", emoji:"🌳",
           mood:"Verde nel cuore di Cagliari",
           desc:"Il grande parco storico di Cagliari con villa ottocentesca, laghetto, alberi centenari e percorsi pedonali. Perfetto per una mattinata rilassante in città.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/monte_claro_syefhj.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/monte_claro_syefhj.jpg",
           link:"https://maps.google.com/?q=Parco+Monte+Claro+Cagliari"},
         { title:"Marina, Castello & Su Siccu", dist:"20 min", emoji:"🏙️",
           mood:"Aperitivo & storia",
           desc:"Il quartiere Marina per i tapas sardi e i vicoli animati; Castello per i panorami sul golfo; Su Siccu per una serata sul lungomare.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744881/cagliari_vqtn9u.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744881/cagliari_vqtn9u.jpg",
           link:"https://maps.google.com/?q=Cagliari+centro+storico"},
+        { title:"Mercato di San Benedetto", dist:"20 min", emoji:"🐟", mood:"Esperienza autentica",
+          desc:"Uno dei mercati coperti più grandi d'Europa: il piano del pesce è uno spettacolo. Andate la mattina (chiude alle 14) e assaggiate ricci e bottarga. Solo contanti in molti banchi.",
+          link:"https://maps.google.com/?q=Mercato+San+Benedetto+Cagliari"},
       ]
     },
     {
@@ -619,22 +623,28 @@ function Esplorare({go}) {
         { title:"San Sperate — Pinuccio Sciola", dist:"15 min", emoji:"🎨",
           mood:"Da non perdere",
           desc:"Il paese-museo: ogni muro è un'opera, ogni vicolo una sorpresa. Le pietre sonore di Sciola vibrano al tocco — un'esperienza che non si dimentica.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/Pinuccio_sciola_lj3opa.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/Pinuccio_sciola_lj3opa.jpg",
           link:"https://maps.google.com/?q=Murales+San+Sperate+Sardegna"},
         { title:"Scavi di Nora", dist:"25 min", emoji:"🏛️",
           mood:"2.800 anni di storia",
           desc:"Teatro romano, terme puniche, mosaici e colonne — tutto affacciato sul mare. Una delle città antiche più scenografiche d'Italia.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/nora_ertuqj.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/nora_ertuqj.jpg",
           link:"https://maps.google.com/?q=Nora+sito+romano+Pula"},
+        { title:"Su Nuraxi di Barumini — UNESCO", dist:"50 min", emoji:"🗿", mood:"Patrimonio dell'umanità",
+          desc:"L'unico sito UNESCO della Sardegna: il villaggio nuragico più importante dell'isola, con la torre centrale del 1500 a.C. Visite guidate ogni 30 minuti. Imperdibile.",
+          link:"https://maps.google.com/?q=Su+Nuraxi+Barumini"},
+        { title:"Grotte Is Zuddas", dist:"50 min", emoji:"💎", mood:"Meraviglia sotterranea",
+          desc:"A Santadi, grotte con rarissime aragoniti eccentriche che sfidano la gravità. Visita guidata di ~1 ora a temperatura costante di 16° — perfetta anche nelle giornate più calde.",
+          link:"https://maps.google.com/?q=Grotte+Is+Zuddas+Santadi"},
         { title:"Villa d'Orri", dist:"25 min", emoji:"🏰",
           mood:"Eleganza ottocentesca",
           desc:"Dimora nobiliare immersa in un parco di lecci centenari. Architettura neoclassica e atmosfera sospesa nel tempo.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744886/Villa_d_orri_taitht.avif",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744886/Villa_d_orri_taitht.avif",
           link:"https://maps.google.com/?q=Villa+d+Orri+Sarroch"},
         { title:"Miniere & Geoparco di Iglesias", dist:"50 min", emoji:"⛏️",
           mood:"Patrimonio UNESCO",
           desc:"Gallerie, laverie e paesaggi industriali restituiti alla memoria collettiva. Il Museo del Carbone di Serbariu è il punto di partenza ideale.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/geoparco_etvg6s.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/geoparco_etvg6s.jpg",
           link:"https://maps.google.com/?q=Miniere+Iglesias+Sardegna"},
       ]
     },
@@ -646,57 +656,60 @@ function Esplorare({go}) {
         { title:"Cantine Argiolas, Mesa, Audarya", dist:"20–40 min", emoji:"🍷",
           mood:"Degustazione",
           desc:"Vermentino, Cannonau, Carignano. Le cantine del Campidano aprono le porte per visite e degustazioni in paesaggi da cartolina.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744882/cantine_n27jpi.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744882/cantine_n27jpi.jpg",
           link:"https://maps.google.com/?q=Cantine+Argiolas+Serdiana"},
         { title:"Cammini — Sant'Efisio, 100 Torri, Santa Barbara", dist:"vari", emoji:"🚶",
           mood:"Pellegrinaggio & trekking",
           desc:"Antichi percorsi a piedi attraverso la Sardegna del sud. Il Cammino dei 100 Torri costiero è tra i più scenografici; Sant'Efisio il più spirituale.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/cammino_santa_barbara_jmtavj.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/cammino_santa_barbara_jmtavj.jpg",
           link:"https://maps.google.com/?q=Cammino+Sant+Efisio+Sardegna"},
         { title:"Sentieri del Carignano — Sulcis", dist:"50 min", emoji:"🥾",
           mood:"Viticoltura eroica",
           desc:"Vigneti a piede franco tra i più antichi d'Europa, aggrappati alle scogliere a strapiombo sul mare. Un trekking fuori dal comune.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/sentiero_carignano_pwfsai.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/sentiero_carignano_pwfsai.jpg",
           link:"https://maps.google.com/?q=Carignano+del+Sulcis+vigneti"},
         { title:"Chia — dune e torri", dist:"45 min", emoji:"🏖️",
           mood:"Spiaggia da sogno",
           desc:"Acqua caraibica, dune di sabbia bianca e una torre aragonese sul promontorio. Tra le spiagge più belle d'Europa. Arrivate presto.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/chia_a9gzlt.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/chia_a9gzlt.jpg",
           link:"https://maps.google.com/?q=Spiaggia+Chia+Sardegna"},
+        { title:"Spiaggia di Tuerredda", dist:"55 min", emoji:"🏝️", mood:"Caraibi sardi",
+          desc:"Sabbia bianchissima e acqua turchese poco profonda, con l'isolotto raggiungibile a nuoto. Tra le spiagge più belle d'Italia. In alta stagione arrivate entro le 9:30.",
+          link:"https://maps.google.com/?q=Spiaggia+Tuerredda"},
         { title:"Belvedere Nebida & Pan di Zucchero", dist:"1h 10min", emoji:"🗼",
           mood:"Panorama mozzafiato",
           desc:"Lo scoglio più alto del Mediterraneo visto dall'alto. Al tramonto la luce arancione sulla roccia bianca è inarrivabile.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744882/belvedere-di-nebida_phr0o8.webp",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744882/belvedere-di-nebida_phr0o8.webp",
           link:"https://maps.google.com/?q=Belvedere+Nebida+Sardegna"},
         { title:"Carloforte — Isola di San Pietro", dist:"1h 20min + traghetto", emoji:"⛵",
           mood:"Isola nell'isola",
           desc:"Borgo tabarkino con accento ligure, strade strette e tonno rosso del Mediterraneo. Una giornata intera non basta.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744882/carloforte_houlpq.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744882/carloforte_houlpq.jpg",
           link:"https://maps.google.com/?q=Carloforte+Isola+San+Pietro"},
         { title:"Villasimius & Costa Rei", dist:"1h", emoji:"🌊",
           mood:"Fondali cristallini",
           desc:"Il sud-est della Sardegna è quasi caraibico. Acque trasparenti, barriera corallina, dune di quarzo rosa. Perfetto per snorkeling.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744889/villasimius_uvzqrv.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744889/villasimius_uvzqrv.jpg",
           link:"https://maps.google.com/?q=Villasimius+Sardegna"},
         { title:"Spiaggia di Scivu & Torre dei Corsari", dist:"1h 10min", emoji:"🏖️",
           mood:"Selvaggia e incontaminata",
           desc:"Due spiagge rimaste intatte, senza strade asfaltate. Sabbia finissima e mare verde smeraldo tra le dune del Sulcis.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747342/scivu_iqjmjj.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747342/scivu_iqjmjj.jpg",
           link:"https://maps.google.com/?q=Spiaggia+Scivu+Sardegna"},
         { title:"Dune di Piscinas", dist:"1h 20min", emoji:"🏜️",
           mood:"Il deserto d'Europa",
           desc:"Le dune più alte d'Europa — fino a 60 metri — si affacciano su un mare spettacolare. Un paesaggio da Sahara nel cuore della Sardegna.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/piscinas_srqqdj.webp",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/piscinas_srqqdj.webp",
           link:"https://maps.google.com/?q=Dune+di+Piscinas+Sardegna"},
         { title:"Golfo di Orosei & Cala Goloritzé", dist:"~3h", emoji:"🌊",
           mood:"Top 10 spiagge al mondo",
           desc:"Cala Goloritzé, Cala Luna, Cala Mariolu — le calette del golfo compaiono ogni anno tra le spiagge più belle del mondo. Vale il viaggio.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/goloritze_gkcup9.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/goloritze_gkcup9.jpg",
           link:"https://maps.google.com/?q=Golfo+di+Orosei+Sardegna"},
         { title:"Arcipelago della Maddalena", dist:"~3h", emoji:"⛵",
           mood:"Parco Nazionale marino",
           desc:"Sette isole, acque trasparenti e graniti rosa. Traghetto da Palau. Una delle aree marine protette più belle del Mediterraneo.",
-          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/maddalena_mgxpth.jpg",
+          photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/maddalena_mgxpth.jpg",
           link:"https://maps.google.com/?q=Arcipelago+della+Maddalena+Sardegna"},
       ]
     },
@@ -1100,27 +1113,46 @@ function Eventi({go}) {
   const meseCorrente = oggi.getMonth() + 1;
 
   const tuttiEvs = [
-    {mese:1, m:"Gennaio", evs:[{d:"12 gennaio",t:"🕯️ Festa di Santa Greca (Decimomannu)"}]},
+    {mese:1, m:"Gennaio", evs:[
+      {d:"12 gennaio",t:"🕯️ Festa di Santa Greca (Decimomannu)"},
+      {d:"16-17 gennaio",t:"🔥 Fuochi di Sant'Antonio Abate — falò tradizionali in molti paesi del circondario"},
+    ]},
+    {mese:2, m:"Febbraio / Carnevale", evs:[
+      {d:"Domenica e martedì di Carnevale",t:"🐴 Sa Sartiglia (Oristano) — la spettacolare giostra equestre, tra le più antiche del Mediterraneo",link:"https://www.sartiglia.info"},
+      {d:"Settimana di Carnevale",t:"🎭 Carnevale di Cagliari — sfilate e la tradizionale Ratantira"},
+    ]},
+    {mese:3, m:"Marzo / Aprile — Pasqua", evs:[
+      {d:"Settimana Santa",t:"⛪ Riti della Settimana Santa (Cagliari e Iglesias) — processioni di origine spagnola tra le più suggestive d'Italia"},
+    ]},
     {mese:5, m:"Maggio", evs:[
       {d:"1–4 maggio",t:"🎖️ Festa di Sant'Efisio (Cagliari) — processione ininterrotta dal 1657",link:"https://www.festadisantefisio.com"},
+      {d:"Un weekend di maggio",t:"🏛️ Monumenti Aperti (Cagliari) — centinaia di siti normalmente chiusi, visitabili gratis",link:"https://monumentiaperti.com"},
       {d:"14 maggio",t:"🌸 Santa Giusta, patrona di Uta"},
-      {d:"Primo sabato dopo il 14",t:"🌾 Sant'Isidoro (Uta) — festa agricola"},
+      {d:"Primo sabato dopo il 14",t:"🌾 Sant'Isidoro (Uta) — festa agricola con trattori e gruppi folk"},
+    ]},
+    {mese:6, m:"Giugno", evs:[
+      {d:"Inizio giugno",t:"🐟 Girotonno (Carloforte) — rassegna gastronomica internazionale del tonno rosso",link:"https://www.girotonno.it"},
+    ]},
+    {mese:7, m:"Estate (luglio/agosto)", evs:[
+      {d:"Tutta l'estate",t:"🎶 Rassegne e concerti all'aperto a Cagliari — Anfiteatro Romano, Parco della Musica, Forte Village Arena"},
+      {d:"Luglio / Agosto",t:"🏊 World Aquatics High Diving World Cup — Porto Flavia (Nebida). Coppa del Mondo di tuffi tra mare e miniere.",link:"https://maps.google.com/?q=Porto+Flavia+Nebida+Sardegna"},
     ]},
     {mese:8, m:"Agosto", evs:[
       {d:"13 agosto",t:"⚔️ Corteo Storico Medievale (Iglesias) — 700 figuranti"},
       {d:"15 agosto",t:"🕯️ Assunzione B.V. Maria + processione solenne (Uta)"},
     ]},
-    {mese:7, m:"Estate (luglio/agosto)", evs:[
-      {d:"Luglio / Agosto",t:"🏊 World Aquatics High Diving World Cup — Porto Flavia (Nebida). Coppa del Mondo di tuffi organizzata da Marmeeting. Spettacolo unico tra mare e miniere.",link:"https://maps.google.com/?q=Porto+Flavia+Nebida+Sardegna"},
-    ]},
     {mese:9, m:"Settembre", evs:[
       {d:"5–9 settembre",t:"🌟 Festa di Santa Maria (Uta) — la più attesa! Concerti, fuochi d'artificio"},
       {d:"Fine settembre",t:"🎊 Festa di Santa Greca (Decimomannu)"},
+      {d:"Da settembre a dicembre",t:"🍂 Autunno in Barbagia — i paesi del centro Sardegna aprono le cortes: artigianato e sapori (gita di un giorno)",link:"https://www.aspenuoro.it"},
     ]},
     {mese:11, m:"Novembre", evs:[
       {d:"Terza domenica",t:"🏃 Maratonina Città di Uta — 21 km, 10,5 km, family run 4 km · ore 10:00 da Via Stazione",link:"https://maratoninadiuta.it"},
     ]},
-    {mese:12, m:"Dicembre", evs:[{d:"13 dicembre",t:"🕯️ Santa Lucia (Uta)"}]},
+    {mese:12, m:"Dicembre", evs:[
+      {d:"Tutto il mese",t:"🎄 Mercatini di Natale a Cagliari — Piazza Yenne, Piazza Garibaldi e Corso Vittorio Emanuele"},
+      {d:"13 dicembre",t:"🕯️ Santa Lucia (Uta)"},
+    ]},
   ];
 
   const evs = [
@@ -1146,47 +1178,6 @@ function Eventi({go}) {
     return diff >= 0 && diff <= 7;
   });
 
-  const [liveEvents, setLiveEvents] = useState(null);
-  const [loading, setLoading] = useState(false);
-
-  const fetchLiveEvents = async () => {
-    setLoading(true);
-    try {
-      const oggi_str = oggi.toLocaleDateString("it-IT",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
-      const res = await fetch("https://api.anthropic.com/v1/messages",{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({
-          model:"claude-sonnet-4-20250514", max_tokens:1200,
-          tools:[{type:"web_search_20250305",name:"web_search"}],
-          messages:[{role:"user",content:`Oggi è ${oggi_str}. Fai una ricerca web e trova eventi in programma QUESTA SETTIMANA (oggi e nei prossimi 7 giorni) in Sardegna, in particolare:
-1. Feste religiose e patronali (esempio: Sant'Efisio 1-4 maggio a Cagliari, feste locali di Uta, Decimomannu, Assemini, Iglesias)
-2. Concerti, spettacoli musicali, festival
-3. Teatro, cinema, eventi culturali
-4. Sagre, mercati, eventi gastronomici
-5. Sport, eventi all'aperto
-Cerca su siti come sardegnaturismo.it, cagliari.it, comune.uta.ca.it e siti di eventi locali sardi.
-Rispondi SOLO con array JSON puro senza backtick né markdown, esempio:
-[{"titolo":"Festa di Sant'Efisio","data":"1-4 maggio","luogo":"Cagliari","tipo":"Sagra","desc":"Processione storica ininterrotta dal 1657","link":"https://www.festadisantefisio.com"}]
-Tipi validi: Concerto, Teatro, Cinema, Sagra, Festival, Sport, Cultura
-Max 10 eventi. SOLO JSON.`}]
-        })
-      });
-      const data = await res.json();
-      const text = data.content.filter(b=>b.type==="text").map(b=>b.text).join("");
-      setLiveEvents(JSON.parse(text.replace(/```json|```/g,"").trim()));
-    } catch(e) { setLiveEvents([]); }
-    setLoading(false);
-  };
-
-  const tipoStyle = {
-    "Cinema":{bg:"#1e2d40",ac:"#6aaee0"},
-    "Teatro":{bg:"#3a1f3a",ac:"#c87fc8"},
-    "Concerto":{bg:"#1a2e1a",ac:"#6db86d"},
-    "Sagra":{bg:"#3a2510",ac:"#d4845f"},
-    "Festival":{bg:"#0e2a35",ac:"#4ab8c8"},
-  };
-
   return <div style={s.app}>
     <PageHead title="Feste ed eventi" back={()=>go("home")} icon={<Ic.cal/>}/>
     <div style={s.content}>
@@ -1206,42 +1197,13 @@ Max 10 eventi. SOLO JSON.`}]
         </div>
       )}
 
-      <div style={{background:c.white,borderRadius:18,padding:"18px",marginBottom:14,border:`1px solid ${c.hazel}15`}}>
-        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:19,fontWeight:400,marginBottom:4,color:c.warm}}>🔍 Cosa c'è questa settimana</div>
-        <p style={{fontSize:12.5,color:c.mastic,lineHeight:1.6,marginBottom:14}}>Concerti, teatro, cinema, sagre e feste nell'area di Cagliari e Sulcis.</p>
-        {!liveEvents && !loading && (
-          <button onClick={fetchLiveEvents} style={{width:"100%",background:c.hazel,color:c.warm,border:"none",borderRadius:12,padding:"13px",fontSize:13,fontFamily:"'Jost',sans-serif",cursor:"pointer"}}>
-            ✨ Cerca eventi in programma
-          </button>
-        )}
-        {loading && <div style={{textAlign:"center",padding:"20px 0",color:c.mastic,fontSize:13}}>🔍 Sto cercando eventi in corso…</div>}
-        {liveEvents && liveEvents.length === 0 && (
-          <div style={{textAlign:"center",padding:"16px 0",color:c.mastic,fontSize:13}}>
-            Nessun evento trovato online questa settimana.
-            <button onClick={fetchLiveEvents} style={{display:"block",margin:"10px auto 0",background:"none",border:`1px solid ${c.sand}`,borderRadius:10,padding:"8px 16px",fontSize:12,cursor:"pointer",color:c.mastic}}>Riprova</button>
-          </div>
-        )}
-        {liveEvents && liveEvents.length > 0 && (
-          <div>
-            {liveEvents.map((e,i)=>{
-              const st = tipoStyle[e.tipo] || {bg:c.warm,ac:c.hazel};
-              return (
-                <div key={i} style={{background:st.bg,borderRadius:14,padding:"12px 14px",marginBottom:8,borderLeft:`3px solid ${st.ac}`}}>
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:4}}>
-                    <span style={{fontSize:10,color:st.ac,textTransform:"uppercase",letterSpacing:"1px",fontWeight:500}}>{e.tipo}</span>
-                    <span style={{fontSize:11,color:"rgba(245,240,232,0.5)"}}>{e.data}</span>
-                  </div>
-                  <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:16,color:c.cream,fontWeight:400,marginBottom:4}}>{e.titolo}</div>
-                  <div style={{fontSize:12,color:"rgba(245,240,232,0.6)",marginBottom:e.desc?4:0}}>📍 {e.luogo}</div>
-                  {e.desc && <div style={{fontSize:12,color:"rgba(245,240,232,0.55)",lineHeight:1.5}}>{e.desc}</div>}
-                  {e.link && <a href={e.link} target="_blank" rel="noreferrer" style={{display:"inline-block",marginTop:8,fontSize:11,color:st.ac,textDecoration:"none"}}>Scopri di più →</a>}
-                </div>
-              );
-            })}
-            <button onClick={fetchLiveEvents} style={{width:"100%",marginTop:8,background:"none",border:`1px solid ${c.sand}`,borderRadius:10,padding:"9px",fontSize:11,cursor:"pointer",color:c.mastic,fontFamily:"'Jost',sans-serif"}}>🔄 Aggiorna</button>
-          </div>
-        )}
-      </div>
+      <Card>
+        <CT text="🔍 Cosa c'è questa settimana?"/>
+        <p style={{fontSize:12.5,color:c.mastic,lineHeight:1.6,marginBottom:6}}>Per concerti, sagre e spettacoli aggiornati in tempo reale:</p>
+        <Row l="🌐 Sardegna Turismo — eventi" v="apri ›" link="https://www.sardegnaturismo.it/it/eventi"/>
+        <Row l="🏙️ Cagliari Turismo" v="apri ›" link="https://www.cagliariturismo.it"/>
+        <Row l="🏛️ Comune di Uta — news" v="apri ›" link="https://www.comune.uta.ca.it" last/>
+      </Card>
 
       <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.mastic,margin:"4px 0 14px",textAlign:"center"}}>Calendario tradizioni locali</div>
       {evs.map(({m,evs:ee},idx)=>(
@@ -1357,13 +1319,13 @@ const TABS_DATA = [
     color:"#2d4a2d", accent:"#6db86d",
     tagline:"Tutto raggiungibile a piedi o in 15 minuti",
     data:[
-      { title:"Chiesa romanica di Santa Maria", dist:"5 min", emoji:"⛪", mood:"Patrimonio del XII sec.", desc:"Pietra calcarea, volte basse e luce filtrata. Una delle chiese medievali più integre del Campidano — vale dieci minuti di sosta.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744886/Santa_Maria_xtazex.jpg", link:"https://maps.google.com/?q=Chiesa+Santa+Maria+Uta"},
-      { title:"Parco S'Ollivariu", dist:"5 min", emoji:"🌳", mood:"Mattinata tranquilla", desc:"Lecci, sentieri ombreggiati e silenzio. Il posto giusto per iniziare la giornata prima che il paese si svegli.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/parcom_uta_xnujth.jpg", link:"https://maps.google.com/?q=Parco+S+Ollivariu+Uta"},
-      { title:"Cinema Vittoria", dist:"a piedi", emoji:"🎬", mood:"Sala storica anni '50", desc:"Una piccola sala cinematografica storica nel cuore di Uta. Programmazione mista, atmosfera d'altri tempi. Un'esperienza autentica e rara.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747029/cinema_vittoria_mgdibo.jpg", link:"https://maps.google.com/?q=Cinema+Vittoria+Uta+Sardegna"},
-      { title:"Laguna di Santa Gilla — uccelli migratori", dist:"10 min", emoji:"🦩", mood:"Spettacolo naturale gratuito", desc:"Laguna costiera dove svernano fenicotteri rosa, aironi, cormorani e migliaia di uccelli migratori. Non serve una riserva — basta affacciarsi dalla strada panoramica.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747029/santa_gilla_hnx9nk.jpg", link:"https://maps.google.com/?q=Laguna+Santa+Gilla+Cagliari"},
-      { title:"Saline di Conti Vecchi", dist:"10 min", emoji:"🧂", mood:"Foto imperdibili", desc:"Ex saline industriali con vasche che cambiano colore dal bianco candido al rosa acceso. Un paesaggio surreale e fotogenico a due passi.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744896/conti_vecchi_xdy4by.jpg", link:"https://maps.google.com/?q=Saline+Conti+Vecchi+Assemini"},
-      { title:"Oasi del Cervo e della Luna — Monte Arcosu", dist:"20 min", emoji:"🦌", mood:"Foresta primordiale · WWF", desc:"La più grande foresta mediterranea privata d'Europa, gestita dal WWF. Sede del rarissimo Cervo sardo. All'interno si trova La Locanda dei Buoni e Cattivi: cucina sarda autentica nel bosco.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747199/wwf_xq90yh.webp", link:"https://maps.google.com/?q=Oasi+WWF+Monte+Arcosu+Uta+Sardegna"},
-      { title:"Parco Naturale di Gutturu Mannu", dist:"25 min", emoji:"🏞️", mood:"Wilderness del Sulcis", desc:"Uno dei parchi più estesi e meno frequentati della Sardegna. Boschi di lecci, torrenti, fauna selvatica. Quasi sconosciuto ai turisti.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/gutturu_mannu_bomtbd.jpg", link:"https://maps.google.com/?q=Gutturu+Mannu+Sardegna"},
+      { title:"Chiesa romanica di Santa Maria", dist:"5 min", emoji:"⛪", mood:"Patrimonio del XII sec.", desc:"Pietra calcarea, volte basse e luce filtrata. Una delle chiese medievali più integre del Campidano — vale dieci minuti di sosta.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744886/Santa_Maria_xtazex.jpg", link:"https://maps.google.com/?q=Chiesa+Santa+Maria+Uta"},
+      { title:"Parco S'Ollivariu", dist:"5 min", emoji:"🌳", mood:"Mattinata tranquilla", desc:"Lecci, sentieri ombreggiati e silenzio. Il posto giusto per iniziare la giornata prima che il paese si svegli.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/parcom_uta_xnujth.jpg", link:"https://maps.google.com/?q=Parco+S+Ollivariu+Uta"},
+      { title:"Cinema Vittoria", dist:"a piedi", emoji:"🎬", mood:"Sala storica anni '50", desc:"Una piccola sala cinematografica storica nel cuore di Uta. Programmazione mista, atmosfera d'altri tempi. Un'esperienza autentica e rara.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747029/cinema_vittoria_mgdibo.jpg", link:"https://maps.google.com/?q=Cinema+Vittoria+Uta+Sardegna"},
+      { title:"Laguna di Santa Gilla — uccelli migratori", dist:"10 min", emoji:"🦩", mood:"Spettacolo naturale gratuito", desc:"Laguna costiera dove svernano fenicotteri rosa, aironi, cormorani e migliaia di uccelli migratori. Non serve una riserva — basta affacciarsi dalla strada panoramica.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747029/santa_gilla_hnx9nk.jpg", link:"https://maps.google.com/?q=Laguna+Santa+Gilla+Cagliari"},
+      { title:"Saline di Conti Vecchi", dist:"10 min", emoji:"🧂", mood:"Foto imperdibili", desc:"Ex saline industriali con vasche che cambiano colore dal bianco candido al rosa acceso. Un paesaggio surreale e fotogenico a due passi.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744896/conti_vecchi_xdy4by.jpg", link:"https://maps.google.com/?q=Saline+Conti+Vecchi+Assemini"},
+      { title:"Oasi del Cervo e della Luna — Monte Arcosu", dist:"20 min", emoji:"🦌", mood:"Foresta primordiale · WWF", desc:"La più grande foresta mediterranea privata d'Europa, gestita dal WWF. Sede del rarissimo Cervo sardo. All'interno si trova La Locanda dei Buoni e Cattivi: cucina sarda autentica nel bosco.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747199/wwf_xq90yh.webp", link:"https://maps.google.com/?q=Oasi+WWF+Monte+Arcosu+Uta+Sardegna"},
+      { title:"Parco Naturale di Gutturu Mannu", dist:"25 min", emoji:"🏞️", mood:"Wilderness del Sulcis", desc:"Uno dei parchi più estesi e meno frequentati della Sardegna. Boschi di lecci, torrenti, fauna selvatica. Quasi sconosciuto ai turisti.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/gutturu_mannu_bomtbd.jpg", link:"https://maps.google.com/?q=Gutturu+Mannu+Sardegna"},
     ]
   },
   {
@@ -1371,11 +1333,11 @@ const TABS_DATA = [
     color:"#1e2d40", accent:"#6aaee0",
     tagline:"Il capoluogo in 20 minuti — mare, storia, vita",
     data:[
-      { title:"Poetto — 11 km di sabbia fine", dist:"15 min", emoji:"🏖️", mood:"Mare & relax", desc:"La spiaggia urbana più lunga della Sardegna. D'estate chioschi e movida, in primavera solo vento e orizzonte. Entrambi validi.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/poetto_hefkna.jpg", link:"https://maps.google.com/?q=Spiaggia+Poetto+Cagliari"},
-      { title:"Sella del Diavolo", dist:"20 min", emoji:"🥾", mood:"Tramonto da ricordare", desc:"Il promontorio tra Poetto e Calamosca. Il sentiero sale tra mirto e lentisco: in cima, il Golfo di Cagliari si apre tutto insieme.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/sella_del_diavolo_xmwacr.jpg", link:"https://maps.google.com/?q=Sella+del+Diavolo+Cagliari"},
-      { title:"Molentargius — fenicotteri & bici fino al Poetto", dist:"15 min", emoji:"🦩", mood:"Esperienza unica da non perdere", desc:"Colonie di fenicotteri rosa che nidificano tutto l'anno. Il percorso in bici attraverso le saline fino al Poetto è indimenticabile. Noleggio bici all'ingresso del parco.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/Molentargius_tl1ctr.jpg", link:"https://maps.google.com/?q=Parco+Molentargius+Cagliari"},
-      { title:"Parco di Monte Claro", dist:"20 min", emoji:"🌳", mood:"Verde nel cuore di Cagliari", desc:"Il grande parco storico di Cagliari con villa ottocentesca, laghetto e alberi centenari. Perfetto per una mattinata rilassante.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/monte_claro_syefhj.jpg", link:"https://maps.google.com/?q=Parco+Monte+Claro+Cagliari"},
-      { title:"Marina, Castello & Su Siccu", dist:"20 min", emoji:"🏙️", mood:"Aperitivo & storia", desc:"Il quartiere Marina per i tapas sardi; Castello per i panorami sul golfo; Su Siccu per una serata sul lungomare.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744881/cagliari_vqtn9u.jpg", link:"https://maps.google.com/?q=Cagliari+centro+storico"},
+      { title:"Poetto — 11 km di sabbia fine", dist:"15 min", emoji:"🏖️", mood:"Mare & relax", desc:"La spiaggia urbana più lunga della Sardegna. D'estate chioschi e movida, in primavera solo vento e orizzonte. Entrambi validi.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/poetto_hefkna.jpg", link:"https://maps.google.com/?q=Spiaggia+Poetto+Cagliari"},
+      { title:"Sella del Diavolo", dist:"20 min", emoji:"🥾", mood:"Tramonto da ricordare", desc:"Il promontorio tra Poetto e Calamosca. Il sentiero sale tra mirto e lentisco: in cima, il Golfo di Cagliari si apre tutto insieme.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/sella_del_diavolo_xmwacr.jpg", link:"https://maps.google.com/?q=Sella+del+Diavolo+Cagliari"},
+      { title:"Molentargius — fenicotteri & bici fino al Poetto", dist:"15 min", emoji:"🦩", mood:"Esperienza unica da non perdere", desc:"Colonie di fenicotteri rosa che nidificano tutto l'anno. Il percorso in bici attraverso le saline fino al Poetto è indimenticabile. Noleggio bici all'ingresso del parco.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/Molentargius_tl1ctr.jpg", link:"https://maps.google.com/?q=Parco+Molentargius+Cagliari"},
+      { title:"Parco di Monte Claro", dist:"20 min", emoji:"🌳", mood:"Verde nel cuore di Cagliari", desc:"Il grande parco storico di Cagliari con villa ottocentesca, laghetto e alberi centenari. Perfetto per una mattinata rilassante.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/monte_claro_syefhj.jpg", link:"https://maps.google.com/?q=Parco+Monte+Claro+Cagliari"},
+      { title:"Marina, Castello & Su Siccu", dist:"20 min", emoji:"🏙️", mood:"Aperitivo & storia", desc:"Il quartiere Marina per i tapas sardi; Castello per i panorami sul golfo; Su Siccu per una serata sul lungomare.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744881/cagliari_vqtn9u.jpg", link:"https://maps.google.com/?q=Cagliari+centro+storico"},
     ]
   },
   {
@@ -1383,10 +1345,10 @@ const TABS_DATA = [
     color:"#3a2510", accent:"#d4845f",
     tagline:"Romani, aragonesi, artigiani e minatori",
     data:[
-      { title:"San Sperate — Pinuccio Sciola", dist:"15 min", emoji:"🎨", mood:"Da non perdere", desc:"Il paese museo: ogni vicolo è una galleria. Le sculture sonore di Sciola — pietre che suonano al vento — sono un'esperienza unica al mondo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/Pinuccio_sciola_lj3opa.jpg", link:"https://maps.google.com/?q=Murales+San+Sperate+Sardegna"},
-      { title:"Scavi di Nora", dist:"25 min", emoji:"🏛️", mood:"2.800 anni di storia", desc:"Teatro romano, terme puniche, mosaici affacciati sul mare. Una delle città antiche più scenografiche d'Italia.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/nora_ertuqj.jpg", link:"https://maps.google.com/?q=Nora+sito+romano+Pula"},
-      { title:"Villa d'Orri", dist:"25 min", emoji:"🏰", mood:"Eleganza ottocentesca", desc:"Dimora nobiliare immersa in un parco di lecci centenari. Architettura neoclassica e atmosfera sospesa nel tempo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744886/Villa_d_orri_taitht.avif", link:"https://maps.google.com/?q=Villa+d+Orri+Sarroch"},
-      { title:"Miniere & Geoparco di Iglesias", dist:"50 min", emoji:"⛏️", mood:"Patrimonio UNESCO", desc:"Gallerie, laverie e paesaggi industriali trasformati in musei. Il Museo del Carbone di Serbariu è il punto di partenza ideale.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/geoparco_etvg6s.jpg", link:"https://maps.google.com/?q=Miniere+Iglesias+Sardegna"},
+      { title:"San Sperate — Pinuccio Sciola", dist:"15 min", emoji:"🎨", mood:"Da non perdere", desc:"Il paese museo: ogni vicolo è una galleria. Le sculture sonore di Sciola — pietre che suonano al vento — sono un'esperienza unica al mondo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/Pinuccio_sciola_lj3opa.jpg", link:"https://maps.google.com/?q=Murales+San+Sperate+Sardegna"},
+      { title:"Scavi di Nora", dist:"25 min", emoji:"🏛️", mood:"2.800 anni di storia", desc:"Teatro romano, terme puniche, mosaici affacciati sul mare. Una delle città antiche più scenografiche d'Italia.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/nora_ertuqj.jpg", link:"https://maps.google.com/?q=Nora+sito+romano+Pula"},
+      { title:"Villa d'Orri", dist:"25 min", emoji:"🏰", mood:"Eleganza ottocentesca", desc:"Dimora nobiliare immersa in un parco di lecci centenari. Architettura neoclassica e atmosfera sospesa nel tempo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744886/Villa_d_orri_taitht.avif", link:"https://maps.google.com/?q=Villa+d+Orri+Sarroch"},
+      { title:"Miniere & Geoparco di Iglesias", dist:"50 min", emoji:"⛏️", mood:"Patrimonio UNESCO", desc:"Gallerie, laverie e paesaggi industriali trasformati in musei. Il Museo del Carbone di Serbariu è il punto di partenza ideale.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/geoparco_etvg6s.jpg", link:"https://maps.google.com/?q=Miniere+Iglesias+Sardegna"},
     ]
   },
   {
@@ -1394,14 +1356,14 @@ const TABS_DATA = [
     color:"#0e2a35", accent:"#4ab8c8",
     tagline:"Spiagge, cammini, vini e isole",
     data:[
-      { title:"Cantine Argiolas, Mesa, Audarya", dist:"20–40 min", emoji:"🍷", mood:"Degustazione", desc:"Vermentino, Cannonau, Carignano. Le cantine del Campidano aprono le porte per visite e degustazioni in paesaggi da cartolina.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744882/cantine_n27jpi.jpg", link:"https://maps.google.com/?q=Cantine+Argiolas+Serdiana"},
-      { title:"Cammini — Sant'Efisio, 100 Torri, Santa Barbara", dist:"vari", emoji:"🚶", mood:"Pellegrinaggio & trekking", desc:"Antichi percorsi a piedi. Il Cammino dei 100 Torri costiero è tra i più scenografici; Sant'Efisio il più spirituale.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/cammino_santa_barbara_jmtavj.jpg", link:"https://maps.google.com/?q=Cammino+Sant+Efisio+Sardegna"},
-      { title:"Chia — dune e torri", dist:"45 min", emoji:"🏖️", mood:"Spiaggia da sogno", desc:"Acqua caraibica, dune di sabbia bianca e torre aragonese. Tra le spiagge più belle d'Europa. Arrivate presto.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/chia_a9gzlt.jpg", link:"https://maps.google.com/?q=Spiaggia+Chia+Sardegna"},
-      { title:"Belvedere Nebida & Pan di Zucchero", dist:"1h 10min", emoji:"🗼", mood:"Panorama mozzafiato", desc:"Lo scoglio più alto del Mediterraneo. Al tramonto la luce arancione sulla roccia bianca è inarrivabile.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744882/belvedere-di-nebida_phr0o8.webp", link:"https://maps.google.com/?q=Belvedere+Nebida+Sardegna"},
-      { title:"Spiaggia di Scivu & Torre dei Corsari", dist:"1h 10min", emoji:"🏖️", mood:"Selvaggia e incontaminata", desc:"Due spiagge rimaste intatte, senza strade asfaltate. Sabbia finissima e mare verde smeraldo tra le dune del Sulcis.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777747342/scivu_iqjmjj.jpg", link:"https://maps.google.com/?q=Spiaggia+Scivu+Sardegna"},
-      { title:"Dune di Piscinas", dist:"1h 20min", emoji:"🏜️", mood:"Il deserto d'Europa", desc:"Le dune più alte d'Europa affacciate su un mare spettacolare. Un paesaggio da Sahara nel cuore della Sardegna.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744885/piscinas_srxqdj.webp", link:"https://maps.google.com/?q=Dune+di+Piscinas+Sardegna"},
-      { title:"Golfo di Orosei & Cala Goloritzé", dist:"~3h", emoji:"🌊", mood:"Top 10 spiagge al mondo", desc:"Cala Goloritzé, Cala Luna, Cala Mariolu — le calette compaiono ogni anno tra le spiagge più belle del mondo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744883/goloritze_gkcup9.jpg", link:"https://maps.google.com/?q=Golfo+di+Orosei+Sardegna"},
-      { title:"Arcipelago della Maddalena", dist:"~3h", emoji:"⛵", mood:"Parco Nazionale marino", desc:"Sette isole, acque trasparenti e graniti rosa. Traghetto da Palau. Una delle aree marine protette più belle del Mediterraneo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/v1777744884/maddalena_mgxpth.jpg", link:"https://maps.google.com/?q=Arcipelago+della+Maddalena+Sardegna"},
+      { title:"Cantine Argiolas, Mesa, Audarya", dist:"20–40 min", emoji:"🍷", mood:"Degustazione", desc:"Vermentino, Cannonau, Carignano. Le cantine del Campidano aprono le porte per visite e degustazioni in paesaggi da cartolina.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744882/cantine_n27jpi.jpg", link:"https://maps.google.com/?q=Cantine+Argiolas+Serdiana"},
+      { title:"Cammini — Sant'Efisio, 100 Torri, Santa Barbara", dist:"vari", emoji:"🚶", mood:"Pellegrinaggio & trekking", desc:"Antichi percorsi a piedi. Il Cammino dei 100 Torri costiero è tra i più scenografici; Sant'Efisio il più spirituale.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/cammino_santa_barbara_jmtavj.jpg", link:"https://maps.google.com/?q=Cammino+Sant+Efisio+Sardegna"},
+      { title:"Chia — dune e torri", dist:"45 min", emoji:"🏖️", mood:"Spiaggia da sogno", desc:"Acqua caraibica, dune di sabbia bianca e torre aragonese. Tra le spiagge più belle d'Europa. Arrivate presto.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/chia_a9gzlt.jpg", link:"https://maps.google.com/?q=Spiaggia+Chia+Sardegna"},
+      { title:"Belvedere Nebida & Pan di Zucchero", dist:"1h 10min", emoji:"🗼", mood:"Panorama mozzafiato", desc:"Lo scoglio più alto del Mediterraneo. Al tramonto la luce arancione sulla roccia bianca è inarrivabile.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744882/belvedere-di-nebida_phr0o8.webp", link:"https://maps.google.com/?q=Belvedere+Nebida+Sardegna"},
+      { title:"Spiaggia di Scivu & Torre dei Corsari", dist:"1h 10min", emoji:"🏖️", mood:"Selvaggia e incontaminata", desc:"Due spiagge rimaste intatte, senza strade asfaltate. Sabbia finissima e mare verde smeraldo tra le dune del Sulcis.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777747342/scivu_iqjmjj.jpg", link:"https://maps.google.com/?q=Spiaggia+Scivu+Sardegna"},
+      { title:"Dune di Piscinas", dist:"1h 20min", emoji:"🏜️", mood:"Il deserto d'Europa", desc:"Le dune più alte d'Europa affacciate su un mare spettacolare. Un paesaggio da Sahara nel cuore della Sardegna.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744885/piscinas_srxqdj.webp", link:"https://maps.google.com/?q=Dune+di+Piscinas+Sardegna"},
+      { title:"Golfo di Orosei & Cala Goloritzé", dist:"~3h", emoji:"🌊", mood:"Top 10 spiagge al mondo", desc:"Cala Goloritzé, Cala Luna, Cala Mariolu — le calette compaiono ogni anno tra le spiagge più belle del mondo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744883/goloritze_gkcup9.jpg", link:"https://maps.google.com/?q=Golfo+di+Orosei+Sardegna"},
+      { title:"Arcipelago della Maddalena", dist:"~3h", emoji:"⛵", mood:"Parco Nazionale marino", desc:"Sette isole, acque trasparenti e graniti rosa. Traghetto da Palau. Una delle aree marine protette più belle del Mediterraneo.", photo:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777744884/maddalena_mgxpth.jpg", link:"https://maps.google.com/?q=Arcipelago+della+Maddalena+Sardegna"},
     ]
   },
 ];
@@ -1466,8 +1428,14 @@ function EsploraCategoria({tabId, go}) {
 
 // ── MAIN APP ──────────────────────────────────
 export default function CasaUta() {
-  const [screen, setScreen] = useState("home");
-  const go = (id) => { setScreen(id); window.scrollTo&&window.scrollTo(0,0); };
+  const getHash = () => (window.location.hash || "#home").slice(1);
+  const [screen, setScreen] = useState(getHash());
+  const go = (id) => { window.location.hash = id; };
+  useEffect(() => {
+    const onHash = () => { setScreen(getHash()); window.scrollTo && window.scrollTo(0, 0); };
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
   const screens = {
     home: <PH go={go}/>, benvenuto:<Benvenuto go={go}/>, checkin:<Checkin go={go}/>,
     wifi:<Wifi go={go}/>, appartamento:<Appartamento go={go}/>, regole:<Regole go={go}/>,
