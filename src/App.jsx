@@ -31,7 +31,7 @@ const Foto = ({ src, alt, style, onClick }) => (
 
 const s = {
   app: { minHeight:"100vh", fontFamily:"'Jost', sans-serif", fontWeight:300, color:c.warm, background:c.cream, maxWidth:480, margin:"0 auto" },
-  hero: { background:`linear-gradient(160deg, #3D1F10 0%, #5a3020 100%)`, textAlign:"center", padding:"52px 24px 40px", borderRadius:"0 0 28px 28px", position:"relative", overflow:"hidden" },
+  hero: { background:`linear-gradient(160deg, #5c3018 0%, #7a4428 100%)`, textAlign:"center", padding:"28px 24px 26px", borderRadius:"0 0 28px 28px", position:"relative", overflow:"hidden" },
   heroTitle: { fontFamily:"'Cormorant Garamond', Georgia, serif", fontWeight:300, fontSize:58, lineHeight:1.0, color:"#faf7f2", margin:0, letterSpacing:1 },
   heroSub: { fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:"rgba(245,240,232,0.4)", marginTop:14 },
   eye: { fontSize:10, letterSpacing:"4px", textTransform:"uppercase", color:"#CEAD85", fontWeight:500, marginBottom:12 },
@@ -109,17 +109,17 @@ function PH({go}) {
     <div style={s.app}>
       <FontLink/>
       <div style={s.hero}>
-        <div style={{position:"absolute",top:-60,right:-60,width:220,height:220,background:`radial-gradient(circle, ${c.hazel}40 0%, transparent 70%)`,pointerEvents:"none"}}/>
-        <div style={{position:"absolute",top:-40,left:-40,width:140,height:140,background:`radial-gradient(circle, ${c.hazel}20 0%, transparent 70%)`,pointerEvents:"none"}}/>
-        <img src="https://res.cloudinary.com/dovpg47yh/image/upload/e_make_transparent:20,f_png,q_auto,w_500/v1781124478/IMG_0212_s1qsxy.png" alt="Corte Pintadera"
-          style={{width:250,maxWidth:"78%",display:"block",margin:"-6px auto 16px",
-          filter:"brightness(0) invert(1)",opacity:0.95}}/>
-        <h1 style={{...s.heroTitle,marginTop:0}}>
+        <div style={{position:"absolute",top:-60,right:-60,width:220,height:220,background:`radial-gradient(circle, ${c.hazel}30 0%, transparent 70%)`,pointerEvents:"none"}}/>
+        <div style={{position:"absolute",top:-40,left:-40,width:140,height:140,background:`radial-gradient(circle, ${c.hazel}15 0%, transparent 70%)`,pointerEvents:"none"}}/>
+        <h1 style={{...s.heroTitle,marginTop:0,fontSize:50}}>
           Ben<em style={{fontStyle:"italic", color:"#CEAD85"}}>venuti</em>
         </h1>
-        <div style={{fontSize:12, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.85)", marginTop:14, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Via Cimitero 38/A</div>
-        <div style={{fontSize:10, letterSpacing:"4px", textTransform:"uppercase", color:"rgba(206,173,133,0.8)", marginTop:8, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Uta · Cagliari · Sardegna</div>
-        <div style={{width:32,height:1,background:c.hazel,margin:"16px auto 0"}}/>
+        <div style={{width:32,height:1,background:"rgba(206,173,133,0.5)",margin:"10px auto 8px"}}/>
+        <img src="https://res.cloudinary.com/dovpg47yh/image/upload/e_trim:10,f_png,q_auto,w_420/v1781124478/IMG_0212_s1qsxy.png" alt="Corte Pintadera"
+          style={{width:200,maxWidth:"72%",display:"block",margin:"0 auto 8px",
+          filter:"brightness(0) invert(1)",opacity:0.92}}/>
+        <div style={{fontSize:11, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.8)", marginTop:4, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Via Cimitero 38/A</div>
+        <div style={{fontSize:10, letterSpacing:"4px", textTransform:"uppercase", color:"rgba(206,173,133,0.75)", marginTop:5, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Uta · Cagliari · Sardegna</div>
       </div>
 
       <div style={{fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:c.mastic,
