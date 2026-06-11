@@ -302,6 +302,21 @@ function Benvenuto({go}) {
           </a>
         ))}
       </div>
+      <a href="mailto:cortepintadera@gmail.com" style={{
+        display:"flex", alignItems:"center", gap:14,
+        padding:"14px 18px", marginTop:12,
+        background:c.white, borderRadius:14,
+        border:`1px solid ${c.hazel}30`, textDecoration:"none"
+      }}>
+        <div style={{width:42,height:42,borderRadius:"50%",
+          background:`linear-gradient(135deg, ${c.hazel}, ${c.hazelL})`,
+          display:"flex",alignItems:"center",justifyContent:"center",fontSize:20,flexShrink:0}}>✉️</div>
+        <div style={{flex:1}}>
+          <div style={{fontSize:14,color:c.warm,fontWeight:500}}>Email</div>
+          <div style={{fontSize:12,color:c.mastic,marginTop:2}}>cortepintadera@gmail.com</div>
+        </div>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:14,color:c.hazel}}>›</div>
+      </a>
     </div>
   </div>;
 }
