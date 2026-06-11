@@ -117,7 +117,7 @@ function PH({go}) {
         <div style={{width:32,height:1,background:"rgba(206,173,133,0.5)",margin:"10px auto 8px"}}/>
         <img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_480/v1781182383/corte_pintadera_logo_clean_mqshm5.png" alt="Corte Pintadera"
           style={{width:200,maxWidth:"72%",display:"block",margin:"0 auto 8px",
-          opacity:0.97}}/>
+          filter:"brightness(0) invert(1)",opacity:0.95}}/>
         <div style={{fontSize:11, letterSpacing:"3px", textTransform:"uppercase", color:"rgba(245,240,232,0.8)", marginTop:4, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Via Cimitero 38/A</div>
         <div style={{fontSize:10, letterSpacing:"4px", textTransform:"uppercase", color:"rgba(206,173,133,0.75)", marginTop:5, fontFamily:"'Jost', sans-serif", fontWeight:300}}>Uta · Cagliari · Sardegna</div>
       </div>
