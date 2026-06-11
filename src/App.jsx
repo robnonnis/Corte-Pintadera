@@ -273,6 +273,22 @@ function Benvenuto({go}) {
         </div>
       </Card>
 
+      <div onClick={()=>go('storia')} style={{
+        background:`linear-gradient(135deg, ${c.hazel}15, ${c.hazelL}25)`,
+        borderRadius:18, padding:"18px 18px", border:`1px solid ${c.hazel}35`,
+        cursor:"pointer", marginBottom:12}}>
+        <div style={{display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:6}}>
+          <div style={{fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:c.hazel}}>La nostra storia</div>
+          <div style={{fontSize:16, color:c.hazel}}>›</div>
+        </div>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:19, fontWeight:300, color:c.warm, marginBottom:6, lineHeight:1.3}}>
+          Come è nata <em style={{fontStyle:"italic", color:c.hazel}}>Corte Pintadera</em>
+        </div>
+        <div style={{fontSize:12.5, color:c.mastic, lineHeight:1.6}}>
+          La famiglia Lecca, i muri in ladiri, il significato della pintadera nuragica e perché abbiamo scelto questo nome.
+        </div>
+      </div>
+
       <div style={{background:`linear-gradient(135deg, ${c.hazel}20, ${c.hazelL}30)`,
         borderRadius:18, padding:"20px 18px", border:`1px solid ${c.hazel}40`}}>
         <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:19, fontWeight:400,
