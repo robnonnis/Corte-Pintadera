@@ -1434,6 +1434,144 @@ function EsploraCategoria({tabId, go}) {
 }
 
 // ── MAIN APP ──────────────────────────────────
+
+function Storia({ go }) {
+  const c = colors;
+  return (
+    <div style={s.app}>
+      <PageHead title="La nostra storia" go={go} />
+      <div style={{padding:"0 18px 40px"}}>
+
+        {/* HERO INTERNO */}
+        <div style={{background:`linear-gradient(160deg, #5c3018 0%, #7a4428 100%)`,borderRadius:18,padding:"28px 20px 24px",textAlign:"center",marginBottom:24,position:"relative",overflow:"hidden"}}>
+          <img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_480/v1781182383/corte_pintadera_logo_clean_mqshm5.png"
+            alt="Corte Pintadera" style={{width:120,display:"block",margin:"0 auto 12px",filter:"brightness(0) invert(1)",opacity:0.92}}/>
+          <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:22,fontWeight:300,color:"#faf7f2",lineHeight:1.3}}>
+            Una casa costruita<br/><em style={{fontStyle:"italic",color:"#CEAD85"}}>per durare nel tempo</em>
+          </div>
+          <div style={{fontSize:11,letterSpacing:"3px",textTransform:"uppercase",color:"rgba(206,173,133,0.8)",marginTop:10,fontWeight:300}}>Uta · Cagliari · Sardegna</div>
+        </div>
+
+        {/* 1. LA FAMIGLIA */}
+        <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.hazel,marginBottom:6}}>Le origini</div>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:22,fontWeight:300,color:c.warm,marginBottom:14,lineHeight:1.25}}>
+          La casa di <em style={{fontStyle:"italic",color:c.hazel}}>Antonio e Maddalena</em>
+        </div>
+        <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:10}}>
+          Al centro di Uta, nel cuore del Campidano, si trovava una delle case più grandi del paese. Due piani, oltre 260 metri quadri, costruita in <strong>ladiri</strong> — i mattoni di argilla cruda e paglia impastata, la tecnica edilizia tradizionale del Campidano che dà ai muri uno spessore e un calore che il cemento non ha mai saputo imitare. Attorno, un giardino a forma di U di quasi mille metri quadri.
+        </p>
+        <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:10}}>
+          Era la casa di <strong>Antonio Lecca</strong> e <strong>Maddalena Carboni</strong>, che qui hanno cresciuto i loro due figli e visto nascere quattro nipoti. Tra questi, <strong>Alessandro</strong> è quello che l'ha vissuta di più: l'infanzia trascorsa in quel cortile, i pranzi in famiglia, i profumi della cucina con il soffitto affrescato a fiori.
+        </p>
+        <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:10}}>
+          Al centro di tutto c'era <strong>Maddalena</strong>. Nel vicinato era conosciuta come una cuoca straordinaria: aveva un <strong>forno a legna</strong> tutto suo, dove ogni giorno sfornava pane e dolci che le sue mani sapevano rendere unici.
+        </p>
+        <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:18}}>
+          In un angolo del giardino, ancora oggi, c'è la sua <strong>pianta di limoni</strong>. Ha più di quarant'anni. Non avevamo il cuore di toccarla.
+        </p>
+
+        {/* PULL QUOTE */}
+        <div style={{borderLeft:`3px solid ${c.hazel}`,paddingLeft:16,margin:"0 0 22px"}}>
+          <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:16,fontStyle:"italic",color:c.warm,lineHeight:1.6}}>
+            "I soffitti li hanno dipinti a mano negli anni '50 — fiori in cucina, geometrie dorate in camera. La pianta di limoni è ancora quella di allora. Non avevamo il cuore di toccare nulla."
+          </div>
+        </div>
+
+        {/* FACT PILLS */}
+        <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:28}}>
+          {[
+            {l:"Costruzione",v:"Muri in ladiri, tradizione campidanese"},
+            {l:"Superficie",v:"260 mq su due piani + giardino ~1.000 mq"},
+            {l:"Famiglia",v:"2 figli, 4 nipoti"},
+            {l:"Acquisto",v:"Alessandro e Roberta, 2022"},
+          ].map((f,i)=>(
+            <div key={i} style={{background:c.white,border:`1px solid ${c.hazel}40`,borderRadius:8,padding:"8px 12px",fontSize:12}}>
+              <div style={{fontSize:9,fontWeight:500,letterSpacing:"2px",textTransform:"uppercase",color:c.hazel,marginBottom:2}}>{f.l}</div>
+              {f.v}
+            </div>
+          ))}
+        </div>
+
+        <div style={{height:1,background:c.sand,margin:"0 0 24px"}}/>
+
+        {/* 2. IL RESTAURO */}
+        <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.hazel,marginBottom:6}}>Il restauro</div>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:22,fontWeight:300,color:c.warm,marginBottom:14,lineHeight:1.25}}>
+          Rinnovare senza <em style={{fontStyle:"italic",color:c.hazel}}>cancellare nulla</em>
+        </div>
+        <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:10}}>
+          Nel 2022 Alessandro e Roberta acquistano la proprietà con un'idea precisa: preservare tutto ciò che la rende unica e ricavarne un luogo capace di accogliere. Il primo appartamento — circa 50 metri quadri con veranda coperta e giardinetto privato — viene ristrutturato senza toccare l'anima dell'edificio.
+        </p>
+        <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:18}}>
+          I muri in ladiri sono rimasti. Gli affreschi anni '50 anche — i fiori rosa della cucina e le geometrie dorate della camera, dipinti da artigiani locali. Quello che è cambiato è il comfort: nuovi impianti, cucina attrezzata, bagno con colonna massaggio, fibra ottica, due climatizzatori Wi-Fi. Il progetto guarda avanti: nei prossimi anni nasceranno altri due appartamenti e una sala eventi affacciata sul grande giardino.
+        </p>
+
+        <div style={{height:1,background:c.sand,margin:"0 0 24px"}}/>
+
+        {/* 3. LA PINTADERA */}
+        <div style={{background:`${c.hazel}12`,borderRadius:18,padding:"20px 18px",marginBottom:24}}>
+          <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.hazel,marginBottom:6}}>Il simbolo</div>
+          <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:22,fontWeight:300,color:c.warm,marginBottom:14,lineHeight:1.25}}>
+            Sa Pintadera — <em style={{fontStyle:"italic",color:c.hazel}}>il marchio del popolo nuragico</em>
+          </div>
+          <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:10}}>
+            <strong>Sa pintadera</strong> è un disco di terracotta o pietra — diametro tra 6 e 18 cm — con motivi geometrici incisi su una faccia e un piccolo manico sull'altra. Veniva usata come timbro: imprimeva il proprio segno sul pane rituale, sulla pelle, sull'argilla fresca. Ogni pintadera era diversa: era il marchio di una famiglia, il sigillo di un'identità.
+          </p>
+          <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:10}}>
+            I ritrovamenti coprono tutta l'isola — da Su Nuraxi di Barumini al santuario di Santa Cristina, dalle tombe dei giganti alle sorgenti sacre del Nuorese. Un alfabeto visivo che nessuno ha ancora saputo decifrare completamente.
+          </p>
+
+          {/* IPOTESI ASTRONOMICA */}
+          <div style={{borderLeft:`3px solid ${c.hazel}`,paddingLeft:16,margin:"16px 0"}}>
+            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:15,fontStyle:"italic",color:c.warm,lineHeight:1.6}}>
+              "Sa arroda de tempu" — la ruota del tempo. Alcuni studiosi propongono che le geometrie incise codifichino un calendario astronomico: ciclo solare, lunare e venusiano in un unico strumento circolare.
+            </div>
+          </div>
+
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10,marginBottom:14}}>
+            {[
+              {e:"☀️",t:"Ciclo solare",d:"Solstizi ed equinozi — i quattro momenti cardinali dell'anno agricolo"},
+              {e:"🌙",t:"Ciclo lunare",d:"Le tacche sul bordo coincidono con i giorni del mese lunare"},
+              {e:"⭐",t:"Ciclo di Venere",d:"I cerchi concentrici sincronizzano il ciclo venusiano di 8 anni"},
+              {e:"🌾",t:"Calendario agropastorale",d:"Le feste legate alle stagioni, al raccolto, alla fertilità"},
+            ].map((a,i)=>(
+              <div key={i} style={{background:c.white,borderRadius:12,padding:"12px 10px",border:`1px solid ${c.hazel}25`}}>
+                <div style={{fontSize:18,marginBottom:4}}>{a.e}</div>
+                <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:13,fontWeight:400,color:c.warm,marginBottom:4}}>{a.t}</div>
+                <div style={{fontSize:11,color:c.mastic,lineHeight:1.5}}>{a.d}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 4. PERCHÉ QUESTO NOME */}
+        <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.hazel,marginBottom:6}}>Il nome</div>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:22,fontWeight:300,color:c.warm,marginBottom:14,lineHeight:1.25}}>
+          Perché abbiamo scelto <em style={{fontStyle:"italic",color:c.hazel}}>questo simbolo</em>
+        </div>
+        <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:10}}>
+          Una casa costruita in ladiri, con affreschi dipinti a mano, in un paese del Campidano dove quattro generazioni hanno lasciato il loro segno — meritava un nome che portasse lo stesso peso.
+        </p>
+        <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:24}}>
+          La pintadera è il simbolo più potente che la Sardegna nuragica ci ha lasciato: circolare come il tempo, geometrica come il pensiero, unica come ogni famiglia. <strong>Corte Pintadera</strong> è il nome di questo posto. La corte è lo spazio condiviso attorno a cui tutto si organizza. La pintadera è il segno che lo distingue: antico, sardo, irripetibile.
+        </p>
+
+        {/* CHIUSURA */}
+        <div style={{background:`linear-gradient(160deg, #5c3018 0%, #7a4428 100%)`,borderRadius:18,padding:"24px 20px",textAlign:"center"}}>
+          <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:20,fontWeight:300,color:"#faf7f2",lineHeight:1.4,marginBottom:8}}>
+            Una casa con <em style={{fontStyle:"italic",color:"#CEAD85"}}>il suo segno nel mondo</em>
+          </div>
+          <div style={{fontSize:12,color:"rgba(206,173,133,0.85)",lineHeight:1.7,fontFamily:"'Cormorant Garamond',Georgia,serif",fontStyle:"italic"}}>
+            Muri in ladiri, soffitti dipinti a mano, un giardino che aspettava.<br/>
+            Corte Pintadera porta tutto questo — e c'è ancora spazio per la tua storia.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
 export default function CortePintadera() {
   const getHash = () => (window.location.hash || "#home").slice(1);
   const [screen, setScreen] = useState(getHash());
