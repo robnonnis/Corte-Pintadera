@@ -1454,7 +1454,6 @@ function EsploraCategoria({tabId, go}) {
 // ── MAIN APP ──────────────────────────────────
 
 function Storia({ go }) {
-  const c = colors;
   return (
     <div style={s.app}>
       <PageHead title="La nostra storia" back={()=>go("home")} icon={<img src="https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_80/v1781182383/corte_pintadera_logo_clean_mqshm5.png" style={{width:32,height:32,objectFit:"contain"}} alt=""/>}/>
