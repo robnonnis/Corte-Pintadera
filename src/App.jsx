@@ -1522,16 +1522,16 @@ function Storia({ go }) {
             <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:14,fontStyle:"italic",color:c.warm,lineHeight:1.6}}>"Sa arroda de tempu" — la ruota del tempo. Alcuni studiosi propongono che le geometrie incise codifichino un calendario astronomico: ciclo solare, lunare e venusiano in un unico strumento circolare.</div>
           </div>
 
-          <a href="https://drive.google.com/file/d/1Ogwe-OLNaI0HHSIi8bzOXOpI7KFQfHzc/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{
+          <a href="https://officinaprogetti.org/it/la-pintadera-nuragica-timbro-per-il-pane-o-calendario-astronomico/" target="_blank" rel="noopener noreferrer" style={{
             display:"flex", alignItems:"center", gap:12,
             background:c.white, borderRadius:12, padding:"12px 14px",
             border:`1px solid ${c.hazel}30`, textDecoration:"none", marginBottom:16
           }}>
             <div style={{width:36,height:36,borderRadius:"50%",background:`${c.hazel}25`,
-              display:"flex",alignItems:"center",justifyContent:"center",fontSize:17,flexShrink:0}}>🎬</div>
+              display:"flex",alignItems:"center",justifyContent:"center",fontSize:17,flexShrink:0}}>📜</div>
             <div style={{flex:1}}>
-              <div style={{fontSize:13,color:c.warm,fontWeight:500}}>Approfondisci: la pintadera come calendario</div>
-              <div style={{fontSize:11,color:c.mastic,marginTop:2}}>Un'analisi più completa dell'ipotesi astronomica</div>
+              <div style={{fontSize:13,color:c.warm,fontWeight:500}}>Approfondisci: timbro per il pane o calendario astronomico?</div>
+              <div style={{fontSize:11,color:c.mastic,marginTop:2}}>Un articolo che esplora entrambe le ipotesi</div>
             </div>
             <div style={{fontSize:16,color:c.hazel}}>↗</div>
           </a>
