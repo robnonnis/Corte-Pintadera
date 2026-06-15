@@ -1511,8 +1511,8 @@ function Storia({ go }) {
 
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,marginBottom:14}}>
             {[
-              `${B}/${T}/v1781517923/pintadera_pus3l5.jpg`,
-              `${B}/${T}/v1781517923/pintadera2_bdnhxm.jpg`,
+              "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781517923/pintadera_pus3l5.jpg",
+              "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781517923/pintadera2_bdnhxm.jpg",
             ].map((url,i)=>(
               <img key={i} src={url} alt="Pintadera nuragica" loading="lazy"
                 style={{width:"100%",height:110,objectFit:"cover",borderRadius:10,border:`1px solid ${c.hazel}25`}}/>
@@ -1538,10 +1538,10 @@ function Storia({ go }) {
 
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,marginBottom:16}}>
             {[
-              `${B}/${T}/v1781517924/equinozio_pintadera_b3puix.jpg`,
-              `${B}/${T}/v1781517923/pintadere_hig9xe.jpg`,
-              `${B}/${T}/v1781517923/pintadere1_jzaxu2.jpg`,
-              `${B}/${T}/v1781517923/pintadera1_elcdgj.jpg`,
+              "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781517924/equinozio_pintadera_b3puix.jpg",
+              "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781517923/pintadere_hig9xe.jpg",
+              "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781517923/pintadere1_jzaxu2.jpg",
+              "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781517923/pintadera1_elcdgj.jpg",
             ].map((url,i)=>(
               <img key={i} src={url} alt="Pintadera nuragica" loading="lazy"
                 style={{width:"100%",height:90,objectFit:"cover",borderRadius:10,border:`1px solid ${c.hazel}25`}}/>
