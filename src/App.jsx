@@ -379,13 +379,18 @@ function Wifi({go}) {
 }
 
 const FOTO = {
-  cucina:    "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777653108/IMG_9577_xhquge.png",
-  camera:    "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777653099/IMG_9578_zsnug5.png",
-  veranda1:  "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734588/IMG_9647_sdz159.png",
-  veranda2:  "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734588/IMG_9650_ipg8kw.png",
-  ingresso:  "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734589/IMG_9649_gyjnyf.png",
-  bagno:     "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734584/IMG_9645_wvvvpr.png",
-  cancello:  "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1777734586/IMG_9646_onqx6z.png",
+  cucina:        "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557410/Cucina_v0odbk.png",
+  cucinaPiano:   "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557408/Cucina_piano_induzione_jxikov.png",
+  camera:        "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557433/Camera_da_letto_vkpsq3.png",
+  cameraDettaglio: "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557435/dettaglio_letto_vehitg.png",
+  soffittoCamera: "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557434/Soffito_camera_da_letto_rrmzmo.png",
+  bagno1:        "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557436/Bagno1_mrjywb.png",
+  bagno2:        "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557433/Bagno_wyhyzs.png",
+  esterno1:      "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557407/ChatGPT_Image_15_giu_2026_22_51_33_kltcdq.png",
+  esterno2:      "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557407/Esterno_pnxypa.png",
+  pilastro:      "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557437/dettaglio_pilastro_veranda_zng9rp.png",
+  ingressoEst:   "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557407/ingresso_esterno_zskcio.png",
+  ingressoInt:   "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557405/Ingresso_interno_xrbmh7.png",
 };
 
 function FotoSlide({imgs, height=200}) {
@@ -422,7 +427,7 @@ function Appartamento({go}) {
     <PageHead title="L'Appartamento" sub="50 m² interno · 40 m² veranda" back={()=>go("home")} icon={<Ic.building/>}/>
     <div style={s.content}>
 
-      <FotoSlide imgs={[FOTO.cancello, FOTO.ingresso, FOTO.veranda1, FOTO.veranda2]} height={220}/>
+      <FotoSlide imgs={[FOTO.esterno1, FOTO.esterno2, FOTO.ingressoEst, FOTO.pilastro]} height={220}/>
 
       <div style={{display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:8, marginBottom:14}}>
         {[["~50 m²","Interno"],["~40 m²","Veranda"],["2×","Clima Wi-Fi"]].map(([val,label])=>(
@@ -435,7 +440,7 @@ function Appartamento({go}) {
 
       <Card>
         <CT text="🍳 Cucina"/>
-        <FotoSlide imgs={[FOTO.cucina]} height={180}/>
+        <FotoSlide imgs={[FOTO.cucina, FOTO.cucinaPiano]} height={180}/>
         {["Piano cottura a induzione","Forno elettrico","Lavastoviglie","Frigorifero","Climatizzatore Wi-Fi","Tavolo allungabile + 4 sedie","Divano letto 3 posti","Vetrata su veranda"].map((t,i,a)=>(
           <Rule key={i} t={t} last={i===a.length-1}/>
         ))}
@@ -450,7 +455,7 @@ function Appartamento({go}) {
 
       <Card>
         <CT text="🛏️ Camera da letto"/>
-        <FotoSlide imgs={[FOTO.camera]} height={180}/>
+        <FotoSlide imgs={[FOTO.camera, FOTO.cameraDettaglio, FOTO.soffittoCamera]} height={180}/>
         {["Letto matrimoniale con contenitore","Armadio ~4 metri","Settimino","Comodini con applique su entrambi i lati","Condizionatore Wi-Fi"].map((t,i,a)=>(
           <Rule key={i} t={t} last={i===a.length-1}/>
         ))}
@@ -465,7 +470,7 @@ function Appartamento({go}) {
 
       <Card>
         <CT text="🚿 Bagno"/>
-        <FotoSlide imgs={[FOTO.bagno]} height={160}/>
+        <FotoSlide imgs={[FOTO.bagno1, FOTO.bagno2]} height={160}/>
         {["Box doccia scorrevole 80×100 cm","Colonna doccia con getti massaggio","Mobile lavandino con cassettoni","Specchio con illuminazione LED","Ventilazione automatica"].map((t,i,a)=>(
           <Rule key={i} t={t} last={i===a.length-1}/>
         ))}
@@ -473,7 +478,7 @@ function Appartamento({go}) {
 
       <Card>
         <CT text="🌿 Veranda e giardino"/>
-        <FotoSlide imgs={[FOTO.veranda1, FOTO.veranda2]} height={160}/>
+        <FotoSlide imgs={[FOTO.esterno1, FOTO.esterno2, FOTO.ingressoInt]} height={160}/>
         <p style={{fontSize:14,lineHeight:1.75,color:c.mastic,margin:0}}>
           Veranda coperta ~40 m² con accesso diretto dalla vetrata della cucina. Giardinetto privato — ideale per colazioni all'aperto e aperitivi al tramonto.
         </p>
