@@ -1508,8 +1508,44 @@ function Storia({ go }) {
           <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:21,fontWeight:300,color:c.warm,marginBottom:12,lineHeight:1.25}}>Sa Pintadera — <em style={{fontStyle:"italic",color:c.hazel}}>il marchio del popolo nuragico</em></div>
           <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:10}}><strong>Sa pintadera</strong> è un disco di terracotta o pietra con motivi geometrici incisi e un piccolo manico sul retro. Veniva usata come timbro: imprimeva il proprio segno sul pane rituale, sulla pelle, sull'argilla fresca. Ogni pintadera era diversa: era il marchio di una famiglia, il sigillo di un'identità.</p>
           <p style={{fontSize:13.5,color:"#3a2e22",lineHeight:1.75,marginBottom:14}}>I ritrovamenti coprono tutta l'isola — da Su Nuraxi di Barumini al santuario di Santa Cristina, dalle tombe dei giganti ai pozzi sacri del Nuorese. Un alfabeto visivo che nessuno ha ancora saputo decifrare completamente.</p>
+
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,marginBottom:14}}>
+            {[
+              `${B}/${T}/v1781517923/pintadera_pus3l5.jpg`,
+              `${B}/${T}/v1781517923/pintadera2_bdnhxm.jpg`,
+            ].map((url,i)=>(
+              <img key={i} src={url} alt="Pintadera nuragica" loading="lazy"
+                style={{width:"100%",height:110,objectFit:"cover",borderRadius:10,border:`1px solid ${c.hazel}25`}}/>
+            ))}
+          </div>
           <div style={{borderLeft:`3px solid ${c.hazel}`,paddingLeft:14,marginBottom:16}}>
             <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:14,fontStyle:"italic",color:c.warm,lineHeight:1.6}}>"Sa arroda de tempu" — la ruota del tempo. Alcuni studiosi propongono che le geometrie incise codifichino un calendario astronomico: ciclo solare, lunare e venusiano in un unico strumento circolare.</div>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1Ogwe-OLNaI0HHSIi8bzOXOpI7KFQfHzc/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{
+            display:"flex", alignItems:"center", gap:12,
+            background:c.white, borderRadius:12, padding:"12px 14px",
+            border:`1px solid ${c.hazel}30`, textDecoration:"none", marginBottom:16
+          }}>
+            <div style={{width:36,height:36,borderRadius:"50%",background:`${c.hazel}25`,
+              display:"flex",alignItems:"center",justifyContent:"center",fontSize:17,flexShrink:0}}>🎬</div>
+            <div style={{flex:1}}>
+              <div style={{fontSize:13,color:c.warm,fontWeight:500}}>Approfondisci: la pintadera come calendario</div>
+              <div style={{fontSize:11,color:c.mastic,marginTop:2}}>Un'analisi più completa dell'ipotesi astronomica</div>
+            </div>
+            <div style={{fontSize:16,color:c.hazel}}>↗</div>
+          </a>
+
+          <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,marginBottom:16}}>
+            {[
+              `${B}/${T}/v1781517924/equinozio_pintadera_b3puix.jpg`,
+              `${B}/${T}/v1781517923/pintadere_hig9xe.jpg`,
+              `${B}/${T}/v1781517923/pintadere1_jzaxu2.jpg`,
+              `${B}/${T}/v1781517923/pintadera1_elcdgj.jpg`,
+            ].map((url,i)=>(
+              <img key={i} src={url} alt="Pintadera nuragica" loading="lazy"
+                style={{width:"100%",height:90,objectFit:"cover",borderRadius:10,border:`1px solid ${c.hazel}25`}}/>
+            ))}
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
             {[{e:"☀️",t:"Ciclo solare",d:"Solstizi ed equinozi — i quattro momenti cardinali dell'anno"},{e:"🌙",t:"Ciclo lunare",d:"Le tacche coincidono con i giorni del mese lunare"},{e:"⭐",t:"Ciclo di Venere",d:"I cerchi sincronizzano il ciclo venusiano di 8 anni"},{e:"🌾",t:"Calendario agropastorale",d:"Le feste legate alle stagioni e al raccolto"}].map((a,i)=>(
