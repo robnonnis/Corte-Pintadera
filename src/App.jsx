@@ -317,6 +317,25 @@ function Benvenuto({go}) {
         </div>
         <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:14,color:c.hazel}}>›</div>
       </a>
+      <a href="https://www.instagram.com/cortepintadera?igsh=MXVsZjU2azh2MzF5ZA==" target="_blank" rel="noopener noreferrer" style={{
+        display:"flex", alignItems:"center", gap:14,
+        padding:"14px 18px", marginTop:10,
+        background:c.white, borderRadius:14,
+        border:`1px solid ${c.hazel}30`, textDecoration:"none"
+      }}>
+        <div style={{width:42,height:42,borderRadius:"50%",
+          background:`linear-gradient(135deg, #F58529, #DD2A7B, #8134AF, #515BD4)`,
+          display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0}}>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="white">
+            <path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 2.43.27 3.33 1.17.9.9 1.12 2.16 1.17 3.33.07 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.27 2.43-1.17 3.33-.9.9-2.16 1.12-3.33 1.17-1.25.07-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-2.43-.27-3.33-1.17-.9-.9-1.12-2.16-1.17-3.33C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.27-2.43 1.17-3.33.9-.9 2.16-1.12 3.33-1.17C7.8 2.2 8.2 2.2 12 2.2zm0 1.8c-3.14 0-3.5 0-4.74.07-.98.04-1.84.2-2.5.86-.66.66-.82 1.52-.86 2.5C3.83 8.5 3.83 8.86 3.83 12s0 3.5.07 4.74c.04.98.2 1.84.86 2.5.66.66 1.52.82 2.5.86 1.24.06 1.6.07 4.74.07s3.5 0 4.74-.07c.98-.04 1.84-.2 2.5-.86.66-.66.82-1.52.86-2.5.06-1.24.07-1.6.07-4.74s0-3.5-.07-4.74c-.04-.98-.2-1.84-.86-2.5-.66-.66-1.52-.82-2.5-.86C15.5 4 15.14 4 12 4zm0 3.4a4.6 4.6 0 110 9.2 4.6 4.6 0 010-9.2zm0 1.8a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6zm5.85-3.6a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/>
+          </svg>
+        </div>
+        <div style={{flex:1}}>
+          <div style={{fontSize:14,color:c.warm,fontWeight:500}}>Seguici su Instagram</div>
+          <div style={{fontSize:12,color:c.mastic,marginTop:2}}>@cortepintadera</div>
+        </div>
+        <div style={{fontSize:16,color:c.hazel}}>↗</div>
+      </a>
     </div>
   </div>;
 }
