@@ -389,8 +389,8 @@ function Wifi({go}) {
       <Card>
         <CT icon={<Ic.wifi/>} text="Fibra ottica — disponibile ovunque"/>
         <p style={{fontSize:14,lineHeight:1.75,color:c.mastic,marginBottom:8}}>Copertura in tutto l'appartamento e in veranda.</p>
-        <div style={s.wifiBox}><div style={{fontSize:9,letterSpacing:"3px",textTransform:"uppercase",color:c.mastic,marginBottom:6}}>Nome rete</div><div style={{fontFamily:"Georgia,serif",fontSize:26,color:c.cream,letterSpacing:2}}>CasaUta_Guest</div></div>
-        <div style={{...s.wifiBox,marginTop:10}}><div style={{fontSize:9,letterSpacing:"3px",textTransform:"uppercase",color:c.mastic,marginBottom:6}}>Password</div><div style={{fontFamily:"Georgia,serif",fontSize:26,color:c.cream,letterSpacing:2}}>— — — — — —</div><div style={{fontSize:10,color:"rgba(245,240,232,0.4)",marginTop:6}}>⚠️ Chiedete la password all'arrivo</div></div>
+        <div style={s.wifiBox}><div style={{fontSize:9,letterSpacing:"3px",textTransform:"uppercase",color:c.mastic,marginBottom:6}}>Nome rete</div><div style={{fontFamily:"Georgia,serif",fontSize:26,color:c.cream,letterSpacing:2}}>FASTWEB-E3XZSC</div></div>
+        <div style={{...s.wifiBox,marginTop:10}}><div style={{fontSize:9,letterSpacing:"3px",textTransform:"uppercase",color:c.mastic,marginBottom:6}}>Password</div><div style={{fontFamily:"Georgia,serif",fontSize:26,color:c.cream,letterSpacing:2}}>C7RAEXHAUG</div></div>
       </Card>
       <Card><CT text="Problemi di connessione?"/><p style={{fontSize:14,lineHeight:1.75,color:c.mastic,margin:0}}>Spegnete e riaccendete il router (armadio nel corridoio). Se il problema persiste, contattateci.</p></Card>
     </div>
@@ -400,6 +400,7 @@ function Wifi({go}) {
 const FOTO = {
   cucina:        "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557410/Cucina_v0odbk.png",
   cucinaPiano:   "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557408/Cucina_piano_induzione_jxikov.png",
+  soffittoCucina:"https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1782328743/Soffito_cucina_h6svt0.png",
   camera:        "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557433/Camera_da_letto_vkpsq3.png",
   cameraDettaglio: "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557435/dettaglio_letto_vehitg.png",
   soffittoCamera: "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557434/Soffito_camera_da_letto_rrmzmo.png",
@@ -412,12 +413,19 @@ const FOTO = {
   ingressoInt:   "https://res.cloudinary.com/dovpg47yh/image/upload/f_auto,q_auto,w_800/v1781557405/Ingresso_interno_xrbmh7.png",
 };
 
-function FotoSlide({imgs, height=200}) {
+function FotoSlide({imgs, aspect="portrait"}) {
   const [idx, setIdx] = useState(0);
   if (!imgs || imgs.length === 0) return null;
+  // portrait = 3:4 per foto verticali, landscape = 4:3 per orizzontali
+  const paddingTop = aspect === "portrait" ? "133%" : aspect === "square" ? "100%" : "75%";
   return (
     <div style={{position:"relative", marginBottom:14}}>
-      <img src={imgs[idx]} alt="" style={{width:"100%", height, objectFit:"cover", borderRadius:14, display:"block"}}/>
+      <div style={{position:"relative", width:"100%", paddingTop, borderRadius:14, overflow:"hidden", background:`linear-gradient(135deg, ${c.sand}, ${c.hazel}30)`}}>
+        <img src={imgs[idx]} alt="" style={{
+          position:"absolute", top:0, left:0, width:"100%", height:"100%",
+          objectFit:"contain", display:"block", borderRadius:14
+        }}/>
+      </div>
       {imgs.length > 1 && (
         <>
           <button onClick={()=>setIdx((idx-1+imgs.length)%imgs.length)} style={{
@@ -446,7 +454,7 @@ function Appartamento({go}) {
     <PageHead title="L'Appartamento" sub="50 m² interno · 40 m² veranda" back={()=>go("home")} icon={<Ic.building/>}/>
     <div style={s.content}>
 
-      <FotoSlide imgs={[FOTO.esterno1, FOTO.esterno2, FOTO.ingressoEst, FOTO.pilastro]} height={220}/>
+      <FotoSlide imgs={[FOTO.esterno1, FOTO.esterno2, FOTO.ingressoEst, FOTO.pilastro]} aspect="portrait"/>
 
       <div style={{display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:8, marginBottom:14}}>
         {[["~50 m²","Interno"],["~40 m²","Veranda"],["2×","Clima Wi-Fi"]].map(([val,label])=>(
@@ -459,7 +467,7 @@ function Appartamento({go}) {
 
       <Card>
         <CT text="🍳 Cucina"/>
-        <FotoSlide imgs={[FOTO.cucina, FOTO.cucinaPiano]} height={180}/>
+        <FotoSlide imgs={[FOTO.cucina, FOTO.cucinaPiano, FOTO.soffittoCucina]}/>
         {["Piano cottura a induzione","Forno elettrico","Lavastoviglie","Frigorifero","Climatizzatore Wi-Fi","Tavolo allungabile + 4 sedie","Divano letto 3 posti","Vetrata su veranda"].map((t,i,a)=>(
           <Rule key={i} t={t} last={i===a.length-1}/>
         ))}
@@ -474,7 +482,7 @@ function Appartamento({go}) {
 
       <Card>
         <CT text="🛏️ Camera da letto"/>
-        <FotoSlide imgs={[FOTO.camera, FOTO.cameraDettaglio, FOTO.soffittoCamera]} height={180}/>
+        <FotoSlide imgs={[FOTO.camera, FOTO.cameraDettaglio, FOTO.soffittoCamera]}/>
         {["Letto matrimoniale con contenitore","Armadio ~4 metri","Settimino","Comodini con applique su entrambi i lati","Condizionatore Wi-Fi"].map((t,i,a)=>(
           <Rule key={i} t={t} last={i===a.length-1}/>
         ))}
@@ -489,7 +497,7 @@ function Appartamento({go}) {
 
       <Card>
         <CT text="🚿 Bagno"/>
-        <FotoSlide imgs={[FOTO.bagno1, FOTO.bagno2]} height={160}/>
+        <FotoSlide imgs={[FOTO.bagno1, FOTO.bagno2]}/>
         {["Box doccia scorrevole 80×100 cm","Colonna doccia con getti massaggio","Mobile lavandino con cassettoni","Specchio con illuminazione LED","Ventilazione automatica"].map((t,i,a)=>(
           <Rule key={i} t={t} last={i===a.length-1}/>
         ))}
@@ -497,7 +505,7 @@ function Appartamento({go}) {
 
       <Card>
         <CT text="🌿 Veranda e giardino"/>
-        <FotoSlide imgs={[FOTO.esterno1, FOTO.esterno2, FOTO.ingressoInt]} height={160}/>
+        <FotoSlide imgs={[FOTO.esterno1, FOTO.esterno2, FOTO.ingressoInt]}/>
         <p style={{fontSize:14,lineHeight:1.75,color:c.mastic,margin:0}}>
           Veranda coperta ~40 m² con accesso diretto dalla vetrata della cucina. Giardinetto privato — ideale per colazioni all'aperto e aperitivi al tramonto.
         </p>
@@ -1274,15 +1282,134 @@ function Eventi({go}) {
 
 function Recensioni({go}) {
   return <div style={s.app}>
-    <PageHead title="Le vostre recensioni" back={()=>go("home")} icon={<Ic.star/>}/>
+    <PageHead title="Recensioni & Social" back={()=>go("home")} icon={<Ic.star/>}/>
     <div style={s.content}>
-      <div style={s.hlBox}><div style={s.hlTitle}>La vostra opinione conta</div><p style={{fontSize:14,lineHeight:1.7,opacity:0.85,margin:0,color:c.warm}}>Speriamo che il soggiorno sia stato di vostro gradimento. Una recensione su Google ci aiuta a far conoscere Corte Pintadera!</p></div>
-      <Card style={{textAlign:"center",padding:"28px 18px"}}>
-        <div style={{fontSize:40,marginBottom:10}}>⭐⭐⭐⭐⭐</div>
-        <p style={{fontFamily:"Georgia,serif",fontSize:20,marginBottom:8,color:c.warm}}>Lascia una recensione su Google</p>
-        <p style={{fontSize:13,color:c.mastic,marginBottom:20,lineHeight:1.6}}>Bastano 2 minuti e ci aiuti enormemente.<br/>Grazie di cuore! 🙏</p>
-        <a href="https://search.google.com/local/writereview?placeid=GOOGLE_PLACE_ID" target="_blank" rel="noreferrer" style={s.mapBtn}><span>⭐</span> Scrivi una recensione</a>
-      </Card>
+
+      {/* INTRO */}
+      <div style={{...s.hlBox, textAlign:"center", padding:"24px 20px"}}>
+        <div style={{fontSize:32, marginBottom:10}}>🙏</div>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:22, fontWeight:300, color:c.warm, marginBottom:8, lineHeight:1.3}}>
+          Grazie per aver scelto<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em>
+        </div>
+        <p style={{fontSize:13.5, lineHeight:1.75, color:c.warm, opacity:0.85, margin:0}}>
+          Una recensione o un tag sui social ci aiuta enormemente a far conoscere questo posto. Bastano due minuti — e per noi vale tantissimo.
+        </p>
+      </div>
+
+      {/* RECENSIONI */}
+      <div style={{fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:c.mastic, margin:"20px 0 12px", textAlign:"center"}}>Lascia una recensione</div>
+
+      {/* Google */}
+      <a href="https://search.google.com/local/writereview?placeid=GOOGLE_PLACE_ID" target="_blank" rel="noreferrer" style={{
+        display:"flex", alignItems:"center", gap:14, padding:"16px 18px", marginBottom:10,
+        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}25`, textDecoration:"none",
+        boxShadow:"0 2px 8px rgba(61,31,16,0.06)"
+      }}>
+        <div style={{width:46, height:46, borderRadius:12, flexShrink:0, overflow:"hidden",
+          background:"white", display:"flex", alignItems:"center", justifyContent:"center",
+          border:"1px solid rgba(0,0,0,0.08)"}}>
+          <svg viewBox="0 0 48 48" width="30" height="30">
+            <path fill="#4285F4" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.4 29.3 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.3 1 7.2 2.8l5.7-5.7C33.4 7.1 28.9 5 24 5 13 5 4 14 4 25s9 20 20 20 20-9 20-20c0-1.5-.2-3-.4-4.5z"/>
+            <path fill="#34A853" d="M6.3 15.7l6.6 4.8C14.7 17 19.1 14 24 14c2.8 0 5.3 1 7.2 2.8l5.7-5.7C33.4 7.1 28.9 5 24 5c-7.6 0-14.2 4.2-17.7 10.7z"/>
+            <path fill="#FBBC05" d="M24 45c5.2 0 9.9-1.9 13.5-5l-6.2-5.2C29.4 36.5 26.8 37.5 24 37.5c-5.2 0-9.6-3.5-11.2-8.2l-6.5 5C9.6 40.6 16.3 45 24 45z"/>
+            <path fill="#EA4335" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.1-4 5.5l6.2 5.2C41.5 36.2 44 31 44 25c0-1.5-.2-3-.4-4.5z"/>
+          </svg>
+        </div>
+        <div style={{flex:1}}>
+          <div style={{fontSize:14, fontWeight:500, color:c.warm}}>Google</div>
+          <div style={{fontSize:12, color:c.mastic, marginTop:2}}>Scrivi una recensione su Google Maps</div>
+        </div>
+        <div style={{display:"flex", gap:1}}>{"⭐⭐⭐⭐⭐".split("").map((s,i)=><span key={i} style={{fontSize:13}}>{s}</span>)}</div>
+      </a>
+
+      {/* Booking */}
+      <div style={{
+        display:"flex", alignItems:"center", gap:14, padding:"16px 18px", marginBottom:10,
+        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}15`, opacity:0.6
+      }}>
+        <div style={{width:46, height:46, borderRadius:12, flexShrink:0,
+          background:"#003580", display:"flex", alignItems:"center", justifyContent:"center"}}>
+          <span style={{fontSize:20, color:"white", fontWeight:800, fontFamily:"sans-serif"}}>B.</span>
+        </div>
+        <div style={{flex:1}}>
+          <div style={{fontSize:14, fontWeight:500, color:c.warm}}>Booking.com</div>
+          <div style={{fontSize:12, color:c.mastic, marginTop:2}}>Pagina in arrivo — presto disponibile</div>
+        </div>
+        <span style={{fontSize:11, background:c.sand, color:c.mastic, borderRadius:8, padding:"3px 9px"}}>Presto</span>
+      </div>
+
+      {/* Airbnb */}
+      <div style={{
+        display:"flex", alignItems:"center", gap:14, padding:"16px 18px", marginBottom:20,
+        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}15`, opacity:0.6
+      }}>
+        <div style={{width:46, height:46, borderRadius:12, flexShrink:0,
+          background:"#FF5A5F", display:"flex", alignItems:"center", justifyContent:"center"}}>
+          <svg viewBox="0 0 32 32" width="24" height="24" fill="white">
+            <path d="M16 1C7.8 1 1 7.8 1 16s6.8 15 15 15 15-6.8 15-15S24.2 1 16 1zm0 5.5c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm6.5 14.5c-.3.8-1.5 2.5-4 3.8-.5.3-1 .4-1.5.4-.4 0-.9-.1-1.3-.3-1.3-.6-2.4-1.7-3.1-2.9-.4-.7-.6-1.4-.5-2.1.1-1.3.9-2.4 2-3 .6-.3 1.2-.5 1.9-.5.6 0 1.2.2 1.8.5.6-.3 1.2-.5 1.8-.5.7 0 1.3.2 1.9.5 1.1.6 1.9 1.7 2 3 .1.7-.1 1.4-.5 2.1h-.5z"/>
+          </svg>
+        </div>
+        <div style={{flex:1}}>
+          <div style={{fontSize:14, fontWeight:500, color:c.warm}}>Airbnb</div>
+          <div style={{fontSize:12, color:c.mastic, marginTop:2}}>Pagina in arrivo — presto disponibile</div>
+        </div>
+        <span style={{fontSize:11, background:c.sand, color:c.mastic, borderRadius:8, padding:"3px 9px"}}>Presto</span>
+      </div>
+
+      {/* SOCIAL */}
+      <div style={{fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:c.mastic, margin:"4px 0 12px", textAlign:"center"}}>Seguici sui social</div>
+
+      {/* Call to action tag */}
+      <div style={{background:`linear-gradient(135deg, #3D1F10, #5a3020)`, borderRadius:16, padding:"18px 18px", marginBottom:12, textAlign:"center"}}>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:20, fontWeight:300, color:"#faf7f2", lineHeight:1.3, marginBottom:8}}>
+          Hai scattato una foto?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Taggaci e la condividiamo!</em>
+        </div>
+        <div style={{display:"inline-block", background:"rgba(206,173,133,0.15)", borderRadius:20, padding:"7px 18px",
+          fontSize:14, color:"#CEAD85", fontWeight:500, letterSpacing:"0.5px"}}>
+          #cortepintadera
+        </div>
+      </div>
+
+      {/* Instagram */}
+      <a href="https://www.instagram.com/cortepintadera" target="_blank" rel="noopener noreferrer" style={{
+        display:"flex", alignItems:"center", gap:14, padding:"16px 18px", marginBottom:10,
+        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}25`, textDecoration:"none",
+        boxShadow:"0 2px 8px rgba(61,31,16,0.06)"
+      }}>
+        <div style={{width:46, height:46, borderRadius:12, flexShrink:0,
+          background:"linear-gradient(135deg, #F58529, #DD2A7B, #8134AF, #515BD4)",
+          display:"flex", alignItems:"center", justifyContent:"center"}}>
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+            <path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 2.43.27 3.33 1.17.9.9 1.12 2.16 1.17 3.33.07 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.27 2.43-1.17 3.33-.9.9-2.16 1.12-3.33 1.17-1.25.07-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-2.43-.27-3.33-1.17-.9-.9-1.12-2.16-1.17-3.33C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.27-2.43 1.17-3.33.9-.9 2.16-1.12 3.33-1.17C7.8 2.2 8.2 2.2 12 2.2zm0 1.8c-3.14 0-3.5 0-4.74.07-.98.04-1.84.2-2.5.86-.66.66-.82 1.52-.86 2.5C3.83 8.5 3.83 8.86 3.83 12s0 3.5.07 4.74c.04.98.2 1.84.86 2.5.66.66 1.52.82 2.5.86 1.24.06 1.6.07 4.74.07s3.5 0 4.74-.07c.98-.04 1.84-.2 2.5-.86.66-.66.82-1.52.86-2.5.06-1.24.07-1.6.07-4.74s0-3.5-.07-4.74c-.04-.98-.2-1.84-.86-2.5-.66-.66-1.52-.82-2.5-.86C15.5 4 15.14 4 12 4zm0 3.4a4.6 4.6 0 110 9.2 4.6 4.6 0 010-9.2zm0 1.8a2.8 2.8 0 100 5.6 2.8 2.8 0 000-5.6zm5.85-3.6a1.1 1.1 0 110 2.2 1.1 1.1 0 010-2.2z"/>
+          </svg>
+        </div>
+        <div style={{flex:1}}>
+          <div style={{fontSize:14, fontWeight:500, color:c.warm}}>Instagram</div>
+          <div style={{fontSize:12, color:c.mastic, marginTop:2}}>@cortepintadera</div>
+        </div>
+        <span style={{fontSize:16, color:c.hazel}}>↗</span>
+      </a>
+
+      {/* Facebook */}
+      <a href="https://www.facebook.com/profile.php?id=61591129855110" target="_blank" rel="noopener noreferrer" style={{
+        display:"flex", alignItems:"center", gap:14, padding:"16px 18px", marginBottom:20,
+        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}25`, textDecoration:"none",
+        boxShadow:"0 2px 8px rgba(61,31,16,0.06)"
+      }}>
+        <div style={{width:46, height:46, borderRadius:12, flexShrink:0,
+          background:"#1877F2", display:"flex", alignItems:"center", justifyContent:"center"}}>
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+            <path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.27h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/>
+          </svg>
+        </div>
+        <div style={{flex:1}}>
+          <div style={{fontSize:14, fontWeight:500, color:c.warm}}>Facebook</div>
+          <div style={{fontSize:12, color:c.mastic, marginTop:2}}>Corte Pintadera</div>
+        </div>
+        <span style={{fontSize:16, color:c.hazel}}>↗</span>
+      </a>
+
+      {/* Cosa ci ha colpito */}
       <Card><CT text="Cosa ci ha colpito di più?"/>
         <Rule t="La pulizia e la cura degli spazi"/>
         <Rule t="Gli affreschi originali degli anni '50"/>
@@ -1290,6 +1417,7 @@ function Recensioni({go}) {
         <Rule t="La veranda e il giardinetto privato"/>
         <Rule t="La disponibilità dei proprietari" last/>
       </Card>
+
     </div>
   </div>;
 }
