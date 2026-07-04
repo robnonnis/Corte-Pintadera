@@ -244,6 +244,8 @@ it: {
     txt:"Una recensione o un tag sui social ci aiuta enormemente a far conoscere questo posto. Bastano due minuti — e per noi vale tantissimo.",
     lascia:"Lascia una recensione", googleSub:"Scrivi una recensione su Google Maps",
     presto:"Presto", prestoSub:"Pagina in arrivo — presto disponibile", social:"Seguici sui social",
+    bkEccez:"Eccezionale", bkSub:"1 recensione · Punteggio ospiti", bkLeggi:"Leggi le recensioni su Booking.com",
+    bkCatT:"Punteggi per categoria", bkCat:["Host","Servizi","Pulizia","Comfort","Qualità-prezzo","Posizione"],
     foto:<>Hai scattato una foto?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Taggaci e la condividiamo!</em></>,
     colpitoT:"Cosa ci ha colpito di più?",
     colpito:["La pulizia e la cura degli spazi","Gli affreschi originali degli anni '50","La posizione e i servizi vicini","La veranda e il giardinetto privato","La disponibilità dei proprietari"] },
@@ -385,6 +387,8 @@ en: {
     txt:"A review or a tag on social media helps us enormously to spread the word about this place. It takes two minutes — and it means the world to us.",
     lascia:"Leave a review", googleSub:"Write a review on Google Maps",
     presto:"Soon", prestoSub:"Page coming soon", social:"Follow us on social media",
+    bkEccez:"Exceptional", bkSub:"1 review · Guest score", bkLeggi:"Read the reviews on Booking.com",
+    bkCatT:"Category scores", bkCat:["Staff","Facilities","Cleanliness","Comfort","Value for money","Location"],
     foto:<>Took a photo?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Tag us and we'll share it!</em></>,
     colpitoT:"What impressed you most?",
     colpito:["The cleanliness and care of the spaces","The original 1950s frescoes","The location and nearby services","The veranda and private garden","The hosts' helpfulness"] },
@@ -526,6 +530,8 @@ es: {
     txt:"Una reseña o una mención en redes nos ayuda muchísimo a dar a conocer este lugar. Solo lleva dos minutos — y para nosotros vale muchísimo.",
     lascia:"Deja una reseña", googleSub:"Escribe una reseña en Google Maps",
     presto:"Pronto", prestoSub:"Página en camino — pronto disponible", social:"Síguenos en redes",
+    bkEccez:"Excepcional", bkSub:"1 reseña · Puntuación de huéspedes", bkLeggi:"Lee las reseñas en Booking.com",
+    bkCatT:"Puntuaciones por categoría", bkCat:["Personal","Servicios","Limpieza","Confort","Calidad-precio","Ubicación"],
     foto:<>¿Has hecho una foto?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>¡Etiquétanos y la compartimos!</em></>,
     colpitoT:"¿Qué es lo que más os ha gustado?",
     colpito:["La limpieza y el cuidado de los espacios","Los frescos originales de los años 50","La ubicación y los servicios cercanos","La veranda y el jardín privado","La disponibilidad de los propietarios"] },
@@ -667,6 +673,8 @@ fr: {
     txt:"Un avis ou un tag sur les réseaux nous aide énormément à faire connaître ce lieu. Deux minutes suffisent — et pour nous, cela compte beaucoup.",
     lascia:"Laissez un avis", googleSub:"Écrire un avis sur Google Maps",
     presto:"Bientôt", prestoSub:"Page à venir — bientôt disponible", social:"Suivez-nous sur les réseaux",
+    bkEccez:"Exceptionnel", bkSub:"1 avis · Note des voyageurs", bkLeggi:"Lire les avis sur Booking.com",
+    bkCatT:"Notes par catégorie", bkCat:["Personnel","Équipements","Propreté","Confort","Rapport qualité-prix","Emplacement"],
     foto:<>Vous avez pris une photo ?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Taguez-nous et nous la partagerons !</em></>,
     colpitoT:"Qu'est-ce qui vous a le plus marqué ?",
     colpito:["La propreté et le soin des espaces","Les fresques originales des années 50","L'emplacement et les services à proximité","La véranda et le petit jardin privé","La disponibilité des propriétaires"] },
@@ -808,6 +816,8 @@ de: {
     txt:"Eine Bewertung oder ein Tag in den sozialen Medien hilft uns enorm, diesen Ort bekannt zu machen. Es dauert nur zwei Minuten — und bedeutet uns sehr viel.",
     lascia:"Bewertung hinterlassen", googleSub:"Eine Bewertung auf Google Maps schreiben",
     presto:"Bald", prestoSub:"Seite in Kürze verfügbar", social:"Folgen Sie uns auf Social Media",
+    bkEccez:"Hervorragend", bkSub:"1 Bewertung · Gästebewertung", bkLeggi:"Bewertungen auf Booking.com lesen",
+    bkCatT:"Bewertung nach Kategorie", bkCat:["Personal","Ausstattung","Sauberkeit","Komfort","Preis-Leistung","Lage"],
     foto:<>Ein Foto gemacht?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Taggen Sie uns und wir teilen es!</em></>,
     colpitoT:"Was hat Ihnen am besten gefallen?",
     colpito:["Die Sauberkeit und Pflege der Räume","Die originalen Fresken aus den 50er Jahren","Die Lage und die nahen Dienste","Die Veranda und der private Garten","Die Hilfsbereitschaft der Gastgeber"] },
@@ -949,6 +959,8 @@ pt: {
     txt:"Uma avaliação ou uma menção nas redes ajuda-nos imenso a dar a conhecer este lugar. São só dois minutos — e para nós vale muitíssimo.",
     lascia:"Deixe uma avaliação", googleSub:"Escreva uma avaliação no Google Maps",
     presto:"Em breve", prestoSub:"Página a chegar — em breve disponível", social:"Sigam-nos nas redes",
+    bkEccez:"Excecional", bkSub:"1 avaliação · Pontuação dos hóspedes", bkLeggi:"Leia as avaliações no Booking.com",
+    bkCatT:"Pontuações por categoria", bkCat:["Pessoal","Comodidades","Limpeza","Conforto","Custo-benefício","Localização"],
     foto:<>Tiraram uma foto?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Marquem-nos e nós partilhamos!</em></>,
     colpitoT:"O que mais vos impressionou?",
     colpito:["A limpeza e o cuidado dos espaços","Os frescos originais dos anos 50","A localização e os serviços próximos","A varanda e o jardim privado","A disponibilidade dos proprietários"] },
@@ -2188,19 +2200,45 @@ function Recensioni({go}) {
         <div style={{display:"flex", gap:1}}>{"⭐⭐⭐⭐⭐".split("").map((st,i)=><span key={i} style={{fontSize:13}}>{st}</span>)}</div>
       </a>
 
-      <div style={{
+      <a href="https://www.booking.com/hotel/it/corte-pintadera.it.html#tab-reviews" target="_blank" rel="noopener noreferrer" style={{
         display:"flex", alignItems:"center", gap:14, padding:"16px 18px", marginBottom:10,
-        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}15`, opacity:0.6
+        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}25`, textDecoration:"none",
+        boxShadow:"0 2px 8px rgba(61,31,16,0.06)"
       }}>
         <div style={{width:46, height:46, borderRadius:12, flexShrink:0,
           background:"#003580", display:"flex", alignItems:"center", justifyContent:"center"}}>
           <span style={{fontSize:20, color:"white", fontWeight:800, fontFamily:"sans-serif"}}>B.</span>
         </div>
-        <div style={{flex:1}}>
-          <div style={{fontSize:14, fontWeight:500, color:c.warm}}>Booking.com</div>
-          <div style={{fontSize:12, color:c.mastic, marginTop:2}}>{RC.prestoSub}</div>
+        <div style={{flex:1, minWidth:0}}>
+          <div style={{display:"flex", alignItems:"center", gap:8, flexWrap:"wrap"}}>
+            <span style={{fontSize:14, fontWeight:500, color:c.warm}}>Booking.com</span>
+            <span style={{fontSize:10, background:"#003580", color:"white", borderRadius:8, padding:"2px 8px", fontWeight:600, letterSpacing:"0.3px"}}>{RC.bkEccez}</span>
+          </div>
+          <div style={{fontSize:12, color:c.mastic, marginTop:3}}>{RC.bkLeggi}</div>
         </div>
-        <span style={{fontSize:11, background:c.sand, color:c.mastic, borderRadius:8, padding:"3px 9px"}}>{RC.presto}</span>
+        <div style={{display:"flex", flexDirection:"column", alignItems:"center", flexShrink:0}}>
+          <div style={{width:38, height:38, borderRadius:"10px 10px 10px 0", background:"#003580",
+            display:"flex", alignItems:"center", justifyContent:"center",
+            fontFamily:"'Jost',sans-serif", fontSize:17, fontWeight:700, color:"white"}}>10</div>
+        </div>
+      </a>
+
+      <div style={{background:c.white, borderRadius:16, border:`1px solid ${c.hazel}20`,
+        padding:"14px 16px", marginBottom:10}}>
+        <div style={{fontSize:9, letterSpacing:"2px", textTransform:"uppercase", color:c.mastic, marginBottom:10}}>{RC.bkCatT}</div>
+        <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"8px 16px"}}>
+          {RC.bkCat.map((cat,i)=>(
+            <div key={i} style={{display:"flex", alignItems:"center", gap:8}}>
+              <div style={{flex:1, minWidth:0}}>
+                <div style={{fontSize:11.5, color:c.warm, marginBottom:3}}>{cat}</div>
+                <div style={{height:4, background:c.sand, borderRadius:2, overflow:"hidden"}}>
+                  <div style={{width:"100%", height:"100%", background:"#003580", borderRadius:2}}/>
+                </div>
+              </div>
+              <span style={{fontSize:12, fontWeight:600, color:"#003580", flexShrink:0}}>10</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div style={{
