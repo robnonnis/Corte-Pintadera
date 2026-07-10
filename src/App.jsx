@@ -255,8 +255,9 @@ it: {
     circT:"🚗 Circondario — ~15 min", circSub:"Lun–Sab 8:30–21:30 · Dom 8:30–14:00/16:30–21:00", vicinoV:"vicino",
     tip:<>💡 La <strong style={{color:c.sand}}>COOP</strong> è la più completa. Il <strong style={{color:c.sand}}>MD</strong> è ideale per rifornimenti con l'orario continuato.</> },
   faq:{ title:"Domande frequenti", raccT:"Raccolta differenziata",
+    raccTxt:"I giorni di raccolta per ogni tipo di rifiuto sono indicati nel calendario ufficiale COSIR, sempre aggiornato. Trovate i sacchetti in casa; il calendario è affisso anche in cucina.",
     esp:<><strong style={{color:c.sand}}>Esposizione:</strong> entro le 6:00 del mattino o la sera precedente dopo le 20:00. Buste nere vietate.<br/>Sito ufficiale: <a href="https://uta.cosir.org" target="_blank" rel="noreferrer" style={{color:c.hazelL}}>uta.cosir.org</a></>,
-    pdf:"Calendario COSIR (PDF ufficiale)", climT:"❄️ Climatizzatori",
+    pdf:"Apri il calendario ufficiale COSIR", climT:"❄️ Climatizzatori",
     climTxt:"Controllabili via app Wi-Fi o telecomando. In camera il telecomando è nel cassetto del comodino.",
     emgT:"🚨 Emergenze", emgGen:"🚨 Emergenze generali", amb:"🚑 Ambulanza", vf:"🔥 Vigili del fuoco",
     guardia:"🩺 Guardia Medica Uta", guardiaSub:"Via Santa Giusta 85 · Feriali 20:00–08:00 · Festivi h24",
@@ -398,8 +399,9 @@ en: {
     circT:"🚗 Nearby — ~15 min", circSub:"Mon–Sat 8:30–21:30 · Sun 8:30–14:00/16:30–21:00", vicinoV:"nearby",
     tip:<>💡 <strong style={{color:c.sand}}>COOP</strong> is the most complete. <strong style={{color:c.sand}}>MD</strong> is ideal for stocking up, open non-stop.</> },
   faq:{ title:"Frequently asked questions", raccT:"Waste sorting & recycling",
+    raccTxt:"The collection days for each type of waste are listed in the official COSIR calendar, which is always up to date. You'll find the bags in the apartment; the calendar is also posted in the kitchen.",
     esp:<><strong style={{color:c.sand}}>Put bins out:</strong> by 6:00 am, or the evening before after 8:00 pm. Black bags are not allowed.<br/>Official site: <a href="https://uta.cosir.org" target="_blank" rel="noreferrer" style={{color:c.hazelL}}>uta.cosir.org</a></>,
-    pdf:"COSIR calendar (official PDF)", climT:"❄️ Air conditioners",
+    pdf:"Open the official COSIR calendar", climT:"❄️ Air conditioners",
     climTxt:"Controlled via Wi-Fi app or remote control. In the bedroom, the remote is in the bedside table drawer.",
     emgT:"🚨 Emergencies", emgGen:"🚨 General emergencies", amb:"🚑 Ambulance", vf:"🔥 Fire brigade",
     guardia:"🩺 Out-of-hours doctor Uta", guardiaSub:"Via Santa Giusta 85 · Weekdays 8:00 pm–8:00 am · Holidays 24h",
@@ -541,8 +543,9 @@ es: {
     circT:"🚗 Alrededores — ~15 min", circSub:"Lun–Sáb 8:30–21:30 · Dom 8:30–14:00/16:30–21:00", vicinoV:"cerca",
     tip:<>💡 El <strong style={{color:c.sand}}>COOP</strong> es el más completo. El <strong style={{color:c.sand}}>MD</strong> es ideal para abastecerse, con horario continuado.</> },
   faq:{ title:"Preguntas frecuentes", raccT:"Recogida selectiva",
+    raccTxt:"Los días de recogida de cada tipo de residuo están indicados en el calendario oficial de COSIR, siempre actualizado. Encontraréis las bolsas en la casa; el calendario también está colgado en la cocina.",
     esp:<><strong style={{color:c.sand}}>Sacar la basura:</strong> antes de las 6:00 de la mañana o la noche anterior después de las 20:00. Bolsas negras prohibidas.<br/>Web oficial: <a href="https://uta.cosir.org" target="_blank" rel="noreferrer" style={{color:c.hazelL}}>uta.cosir.org</a></>,
-    pdf:"Calendario COSIR (PDF oficial)", climT:"❄️ Aire acondicionado",
+    pdf:"Abre el calendario oficial de COSIR", climT:"❄️ Aire acondicionado",
     climTxt:"Se controla vía app Wi-Fi o mando a distancia. En el dormitorio, el mando está en el cajón de la mesita.",
     emgT:"🚨 Emergencias", emgGen:"🚨 Emergencias generales", amb:"🚑 Ambulancia", vf:"🔥 Bomberos",
     guardia:"🩺 Médico de guardia Uta", guardiaSub:"Via Santa Giusta 85 · Laborables 20:00–08:00 · Festivos 24h",
@@ -684,8 +687,9 @@ fr: {
     circT:"🚗 Alentours — ~15 min", circSub:"Lun–Sam 8h30–21h30 · Dim 8h30–14h00/16h30–21h00", vicinoV:"proche",
     tip:<>💡 Le <strong style={{color:c.sand}}>COOP</strong> est le plus complet. Le <strong style={{color:c.sand}}>MD</strong> est idéal pour les provisions, ouvert sans interruption.</> },
   faq:{ title:"Questions fréquentes", raccT:"Tri sélectif",
+    raccTxt:"Les jours de collecte pour chaque type de déchet sont indiqués dans le calendrier officiel COSIR, toujours à jour. Vous trouverez les sacs dans le logement ; le calendrier est aussi affiché dans la cuisine.",
     esp:<><strong style={{color:c.sand}}>Sortie des déchets :</strong> avant 6h00 du matin ou la veille au soir après 20h00. Sacs noirs interdits.<br/>Site officiel : <a href="https://uta.cosir.org" target="_blank" rel="noreferrer" style={{color:c.hazelL}}>uta.cosir.org</a></>,
-    pdf:"Calendrier COSIR (PDF officiel)", climT:"❄️ Climatiseurs",
+    pdf:"Ouvrir le calendrier officiel COSIR", climT:"❄️ Climatiseurs",
     climTxt:"Contrôlables via app Wi-Fi ou télécommande. Dans la chambre, la télécommande est dans le tiroir de la table de chevet.",
     emgT:"🚨 Urgences", emgGen:"🚨 Urgences générales", amb:"🚑 Ambulance", vf:"🔥 Pompiers",
     guardia:"🩺 Médecin de garde Uta", guardiaSub:"Via Santa Giusta 85 · Semaine 20h00–08h00 · Fériés 24h/24",
@@ -827,8 +831,9 @@ de: {
     circT:"🚗 Umgebung — ~15 Min", circSub:"Mo–Sa 8:30–21:30 · So 8:30–14:00/16:30–21:00", vicinoV:"nah",
     tip:<>💡 Der <strong style={{color:c.sand}}>COOP</strong> hat die größte Auswahl. Der <strong style={{color:c.sand}}>MD</strong> ist ideal zum Auffüllen, durchgehend geöffnet.</> },
   faq:{ title:"Häufige Fragen", raccT:"Mülltrennung",
+    raccTxt:"Die Abholtage für die einzelnen Abfallarten stehen im offiziellen COSIR-Kalender, der immer aktuell ist. Die Beutel finden Sie in der Wohnung; der Kalender hängt auch in der Küche aus.",
     esp:<><strong style={{color:c.sand}}>Bereitstellung:</strong> bis 6:00 Uhr morgens oder am Vorabend nach 20:00 Uhr. Schwarze Säcke verboten.<br/>Offizielle Website: <a href="https://uta.cosir.org" target="_blank" rel="noreferrer" style={{color:c.hazelL}}>uta.cosir.org</a></>,
-    pdf:"COSIR-Kalender (offizielles PDF)", climT:"❄️ Klimaanlagen",
+    pdf:"Offiziellen COSIR-Kalender öffnen", climT:"❄️ Klimaanlagen",
     climTxt:"Steuerbar per WLAN-App oder Fernbedienung. Im Schlafzimmer liegt die Fernbedienung in der Nachttischschublade.",
     emgT:"🚨 Notfälle", emgGen:"🚨 Allgemeine Notfälle", amb:"🚑 Krankenwagen", vf:"🔥 Feuerwehr",
     guardia:"🩺 Bereitschaftsdienst Uta", guardiaSub:"Via Santa Giusta 85 · Werktags 20:00–08:00 · Feiertags 24h",
@@ -970,8 +975,9 @@ pt: {
     circT:"🚗 Arredores — ~15 min", circSub:"Seg–Sáb 8:30–21:30 · Dom 8:30–14:00/16:30–21:00", vicinoV:"perto",
     tip:<>💡 O <strong style={{color:c.sand}}>COOP</strong> é o mais completo. O <strong style={{color:c.sand}}>MD</strong> é ideal para abastecer, com horário contínuo.</> },
   faq:{ title:"Perguntas frequentes", raccT:"Recolha seletiva",
+    raccTxt:"Os dias de recolha de cada tipo de resíduo estão indicados no calendário oficial COSIR, sempre atualizado. Encontrará os sacos na casa; o calendário está também afixado na cozinha.",
     esp:<><strong style={{color:c.sand}}>Colocar o lixo:</strong> até às 6:00 da manhã ou na véspera após as 20:00. Sacos pretos proibidos.<br/>Site oficial: <a href="https://uta.cosir.org" target="_blank" rel="noreferrer" style={{color:c.hazelL}}>uta.cosir.org</a></>,
-    pdf:"Calendário COSIR (PDF oficial)", climT:"❄️ Ar condicionado",
+    pdf:"Abrir o calendário oficial COSIR", climT:"❄️ Ar condicionado",
     climTxt:"Controláveis via app Wi-Fi ou comando. No quarto, o comando está na gaveta da mesa de cabeceira.",
     emgT:"🚨 Emergências", emgGen:"🚨 Emergências gerais", amb:"🚑 Ambulância", vf:"🔥 Bombeiros",
     guardia:"🩺 Médico de urgência Uta", guardiaSub:"Via Santa Giusta 85 · Dias úteis 20:00–08:00 · Feriados 24h",
@@ -1300,15 +1306,6 @@ const EVENTI_FISSI = [
   {mese:9,giorno:9,titolo:M("Festa di Santa Maria (fine)","Feast of Santa Maria (end)","Fiesta de Santa Maria (fin)","Fête de Santa Maria (fin)","Fest der Santa Maria (Ende)","Festa de Santa Maria (fim)"),luogo:"Uta",emoji:"🎆"},
   {mese:11,giorno:21,titolo:M("Maratonina di Uta","Uta Half-Marathon","Media Maratón de Uta","Semi-marathon d'Uta","Halbmarathon von Uta","Meia Maratona de Uta"),luogo:"Uta",emoji:"🏃"},
   {mese:12,giorno:13,titolo:M("Santa Lucia","Santa Lucia","Santa Lucía","Sainte-Lucie","Santa Lucia","Santa Luzia"),luogo:"Uta",emoji:"🕯️"},
-];
-
-// ── DATI RIFIUTI ─────────────────────────────────
-const RIFIUTI = [
-  {n:M("🟢 Umido","🟢 Food waste","🟢 Orgánico","🟢 Déchets alimentaires","🟢 Biomüll","🟢 Orgânico"), g:M("Giovedì · Venerdì · Sabato","Thursday · Friday · Saturday","Jueves · Viernes · Sábado","Jeudi · Vendredi · Samedi","Donnerstag · Freitag · Samstag","Quinta · Sexta · Sábado"), s:M("sacchetto marrone","brown bag","bolsa marrón","sac marron","brauner Beutel","saco castanho")},
-  {n:M("🟡 Plastica","🟡 Plastic","🟡 Plástico","🟡 Plastique","🟡 Plastik","🟡 Plástico"), g:M("Giovedì · Sabato","Thursday · Saturday","Jueves · Sábado","Jeudi · Samedi","Donnerstag · Samstag","Quinta · Sábado"), s:M("sacchetto giallo","yellow bag","bolsa amarilla","sac jaune","gelber Beutel","saco amarelo")},
-  {n:M("⚫ Secco","⚫ Non-recyclable","⚫ Resto","⚫ Déchets résiduels","⚫ Restmüll","⚫ Indiferenciado"), g:M("Venerdì","Friday","Viernes","Vendredi","Freitag","Sexta"), s:M("sacchetto nero","black bag","bolsa negra","sac noir","schwarzer Beutel","saco preto")},
-  {n:M("🔵 Carta e Cartone","🔵 Paper & Cardboard","🔵 Papel y Cartón","🔵 Papier & Carton","🔵 Papier & Karton","🔵 Papel e Cartão"), g:M("Martedì","Tuesday","Martes","Mardi","Dienstag","Terça"), s:M("sacchetto blu","blue bag","bolsa azul","sac bleu","blauer Beutel","saco azul")},
-  {n:M("♻️ Vetro e Alluminio","♻️ Glass & Aluminium","♻️ Vidrio y Aluminio","♻️ Verre & Aluminium","♻️ Glas & Aluminium","♻️ Vidro e Alumínio"), g:M("Mercoledì — senza busta","Wednesday — no bag","Miércoles — sin bolsa","Mercredi — sans sac","Mittwoch — ohne Beutel","Quarta — sem saco"), s:M("mastello","bin","cubo","bac","Behälter","balde")},
 ];
 
 // ══════════════════════════════════════════════
@@ -2344,16 +2341,21 @@ function FAQ({go}) {
     <PageHead title={F.title} back={()=>go("home")} icon={<Ic.faq/>}/>
     <div style={s.content}>
       <Card><CT icon={<Ic.trash/>} text={F.raccT}/>
-        <div style={{...s.darkBox,marginTop:4}}>
-          {RIFIUTI.map((r,i)=>(
-            <div key={i} style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"10px 0",borderBottom:i<RIFIUTI.length-1?`1px solid rgba(255,255,255,0.1)`:"none"}}>
-              <div><div style={{fontSize:13,color:c.cream,fontWeight:400}}>{tx(r.n)}</div><div style={{fontSize:11,color:"rgba(245,240,232,0.55)",marginTop:2}}>{tx(r.g)}</div></div>
-              <span style={{fontSize:11,color:c.hazel,background:"rgba(206,173,133,0.2)",borderRadius:8,padding:"3px 8px"}}>{tx(r.s)}</span>
-            </div>
-          ))}
-        </div>
-        <div style={{...s.darkBox,display:"flex",gap:10,marginTop:10,marginBottom:0}}><span>⚠️</span><p style={{fontSize:12,color:"rgba(245,240,232,0.8)",lineHeight:1.6,margin:0}}>{F.esp}</p></div>
-        <a href="https://uta.cosir.org/wp-content/uploads/2026/03/20260320-Calendario-Uta-Domestiche.pdf" target="_blank" rel="noreferrer" style={s.pdfBtn}><Ic.docW/> {F.pdf}</a>
+        <p style={{fontSize:14,lineHeight:1.75,color:c.mastic,marginBottom:10}}>{F.raccTxt}</p>
+        <a href="https://uta.cosir.org/wp-content/uploads/2026/03/20260320-Calendario-Uta-Domestiche.pdf" target="_blank" rel="noreferrer" style={{
+          display:"flex", alignItems:"center", gap:12, textDecoration:"none",
+          background:`linear-gradient(135deg, #2a6a3a, #1e5230)`, borderRadius:14,
+          padding:"14px 16px", marginBottom:10
+        }}>
+          <div style={{width:40, height:40, borderRadius:10, flexShrink:0, background:"rgba(255,255,255,0.15)",
+            display:"flex", alignItems:"center", justifyContent:"center", fontSize:20}}>♻️</div>
+          <div style={{flex:1}}>
+            <div style={{fontSize:14, color:"white", fontWeight:500}}>{F.pdf}</div>
+            <div style={{fontSize:11, color:"rgba(255,255,255,0.6)", marginTop:2}}>uta.cosir.org · PDF</div>
+          </div>
+          <span style={{fontSize:16, color:"rgba(255,255,255,0.7)"}}>↗</span>
+        </a>
+        <div style={{...s.darkBox,display:"flex",gap:10,marginTop:0,marginBottom:0}}><span>⚠️</span><p style={{fontSize:12,color:"rgba(245,240,232,0.8)",lineHeight:1.6,margin:0}}>{F.esp}</p></div>
       </Card>
       <Card><CT text={F.climT}/><p style={{fontSize:14,lineHeight:1.75,color:c.mastic,margin:0}}>{F.climTxt}</p></Card>
       <Card><CT text={F.emgT}/>
