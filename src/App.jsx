@@ -1312,6 +1312,73 @@ const EVENTI_FISSI = [
 // ── COMPONENTI SCHERMATE ──────────────────────
 // ══════════════════════════════════════════════
 
+// ── AURA Beach Advisor (consiglio spiagge in base al vento) ──
+const AURA = {
+  title: M("AURA · quale spiaggia oggi?","AURA · which beach today?","AURA · ¿qué playa hoy?","AURA · quelle plage aujourd'hui ?","AURA · welcher Strand heute?","AURA · que praia hoje?"),
+  desc: M(
+    "In Sardegna la spiaggia giusta dipende dal vento. AURA analizza ogni giorno oltre 300 spiagge combinando vento, onde e meteo, e assegna a ciascuna un punteggio da 0 a 10: così scegli al volo dove il mare sarà più bello e riparato.",
+    "In Sardinia the right beach depends on the wind. Every day AURA analyses over 300 beaches, combining wind, waves and weather, and gives each one a score from 0 to 10 — so you can instantly pick where the sea will be calmest and most sheltered.",
+    "En Cerdeña la playa ideal depende del viento. Cada día AURA analiza más de 300 playas combinando viento, olas y meteorología, y asigna a cada una una puntuación de 0 a 10: así eliges al instante dónde el mar estará más bonito y resguardado.",
+    "En Sardaigne, la bonne plage dépend du vent. Chaque jour, AURA analyse plus de 300 plages en combinant vent, vagues et météo, et attribue à chacune une note de 0 à 10 : vous choisissez ainsi en un instant où la mer sera la plus belle et abritée.",
+    "Auf Sardinien hängt der richtige Strand vom Wind ab. AURA analysiert täglich über 300 Strände und kombiniert Wind, Wellen und Wetter zu einer Bewertung von 0 bis 10 — so wählen Sie sofort, wo das Meer am schönsten und geschütztesten ist.",
+    "Na Sardenha, a praia certa depende do vento. Todos os dias a AURA analisa mais de 300 praias combinando vento, ondas e meteorologia, e atribui a cada uma uma pontuação de 0 a 10: assim escolhe num instante onde o mar estará mais bonito e abrigado."
+  ),
+  web: M("Apri sul web","Open on the web","Abrir en la web","Ouvrir sur le web","Im Web öffnen","Abrir na web"),
+  app: M("Scarica l'app","Get the app","Descarga la app","Télécharger l'app","App laden","Baixar a app"),
+  tip: M("Consigliata per organizzare le giornate al mare","Recommended for planning your beach days","Recomendada para organizar tus días de playa","Recommandée pour organiser vos journées à la plage","Empfohlen für die Planung Ihrer Strandtage","Recomendada para organizar os seus dias de praia"),
+};
+
+function AuraBox() {
+  const A = AURA;
+  const APP_STORE = "https://apps.apple.com/it/app/aura-beach-advisor/id6768235580";
+  const PLAY_STORE = "https://play.google.com/store/apps/details?id=app.aurabeach.app";
+  const WEB = "https://aurabeach.app/";
+  // Rileva il sistema operativo per mandare l'utente allo store giusto
+  const [appLink] = useState(() => {
+    try {
+      const ua = (navigator.userAgent || navigator.vendor || "").toLowerCase();
+      if (/iphone|ipad|ipod/.test(ua) || (/mac/.test(ua) && "ontouchend" in document)) return APP_STORE;
+      if (/android/.test(ua)) return PLAY_STORE;
+    } catch(e) {}
+    return WEB; // desktop o rilevamento fallito → sito (smista da sé allo store)
+  });
+  return (
+    <div style={{
+      background:"linear-gradient(160deg, #0e3a4a, #12556a)", borderRadius:18,
+      padding:"18px 18px 16px", marginBottom:16, position:"relative", overflow:"hidden"
+    }}>
+      <div style={{position:"absolute",top:-30,right:-30,width:130,height:130,
+        background:"radial-gradient(circle, rgba(74,184,200,0.35), transparent 70%)",pointerEvents:"none"}}/>
+      <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:12}}>
+        <div style={{width:44, height:44, borderRadius:12, flexShrink:0,
+          background:"rgba(255,255,255,0.14)", display:"flex", alignItems:"center", justifyContent:"center", fontSize:24}}>🏖️</div>
+        <div style={{flex:1, minWidth:0}}>
+          <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:19, fontWeight:400, color:"white", lineHeight:1.2}}>{tx(A.title)}</div>
+          <div style={{fontSize:10, color:"#7fd4e2", letterSpacing:"1px", marginTop:2}}>{tx(A.tip)}</div>
+        </div>
+      </div>
+      <p style={{fontSize:12.5, color:"rgba(245,250,252,0.82)", lineHeight:1.7, margin:"0 0 14px"}}>{tx(A.desc)}</p>
+      <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:8}}>
+        <a href={WEB} target="_blank" rel="noopener noreferrer" style={{
+          display:"flex", alignItems:"center", justifyContent:"center", gap:7,
+          background:"rgba(255,255,255,0.12)", border:"1px solid rgba(255,255,255,0.2)",
+          borderRadius:12, padding:"11px 10px", textDecoration:"none"
+        }}>
+          <span style={{fontSize:15}}>🌐</span>
+          <span style={{fontSize:12.5, color:"white", fontWeight:500}}>{tx(A.web)}</span>
+        </a>
+        <a href={appLink} target="_blank" rel="noopener noreferrer" style={{
+          display:"flex", alignItems:"center", justifyContent:"center", gap:7,
+          background:"white", borderRadius:12, padding:"11px 10px", textDecoration:"none"
+        }}>
+          <span style={{fontSize:15}}>📲</span>
+          <span style={{fontSize:12.5, color:"#0e3a4a", fontWeight:600}}>{tx(A.app)}</span>
+        </a>
+      </div>
+    </div>
+  );
+}
+
 function PH({go, lang, setLang}) {
   const H = L.home;
   return (
@@ -1895,6 +1962,8 @@ function Esplorare({go}) {
         </div>
       </div>
 
+      <AuraBox/>
+
       <div style={{display:"flex", flexDirection:"column", gap:12}}>
         {TABS_DATA.map(({id,label,emoji,color,accent,tagline,data})=>(
           <button key={id} onClick={()=>go(`esplorare_${id}`)} style={{
@@ -2395,6 +2464,7 @@ function EsploraCategoria({tabId, go}) {
       </div>
 
       <div style={s.content}>
+        {tabId === "natura" && <AuraBox/>}
         {t.data.map((p,i)=>(
           <a key={i} href={p.link} target="_blank" rel="noreferrer" style={{
             display:"block", textDecoration:"none",
