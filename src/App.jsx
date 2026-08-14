@@ -246,9 +246,11 @@ it: {
     grazie:<>Grazie per aver scelto<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Una recensione o un tag sui social ci aiuta enormemente a far conoscere questo posto. Bastano due minuti — e per noi vale tantissimo.",
     lascia:"Lascia una recensione", googleSub:"Scrivi una recensione su Google Maps",
-    presto:"Presto", prestoSub:"Pagina in arrivo — presto disponibile", social:"Seguici sui social",
-    bkEccez:"Eccezionale", bkSub:"1 recensione · Punteggio ospiti", bkLeggi:"Leggi le recensioni su Booking.com",
+    social:"Seguici sui social",
+    bkEccez:"Eccezionale", bkSub:"2 recensioni · Punteggio ospiti",
     bkCatT:"Punteggi per categoria", bkCat:["Host","Servizi","Pulizia","Comfort","Qualità-prezzo","Posizione"],
+    abSub:"3 recensioni · Punteggio ospiti",
+    abCat:["Pulizia","Precisione","Check-in","Comunicazione","Posizione"],
     foto:<>Hai scattato una foto?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Taggaci e la condividiamo!</em></>,
     colpitoT:"Cosa ci ha colpito di più?",
     colpito:["La pulizia e la cura degli spazi","Gli affreschi originali degli anni '50","La posizione e i servizi vicini","La veranda e il giardinetto privato","La disponibilità dei proprietari"] },
@@ -393,9 +395,11 @@ en: {
     grazie:<>Thank you for choosing<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"A review or a tag on social media helps us enormously to spread the word about this place. It takes two minutes — and it means the world to us.",
     lascia:"Leave a review", googleSub:"Write a review on Google Maps",
-    presto:"Soon", prestoSub:"Page coming soon", social:"Follow us on social media",
-    bkEccez:"Exceptional", bkSub:"1 review · Guest score", bkLeggi:"Read the reviews on Booking.com",
+    social:"Follow us on social media",
+    bkEccez:"Exceptional", bkSub:"2 reviews · Guest score",
     bkCatT:"Category scores", bkCat:["Staff","Facilities","Cleanliness","Comfort","Value for money","Location"],
+    abSub:"3 reviews · Guest score",
+    abCat:["Cleanliness","Accuracy","Check-in","Communication","Location"],
     foto:<>Took a photo?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Tag us and we'll share it!</em></>,
     colpitoT:"What impressed you most?",
     colpito:["The cleanliness and care of the spaces","The original 1950s frescoes","The location and nearby services","The veranda and private garden","The hosts' helpfulness"] },
@@ -540,9 +544,11 @@ es: {
     grazie:<>Gracias por elegir<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Una reseña o una mención en redes nos ayuda muchísimo a dar a conocer este lugar. Solo lleva dos minutos — y para nosotros vale muchísimo.",
     lascia:"Deja una reseña", googleSub:"Escribe una reseña en Google Maps",
-    presto:"Pronto", prestoSub:"Página en camino — pronto disponible", social:"Síguenos en redes",
-    bkEccez:"Excepcional", bkSub:"1 reseña · Puntuación de huéspedes", bkLeggi:"Lee las reseñas en Booking.com",
+    social:"Síguenos en redes",
+    bkEccez:"Excepcional", bkSub:"2 reseñas · Puntuación de huéspedes",
     bkCatT:"Puntuaciones por categoría", bkCat:["Personal","Servicios","Limpieza","Confort","Calidad-precio","Ubicación"],
+    abSub:"3 reseñas · Puntuación de huéspedes",
+    abCat:["Limpieza","Precisión","Check-in","Comunicación","Ubicación"],
     foto:<>¿Has hecho una foto?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>¡Etiquétanos y la compartimos!</em></>,
     colpitoT:"¿Qué es lo que más os ha gustado?",
     colpito:["La limpieza y el cuidado de los espacios","Los frescos originales de los años 50","La ubicación y los servicios cercanos","La veranda y el jardín privado","La disponibilidad de los propietarios"] },
@@ -687,9 +693,11 @@ fr: {
     grazie:<>Merci d'avoir choisi<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Un avis ou un tag sur les réseaux nous aide énormément à faire connaître ce lieu. Deux minutes suffisent — et pour nous, cela compte beaucoup.",
     lascia:"Laissez un avis", googleSub:"Écrire un avis sur Google Maps",
-    presto:"Bientôt", prestoSub:"Page à venir — bientôt disponible", social:"Suivez-nous sur les réseaux",
-    bkEccez:"Exceptionnel", bkSub:"1 avis · Note des voyageurs", bkLeggi:"Lire les avis sur Booking.com",
+    social:"Suivez-nous sur les réseaux",
+    bkEccez:"Exceptionnel", bkSub:"2 avis · Note des voyageurs",
     bkCatT:"Notes par catégorie", bkCat:["Personnel","Équipements","Propreté","Confort","Rapport qualité-prix","Emplacement"],
+    abSub:"3 avis · Note des voyageurs",
+    abCat:["Propreté","Précision","Arrivée","Communication","Emplacement"],
     foto:<>Vous avez pris une photo ?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Taguez-nous et nous la partagerons !</em></>,
     colpitoT:"Qu'est-ce qui vous a le plus marqué ?",
     colpito:["La propreté et le soin des espaces","Les fresques originales des années 50","L'emplacement et les services à proximité","La véranda et le petit jardin privé","La disponibilité des propriétaires"] },
@@ -834,9 +842,11 @@ de: {
     grazie:<>Danke, dass Sie sich für<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em> entschieden haben</>,
     txt:"Eine Bewertung oder ein Tag in den sozialen Medien hilft uns enorm, diesen Ort bekannt zu machen. Es dauert nur zwei Minuten — und bedeutet uns sehr viel.",
     lascia:"Bewertung hinterlassen", googleSub:"Eine Bewertung auf Google Maps schreiben",
-    presto:"Bald", prestoSub:"Seite in Kürze verfügbar", social:"Folgen Sie uns auf Social Media",
-    bkEccez:"Hervorragend", bkSub:"1 Bewertung · Gästebewertung", bkLeggi:"Bewertungen auf Booking.com lesen",
+    social:"Folgen Sie uns auf Social Media",
+    bkEccez:"Hervorragend", bkSub:"2 Bewertungen · Gästebewertung",
     bkCatT:"Bewertung nach Kategorie", bkCat:["Personal","Ausstattung","Sauberkeit","Komfort","Preis-Leistung","Lage"],
+    abSub:"3 Bewertungen · Gästebewertung",
+    abCat:["Sauberkeit","Genauigkeit","Check-in","Kommunikation","Lage"],
     foto:<>Ein Foto gemacht?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Taggen Sie uns und wir teilen es!</em></>,
     colpitoT:"Was hat Ihnen am besten gefallen?",
     colpito:["Die Sauberkeit und Pflege der Räume","Die originalen Fresken aus den 50er Jahren","Die Lage und die nahen Dienste","Die Veranda und der private Garten","Die Hilfsbereitschaft der Gastgeber"] },
@@ -981,9 +991,11 @@ pt: {
     grazie:<>Obrigado por escolherem<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Uma avaliação ou uma menção nas redes ajuda-nos imenso a dar a conhecer este lugar. São só dois minutos — e para nós vale muitíssimo.",
     lascia:"Deixe uma avaliação", googleSub:"Escreva uma avaliação no Google Maps",
-    presto:"Em breve", prestoSub:"Página a chegar — em breve disponível", social:"Sigam-nos nas redes",
-    bkEccez:"Excecional", bkSub:"1 avaliação · Pontuação dos hóspedes", bkLeggi:"Leia as avaliações no Booking.com",
+    social:"Sigam-nos nas redes",
+    bkEccez:"Excecional", bkSub:"2 avaliações · Pontuação dos hóspedes",
     bkCatT:"Pontuações por categoria", bkCat:["Pessoal","Comodidades","Limpeza","Conforto","Custo-benefício","Localização"],
+    abSub:"3 avaliações · Pontuação dos hóspedes",
+    abCat:["Limpeza","Precisão","Check-in","Comunicação","Localização"],
     foto:<>Tiraram uma foto?<br/><em style={{fontStyle:"italic", color:"#CEAD85"}}>Marquem-nos e nós partilhamos!</em></>,
     colpitoT:"O que mais vos impressionou?",
     colpito:["A limpeza e o cuidado dos espaços","Os frescos originais dos anos 50","A localização e os serviços próximos","A varanda e o jardim privado","A disponibilidade dos proprietários"] },
@@ -2323,7 +2335,7 @@ function Recensioni({go}) {
             <span style={{fontSize:14, fontWeight:500, color:c.warm}}>Booking.com</span>
             <span style={{fontSize:10, background:"#003580", color:"white", borderRadius:8, padding:"2px 8px", fontWeight:600, letterSpacing:"0.3px"}}>{RC.bkEccez}</span>
           </div>
-          <div style={{fontSize:12, color:c.mastic, marginTop:3}}>{RC.bkLeggi}</div>
+          <div style={{fontSize:12, color:c.mastic, marginTop:3}}>{RC.bkSub}</div>
         </div>
         <div style={{display:"flex", flexDirection:"column", alignItems:"center", flexShrink:0}}>
           <div style={{width:38, height:38, borderRadius:"10px 10px 10px 0", background:"#003580",
@@ -2332,8 +2344,15 @@ function Recensioni({go}) {
         </div>
       </a>
 
+      <div style={{background:c.white, borderRadius:16, border:`1px solid ${c.hazel}30`, padding:"14px 16px", marginBottom:10}}>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:15, fontStyle:"italic", color:c.warm, lineHeight:1.55, marginBottom:6}}>
+          "The location was perfect, very central if you want to see a lot of different places in the south of Sardegna! The house was very clean and everything was new since they just renovated. The hosts were amazing, really kind and understanding."
+        </div>
+        <div style={{fontSize:11, color:c.mastic}}>— Fabrizio · Booking.com · luglio 2026</div>
+      </div>
+
       <div style={{background:c.white, borderRadius:16, border:`1px solid ${c.hazel}20`,
-        padding:"14px 16px", marginBottom:10}}>
+        padding:"14px 16px", marginBottom:20}}>
         <div style={{fontSize:9, letterSpacing:"2px", textTransform:"uppercase", color:c.mastic, marginBottom:10}}>{RC.bkCatT}</div>
         <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"8px 16px"}}>
           {RC.bkCat.map((cat,i)=>(
@@ -2350,9 +2369,10 @@ function Recensioni({go}) {
         </div>
       </div>
 
-      <div style={{
-        display:"flex", alignItems:"center", gap:14, padding:"16px 18px", marginBottom:20,
-        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}15`, opacity:0.6
+      <a href="https://www.airbnb.it/rooms/1716862452089388498" target="_blank" rel="noopener noreferrer" style={{
+        display:"flex", alignItems:"center", gap:14, padding:"16px 18px", marginBottom:10,
+        background:c.white, borderRadius:16, border:`1px solid ${c.hazel}25`, textDecoration:"none",
+        boxShadow:"0 2px 8px rgba(61,31,16,0.06)"
       }}>
         <div style={{width:46, height:46, borderRadius:12, flexShrink:0,
           background:"#FF5A5F", display:"flex", alignItems:"center", justifyContent:"center"}}>
@@ -2360,11 +2380,53 @@ function Recensioni({go}) {
             <path d="M16 1C7.8 1 1 7.8 1 16s6.8 15 15 15 15-6.8 15-15S24.2 1 16 1zm0 5.5c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm6.5 14.5c-.3.8-1.5 2.5-4 3.8-.5.3-1 .4-1.5.4-.4 0-.9-.1-1.3-.3-1.3-.6-2.4-1.7-3.1-2.9-.4-.7-.6-1.4-.5-2.1.1-1.3.9-2.4 2-3 .6-.3 1.2-.5 1.9-.5.6 0 1.2.2 1.8.5.6-.3 1.2-.5 1.8-.5.7 0 1.3.2 1.9.5 1.1.6 1.9 1.7 2 3 .1.7-.1 1.4-.5 2.1h-.5z"/>
           </svg>
         </div>
-        <div style={{flex:1}}>
+        <div style={{flex:1, minWidth:0}}>
           <div style={{fontSize:14, fontWeight:500, color:c.warm}}>Airbnb</div>
-          <div style={{fontSize:12, color:c.mastic, marginTop:2}}>{RC.prestoSub}</div>
+          <div style={{fontSize:12, color:c.mastic, marginTop:3}}>{RC.abSub}</div>
         </div>
-        <span style={{fontSize:11, background:c.sand, color:c.mastic, borderRadius:8, padding:"3px 9px"}}>{RC.presto}</span>
+        <div style={{display:"flex", alignItems:"center", gap:4, flexShrink:0}}>
+          <span style={{fontSize:13, color:"#FF5A5F"}}>★</span>
+          <span style={{fontSize:15, fontWeight:600, color:c.warm}}>5,0</span>
+        </div>
+      </a>
+
+      <div style={{background:c.white, borderRadius:16, border:`1px solid ${c.hazel}30`, padding:"14px 16px", marginBottom:9}}>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:15, fontStyle:"italic", color:c.warm, lineHeight:1.55, marginBottom:6}}>
+          "Casa impeccabile. Esattamente come da foto. Host perfetti, cordiali, sempre disponibili e ci hanno anche lasciato un omaggio di benvenuto, niente da dire tutto perfetto."
+        </div>
+        <div style={{fontSize:11, color:c.mastic}}>— Giada · Airbnb</div>
+      </div>
+
+      <div style={{background:c.white, borderRadius:16, border:`1px solid ${c.hazel}30`, padding:"14px 16px", marginBottom:9}}>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:15, fontStyle:"italic", color:c.warm, lineHeight:1.55, marginBottom:6}}>
+          "Alessandro e Roberta sono stati gentilissimi! L'alloggio era pulito, moderno e dotato di tutti i comfort. Ci torneremo sicuramente."
+        </div>
+        <div style={{fontSize:11, color:c.mastic}}>— Keyla · Airbnb</div>
+      </div>
+
+      <div style={{background:c.white, borderRadius:16, border:`1px solid ${c.hazel}30`, padding:"14px 16px", marginBottom:10}}>
+        <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif", fontSize:15, fontStyle:"italic", color:c.warm, lineHeight:1.55, marginBottom:6}}>
+          "L'alloggio era molto pulito, i padroni di casa super premurosi ed entrambi molto gentili. Alloggio confortevole e vicino a tutto, diverse spiagge vicine, mercati e ristoranti nei dintorni. A 15 minuti dall'aeroporto e a 20/30 minuti da Cagliari. Tutto a 5 stelle."
+        </div>
+        <div style={{fontSize:11, color:c.mastic}}>— Renata · Airbnb · luglio 2026</div>
+      </div>
+
+      <div style={{background:c.white, borderRadius:16, border:`1px solid ${c.hazel}20`,
+        padding:"14px 16px", marginBottom:20}}>
+        <div style={{fontSize:9, letterSpacing:"2px", textTransform:"uppercase", color:c.mastic, marginBottom:10}}>{RC.bkCatT}</div>
+        <div style={{display:"grid", gridTemplateColumns:"1fr 1fr", gap:"8px 16px"}}>
+          {RC.abCat.map((cat,i)=>(
+            <div key={i} style={{display:"flex", alignItems:"center", gap:8}}>
+              <div style={{flex:1, minWidth:0}}>
+                <div style={{fontSize:11.5, color:c.warm, marginBottom:3}}>{cat}</div>
+                <div style={{height:4, background:c.sand, borderRadius:2, overflow:"hidden"}}>
+                  <div style={{width:"100%", height:"100%", background:"#FF5A5F", borderRadius:2}}/>
+                </div>
+              </div>
+              <span style={{fontSize:12, fontWeight:600, color:"#FF5A5F", flexShrink:0}}>5,0</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div style={{fontSize:9, letterSpacing:"4px", textTransform:"uppercase", color:c.mastic, margin:"4px 0 12px", textAlign:"center"}}>{RC.social}</div>
