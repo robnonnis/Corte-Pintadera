@@ -1440,7 +1440,7 @@ const SANTAMARIA_RELIGIOSO = [
     {ora:"18:00", testo:M("Santa Messa","Holy Mass","Santa Misa","Sainte Messe","Heilige Messe","Santa Missa")},
   ]},
   {giorno:M("Domenica 13 settembre","Sunday 13 September","Domingo 13 de septiembre","Dimanche 13 septembre","Sonntag, 13. September","Domingo, 13 de setembro"), voci:[
-    {ora:"17:00", testo:M("Festa degli animali","Blessing of the animals","Fiesta de los animales","Fête des animaux","Tiersegnung","Festa dos animais")},
+    {ora:"17:00", testo:M("Festa degli ammalati","Feast of the sick","Fiesta de los enfermos","Fête des malades","Fest der Kranken","Festa dos doentes")},
   ]},
   {giorno:M("Lunedì 14 settembre","Monday 14 September","Lunes 14 de septiembre","Lundi 14 septembre","Montag, 14. September","Segunda-feira, 14 de setembro"), voci:[
     {ora:"20:00", testo:M("Ultima novena","Last novena","Última novena","Dernière neuvaine","Letzte Novene","Última novena")},
@@ -1466,28 +1466,29 @@ const SANTAMARIA_CIVILE = [
 // ── AUTUNNO IN BARBAGIA · CORTES APERTAS 2026 ──
 const BARBAGIA_CALENDARIO = [
   {mese:M("Settembre","September","Septiembre","Septembre","September","Setembro"), tappe:[
-    {date:"5–6", paesi:"Bitti"},
-    {date:"12–13", paesi:"Oliena"},
-    {date:"19–20", paesi:"Lodine, Sarule"},
-    {date:"26–27", paesi:"Austis, Dorgali, Orani"},
+    {date:"5", paesi:"Bitti"}, {date:"6", paesi:"Bitti"},
+    {date:"12", paesi:"Oliena"}, {date:"13", paesi:"Oliena"},
+    {date:"19", paesi:"Lodine, Sarule"}, {date:"20", paesi:"Lodine, Sarule"},
+    {date:"26", paesi:"Austis, Dorgali, Orani"}, {date:"27", paesi:"Austis, Dorgali, Orani"},
   ]},
   {mese:M("Ottobre","October","Octubre","Octobre","Oktober","Outubro"), tappe:[
-    {date:"3–4", paesi:"Lula, Meana Sardo, Orotelli, Sorgono"},
-    {date:"10–11", paesi:"Gavoi, Lollove, Onanì, Tonara"},
-    {date:"17–18", paesi:"Belvì, Orgosolo"},
-    {date:"24–25", paesi:"Aritzo, Olzai, Ottana"},
-    {date:M("31 ott – 1 nov","31 Oct – 1 Nov","31 oct – 1 nov","31 oct – 1 nov","31. Okt. – 1. Nov.","31 out – 1 nov"), paesi:"Desulo"},
+    {date:"3", paesi:"Lula, Meana Sardo, Orotelli, Sorgono"}, {date:"4", paesi:"Lula, Meana Sardo, Orotelli, Sorgono"},
+    {date:"10", paesi:"Gavoi, Lollove, Onanì, Tonara"}, {date:"11", paesi:"Gavoi, Lollove, Onanì, Tonara"},
+    {date:"17", paesi:"Belvì, Orgosolo"}, {date:"18", paesi:"Belvì, Orgosolo"},
+    {date:"24", paesi:"Aritzo, Olzai, Ottana"}, {date:"25", paesi:"Aritzo, Olzai, Ottana"},
+    {date:"31", paesi:"Desulo"},
   ]},
   {mese:M("Novembre","November","Noviembre","Novembre","November","Novembro"), tappe:[
-    {date:"6–7–8", paesi:"Mamoiada"},
-    {date:"7–8", paesi:"Ovodda"},
-    {date:"14–15", paesi:"Nuoro, Tiana, Ollolai"},
-    {date:"21–22", paesi:"Atzara"},
-    {date:"28–29", paesi:"Gadoni, Oniferi"},
+    {date:"1", paesi:"Desulo"},
+    {date:"6", paesi:"Mamoiada"},
+    {date:"7", paesi:"Mamoiada, Ovodda"}, {date:"8", paesi:"Mamoiada, Ovodda"},
+    {date:"14", paesi:"Nuoro, Tiana, Ollolai"}, {date:"15", paesi:"Nuoro, Tiana, Ollolai"},
+    {date:"21", paesi:"Atzara"}, {date:"22", paesi:"Atzara"},
+    {date:"28", paesi:"Gadoni, Oniferi"}, {date:"29", paesi:"Gadoni, Oniferi"},
   ]},
   {mese:M("Dicembre","December","Diciembre","Décembre","Dezember","Dezembro"), tappe:[
-    {date:"6–7–8", paesi:"Fonni"},
-    {date:"12–13", paesi:"Ortueri, Orune, Seulo"},
+    {date:"6", paesi:"Fonni"}, {date:"7", paesi:"Fonni"}, {date:"8", paesi:"Fonni"},
+    {date:"12", paesi:"Ortueri, Orune, Seulo"}, {date:"13", paesi:"Ortueri, Orune, Seulo"},
   ]},
 ];
 
@@ -2381,24 +2382,24 @@ function Eventi({go}) {
         </div>
       )}
 
-      <div style={{display:"flex",flexDirection:"column",gap:8,marginBottom:14}}>
-        <div onClick={()=>go("santamaria")} style={{display:"flex",alignItems:"center",gap:12,padding:"14px 16px",
-          background:`linear-gradient(135deg, #3D1F10, #5a3020)`,borderRadius:14,cursor:"pointer"}}>
-          <span style={{fontSize:22}}>🌟</span>
+      <div style={{display:"flex",flexDirection:"column",gap:10,marginBottom:14}}>
+        <div onClick={()=>go("santamaria")} style={{display:"flex",alignItems:"center",gap:12,padding:"16px 18px",
+          background:`linear-gradient(135deg, #CEAD85, #a97d45)`,borderRadius:14,cursor:"pointer",boxShadow:"0 4px 14px rgba(169,125,69,0.35)"}}>
+          <span style={{fontSize:26}}>🌟</span>
           <div style={{flex:1}}>
-            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:16,color:c.cream}}>{L.santamaria.title}</div>
-            <div style={{fontSize:11,color:"rgba(245,240,232,0.6)",marginTop:2}}>{L.santamaria.sub}</div>
+            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:18,fontWeight:600,color:"#3D1F10"}}>{L.santamaria.title}</div>
+            <div style={{fontSize:11,color:"rgba(61,31,16,0.75)",marginTop:2}}>{L.santamaria.sub}</div>
           </div>
-          <span style={{fontSize:11,color:c.hazel,whiteSpace:"nowrap"}}>{EV.smCta}</span>
+          <span style={{fontSize:11,color:"#3D1F10",fontWeight:600,whiteSpace:"nowrap",background:"rgba(255,255,255,0.35)",borderRadius:20,padding:"5px 10px"}}>{EV.smCta}</span>
         </div>
-        <div onClick={()=>go("barbagia")} style={{display:"flex",alignItems:"center",gap:12,padding:"14px 16px",
-          background:c.white,border:`1px solid ${c.hazel}30`,borderRadius:14,cursor:"pointer"}}>
-          <span style={{fontSize:22}}>🍂</span>
+        <div onClick={()=>go("barbagia")} style={{display:"flex",alignItems:"center",gap:12,padding:"16px 18px",
+          background:`linear-gradient(135deg, #C1673A, #8f4a26)`,borderRadius:14,cursor:"pointer",boxShadow:"0 4px 14px rgba(143,74,38,0.35)"}}>
+          <span style={{fontSize:26}}>🍂</span>
           <div style={{flex:1}}>
-            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:16,color:c.warm}}>{L.barbagia.title}</div>
-            <div style={{fontSize:11,color:c.mastic,marginTop:2}}>{L.barbagia.sub}</div>
+            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:18,fontWeight:600,color:c.cream}}>{L.barbagia.title}</div>
+            <div style={{fontSize:11,color:"rgba(250,247,242,0.75)",marginTop:2}}>{L.barbagia.sub}</div>
           </div>
-          <span style={{fontSize:11,color:c.hazel,whiteSpace:"nowrap"}}>{EV.bbCta}</span>
+          <span style={{fontSize:11,color:c.cream,fontWeight:600,whiteSpace:"nowrap",background:"rgba(255,255,255,0.2)",borderRadius:20,padding:"5px 10px"}}>{EV.bbCta}</span>
         </div>
       </div>
 
@@ -2442,7 +2443,19 @@ function SantaMaria({go}) {
         <p style={{fontSize:13.5, lineHeight:1.7, color:c.warm, margin:0}}>{SM.intro}</p>
       </div>
 
-      <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.mastic,margin:"4px 0 12px",textAlign:"center"}}>{SM.religiosoT}</div>
+      <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.mastic,margin:"4px 0 12px",textAlign:"center"}}>{SM.civileT}</div>
+      <Card>
+        {SANTAMARIA_CIVILE.map((v,i)=>(
+          <div key={i} style={i===SANTAMARIA_CIVILE.length-1?s.ruleLast:s.rule}>
+            <div style={{flexShrink:0, minWidth:44}}>
+              <div style={{...s.rowValue, fontSize:13}}>{v.ora}</div>
+            </div>
+            <span><strong>{tx(v.giorno)}</strong> — {tx(v.testo)}</span>
+          </div>
+        ))}
+      </Card>
+
+      <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.mastic,margin:"18px 0 12px",textAlign:"center"}}>{SM.religiosoT}</div>
       {SANTAMARIA_RELIGIOSO.map((g,idx)=>(
         <Card key={idx}>
           <div style={{...s.cardTitle, fontSize:17, marginBottom:8}}>{tx(g.giorno)}</div>
@@ -2454,18 +2467,6 @@ function SantaMaria({go}) {
           ))}
         </Card>
       ))}
-
-      <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.mastic,margin:"18px 0 12px",textAlign:"center"}}>{SM.civileT}</div>
-      <Card>
-        {SANTAMARIA_CIVILE.map((v,i)=>(
-          <div key={i} style={i===SANTAMARIA_CIVILE.length-1?s.ruleLast:s.rule}>
-            <div style={{flexShrink:0, minWidth:44}}>
-              <div style={{...s.rowValue, fontSize:13}}>{v.ora}</div>
-            </div>
-            <span><strong>{tx(v.giorno)}</strong> — {tx(v.testo)}</span>
-          </div>
-        ))}
-      </Card>
 
       <div style={{...s.darkBox,textAlign:"center",marginTop:12}}>
         <p style={{fontSize:12,color:"rgba(245,240,232,0.7)",lineHeight:1.7,margin:0}}>{SM.note}</p>
