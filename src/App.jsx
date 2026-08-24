@@ -248,7 +248,7 @@ it: {
     note:"Il programma può subire variazioni. Per aggiornamenti in tempo reale segui la pagina del Comune di Uta." },
   barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
     intro:"Da settembre a dicembre i paesi del centro Sardegna aprono le corti (cortes) delle case antiche: artigianato, sapori tipici e tradizione, un weekend alla volta. Un'ottima gita di un giorno da Uta (1–1,5 ore d'auto).",
-    note:"Date indicative — verifica sempre gli aggiornamenti su aspenuoro.it prima di partire." },
+    note:"Date indicative e soggette a variazioni — verifica sempre gli aggiornamenti prima di partire." },
   rec:{ title:"Recensioni & Social",
     grazie:<>Grazie per aver scelto<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Una recensione o un tag sui social ci aiuta enormemente a far conoscere questo posto. Bastano due minuti — e per noi vale tantissimo.",
@@ -404,7 +404,7 @@ en: {
     note:"The programme may change. For real-time updates, follow the Municipality of Uta's page." },
   barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
     intro:"From September to December, the villages of central Sardinia open the courtyards (cortes) of their old houses: crafts, local flavours and tradition, one weekend at a time. A great day trip from Uta (1–1.5 hours by car).",
-    note:"Indicative dates — always check for updates at aspenuoro.it before you go." },
+    note:"Indicative dates, subject to change — always check for updates before you go." },
   rec:{ title:"Reviews & Social",
     grazie:<>Thank you for choosing<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"A review or a tag on social media helps us enormously to spread the word about this place. It takes two minutes — and it means the world to us.",
@@ -560,7 +560,7 @@ es: {
     note:"El programa puede sufrir variaciones. Para actualizaciones en tiempo real sigue la página del Ayuntamiento de Uta." },
   barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
     intro:"De septiembre a diciembre, los pueblos del centro de Cerdeña abren los patios (cortes) de las casas antiguas: artesanía, sabores típicos y tradición, un fin de semana a la vez. Una excelente excursión de un día desde Uta (1–1,5 horas en coche).",
-    note:"Fechas indicativas — comprueba siempre las actualizaciones en aspenuoro.it antes de salir." },
+    note:"Fechas indicativas y sujetas a cambios — comprueba siempre las actualizaciones antes de salir." },
   rec:{ title:"Reseñas y redes",
     grazie:<>Gracias por elegir<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Una reseña o una mención en redes nos ayuda muchísimo a dar a conocer este lugar. Solo lleva dos minutos — y para nosotros vale muchísimo.",
@@ -716,7 +716,7 @@ fr: {
     note:"Le programme peut être modifié. Pour les mises à jour en temps réel, suivez la page de la Mairie d'Uta." },
   barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
     intro:"De septembre à décembre, les villages du centre de la Sardaigne ouvrent les cours (cortes) de leurs vieilles maisons : artisanat, saveurs locales et tradition, un week-end à la fois. Une excellente excursion d'une journée depuis Uta (1 à 1h30 de route).",
-    note:"Dates indicatives — vérifiez toujours les mises à jour sur aspenuoro.it avant de partir." },
+    note:"Dates indicatives et susceptibles de changer — vérifiez toujours les mises à jour avant de partir." },
   rec:{ title:"Avis & réseaux",
     grazie:<>Merci d'avoir choisi<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Un avis ou un tag sur les réseaux nous aide énormément à faire connaître ce lieu. Deux minutes suffisent — et pour nous, cela compte beaucoup.",
@@ -872,7 +872,7 @@ de: {
     note:"Das Programm kann sich ändern. Aktuelle Updates gibt es auf der Seite der Gemeinde Uta." },
   barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
     intro:"Von September bis Dezember öffnen die Dörfer Zentralsardiniens die Höfe (cortes) ihrer alten Häuser: Handwerk, typische Aromen und Tradition, jeweils ein Wochenende. Ein toller Tagesausflug ab Uta (1–1,5 Autostunden).",
-    note:"Unverbindliche Termine — bitte vor der Abfahrt immer die Aktualisierungen auf aspenuoro.it prüfen." },
+    note:"Unverbindliche Termine, die sich ändern können — bitte vor der Abfahrt immer die Aktualisierungen prüfen." },
   rec:{ title:"Bewertungen & Social",
     grazie:<>Danke, dass Sie sich für<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em> entschieden haben</>,
     txt:"Eine Bewertung oder ein Tag in den sozialen Medien hilft uns enorm, diesen Ort bekannt zu machen. Es dauert nur zwei Minuten — und bedeutet uns sehr viel.",
@@ -1028,7 +1028,7 @@ pt: {
     note:"O programa pode sofrer alterações. Para atualizações em tempo real, siga a página do Município de Uta." },
   barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
     intro:"De setembro a dezembro, as aldeias do centro da Sardenha abrem os pátios (cortes) das casas antigas: artesanato, sabores típicos e tradição, um fim de semana de cada vez. Um ótimo passeio de um dia a partir de Uta (1–1,5 horas de carro).",
-    note:"Datas indicativas — verifica sempre as atualizações em aspenuoro.it antes de partir." },
+    note:"Datas indicativas e sujeitas a alterações — verifica sempre as atualizações antes de partir." },
   rec:{ title:"Avaliações & Redes",
     grazie:<>Obrigado por escolherem<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Uma avaliação ou uma menção nas redes ajuda-nos imenso a dar a conhecer este lugar. São só dois minutos — e para nós vale muitíssimo.",
@@ -1383,12 +1383,17 @@ const EVENTI_MESI = [
   {mese:9, m:M("Settembre","September","Septiembre","Septembre","September","Setembro"), evs:[
     {d:M("5–9 settembre","5–9 September","5–9 de septiembre","5–9 septembre","5.–9. September","5–9 de setembro"),t:M("🌟 Festa di Santa Maria (Uta) — la più attesa! Concerti, fuochi d'artificio","🌟 Feast of Santa Maria (Uta) — the most awaited! Concerts, fireworks","🌟 Fiesta de Santa Maria (Uta) — ¡la más esperada! Conciertos, fuegos artificiales","🌟 Fête de Santa Maria (Uta) — la plus attendue ! Concerts, feux d'artifice","🌟 Fest der Santa Maria (Uta) — das ersehnteste! Konzerte, Feuerwerk","🌟 Festa de Santa Maria (Uta) — a mais esperada! Concertos, fogo de artifício")},
     {d:M("Fine settembre","Late September","Finales de septiembre","Fin septembre","Ende September","Fim de setembro"),t:M("🎊 Festa di Santa Greca (Decimomannu)","🎊 Feast of Santa Greca (Decimomannu)","🎊 Fiesta de Santa Greca (Decimomannu)","🎊 Fête de Santa Greca (Decimomannu)","🎊 Fest der Santa Greca (Decimomannu)","🎊 Festa de Santa Greca (Decimomannu)")},
-    {d:M("Da settembre a dicembre","From September to December","De septiembre a diciembre","De septembre à décembre","Von September bis Dezember","De setembro a dezembro"),t:M("🍂 Autunno in Barbagia — i paesi del centro Sardegna aprono le cortes: artigianato e sapori (gita di un giorno)","🍂 Autunno in Barbagia — the villages of central Sardinia open their cortes: crafts and flavours (a day trip)","🍂 Autunno in Barbagia — los pueblos del centro de Cerdeña abren sus cortes: artesanía y sabores (excursión de un día)","🍂 Autunno in Barbagia — les villages du centre de la Sardaigne ouvrent leurs cortes : artisanat et saveurs (excursion d'une journée)","🍂 Autunno in Barbagia — die Dörfer Zentralsardiniens öffnen ihre Cortes: Handwerk und Gaumenfreuden (Tagesausflug)","🍂 Autunno in Barbagia — as aldeias do centro da Sardenha abrem as suas cortes: artesanato e sabores (passeio de um dia)"),link:"https://www.aspenuoro.it"},
+    {d:M("5–27 settembre","5–27 September","5–27 de septiembre","5–27 septembre","5.–27. September","5–27 de setembro"),t:M("🍂 Autunno in Barbagia — Bitti, Oliena, Lodine, Sarule, Austis, Dorgali, Orani aprono le cortes: artigianato e sapori","🍂 Autunno in Barbagia — Bitti, Oliena, Lodine, Sarule, Austis, Dorgali, Orani open their cortes: crafts and flavours","🍂 Autunno in Barbagia — Bitti, Oliena, Lodine, Sarule, Austis, Dorgali, Orani abren sus cortes: artesanía y sabores","🍂 Autunno in Barbagia — Bitti, Oliena, Lodine, Sarule, Austis, Dorgali, Orani ouvrent leurs cortes : artisanat et saveurs","🍂 Autunno in Barbagia — Bitti, Oliena, Lodine, Sarule, Austis, Dorgali, Orani öffnen ihre Cortes: Handwerk und Gaumenfreuden","🍂 Autunno in Barbagia — Bitti, Oliena, Lodine, Sarule, Austis, Dorgali, Orani abrem as suas cortes: artesanato e sabores"),go:"barbagia"},
+  ]},
+  {mese:10, m:M("Ottobre","October","Octubre","Octobre","Oktober","Outubro"), evs:[
+    {d:M("3–31 ottobre","3–31 October","3–31 de octubre","3–31 octobre","3.–31. Oktober","3–31 de outubro"),t:M("🍂 Autunno in Barbagia — Lula, Gavoi, Tonara, Belvì, Orgosolo, Aritzo, Olzai, Desulo e altri paesi aprono le cortes","🍂 Autunno in Barbagia — Lula, Gavoi, Tonara, Belvì, Orgosolo, Aritzo, Olzai, Desulo and other villages open their cortes","🍂 Autunno in Barbagia — Lula, Gavoi, Tonara, Belvì, Orgosolo, Aritzo, Olzai, Desulo y otros pueblos abren sus cortes","🍂 Autunno in Barbagia — Lula, Gavoi, Tonara, Belvì, Orgosolo, Aritzo, Olzai, Desulo et d'autres villages ouvrent leurs cortes","🍂 Autunno in Barbagia — Lula, Gavoi, Tonara, Belvì, Orgosolo, Aritzo, Olzai, Desulo und weitere Dörfer öffnen ihre Cortes","🍂 Autunno in Barbagia — Lula, Gavoi, Tonara, Belvì, Orgosolo, Aritzo, Olzai, Desulo e outras aldeias abrem as suas cortes"),go:"barbagia"},
   ]},
   {mese:11, m:M("Novembre","November","Noviembre","Novembre","November","Novembro"), evs:[
+    {d:M("1–29 novembre","1–29 November","1–29 de noviembre","1–29 novembre","1.–29. November","1–29 de novembro"),t:M("🍂 Autunno in Barbagia — Desulo, Mamoiada, Ovodda, Nuoro, Ollolai, Atzara, Gadoni e altri paesi aprono le cortes","🍂 Autunno in Barbagia — Desulo, Mamoiada, Ovodda, Nuoro, Ollolai, Atzara, Gadoni and other villages open their cortes","🍂 Autunno in Barbagia — Desulo, Mamoiada, Ovodda, Nuoro, Ollolai, Atzara, Gadoni y otros pueblos abren sus cortes","🍂 Autunno in Barbagia — Desulo, Mamoiada, Ovodda, Nuoro, Ollolai, Atzara, Gadoni et d'autres villages ouvrent leurs cortes","🍂 Autunno in Barbagia — Desulo, Mamoiada, Ovodda, Nuoro, Ollolai, Atzara, Gadoni und weitere Dörfer öffnen ihre Cortes","🍂 Autunno in Barbagia — Desulo, Mamoiada, Ovodda, Nuoro, Ollolai, Atzara, Gadoni e outras aldeias abrem as suas cortes"),go:"barbagia"},
     {d:M("Terza domenica","Third Sunday","Tercer domingo","Troisième dimanche","Dritter Sonntag","Terceiro domingo"),t:M("🏃 Maratonina Città di Uta — 21 km, 10,5 km, family run 4 km · ore 10:00 da Via Stazione","🏃 Città di Uta Half-Marathon — 21 km, 10.5 km, 4 km family run · 10:00 from Via Stazione","🏃 Media Maratón Città di Uta — 21 km, 10,5 km, family run 4 km · 10:00 desde Via Stazione","🏃 Semi-marathon Città di Uta — 21 km, 10,5 km, family run 4 km · 10h00 depuis Via Stazione","🏃 Halbmarathon Città di Uta — 21 km, 10,5 km, Family Run 4 km · 10:00 Uhr ab Via Stazione","🏃 Meia Maratona Città di Uta — 21 km, 10,5 km, family run 4 km · 10:00 a partir da Via Stazione"),link:"https://maratoninadiuta.it"},
   ]},
   {mese:12, m:M("Dicembre","December","Diciembre","Décembre","Dezember","Dezembro"), evs:[
+    {d:M("6–13 dicembre","6–13 December","6–13 de diciembre","6–13 décembre","6.–13. Dezember","6–13 de dezembro"),t:M("🍂 Autunno in Barbagia — Fonni, Ortueri, Orune, Seulo chiudono la stagione delle cortes","🍂 Autunno in Barbagia — Fonni, Ortueri, Orune, Seulo close out the cortes season","🍂 Autunno in Barbagia — Fonni, Ortueri, Orune, Seulo cierran la temporada de las cortes","🍂 Autunno in Barbagia — Fonni, Ortueri, Orune, Seulo clôturent la saison des cortes","🍂 Autunno in Barbagia — Fonni, Ortueri, Orune, Seulo beschließen die Cortes-Saison","🍂 Autunno in Barbagia — Fonni, Ortueri, Orune, Seulo encerram a época das cortes"),go:"barbagia"},
     {d:M("Tutto il mese","All month","Todo el mes","Tout le mois","Den ganzen Monat","Todo o mês"),t:M("🎄 Mercatini di Natale a Cagliari — Piazza Yenne, Piazza Garibaldi e Corso Vittorio Emanuele","🎄 Christmas markets in Cagliari — Piazza Yenne, Piazza Garibaldi and Corso Vittorio Emanuele","🎄 Mercadillos de Navidad en Cagliari — Piazza Yenne, Piazza Garibaldi y Corso Vittorio Emanuele","🎄 Marchés de Noël à Cagliari — Piazza Yenne, Piazza Garibaldi et Corso Vittorio Emanuele","🎄 Weihnachtsmärkte in Cagliari — Piazza Yenne, Piazza Garibaldi und Corso Vittorio Emanuele","🎄 Mercados de Natal em Cagliari — Piazza Yenne, Piazza Garibaldi e Corso Vittorio Emanuele")},
     {d:M("13 dicembre","13 December","13 de diciembre","13 décembre","13. Dezember","13 de dezembro"),t:M("🕯️ Santa Lucia (Uta)","🕯️ Santa Lucia (Uta)","🕯️ Santa Lucía (Uta)","🕯️ Sainte-Lucie (Uta)","🕯️ Santa Lucia (Uta)","🕯️ Santa Luzia (Uta)")},
   ]},
@@ -2420,7 +2425,7 @@ function Eventi({go}) {
           </div>
           {ee.map((e,i)=>(
             <div key={i} style={i===ee.length-1?s.ruleLast:s.rule}><div style={s.dot}/>
-              <span><strong>{tx(e.d)}</strong> — {e.link?<a href={e.link} target="_blank" rel="noreferrer" style={{color:c.hazel}}>{tx(e.t)}</a>:tx(e.t)}</span>
+              <span><strong>{tx(e.d)}</strong> — {e.go?<a onClick={()=>go(e.go)} style={{color:c.hazel,cursor:"pointer"}}>{tx(e.t)}</a>:e.link?<a href={e.link} target="_blank" rel="noreferrer" style={{color:c.hazel}}>{tx(e.t)}</a>:tx(e.t)}</span>
             </div>
           ))}
         </Card>
