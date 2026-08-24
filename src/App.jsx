@@ -240,8 +240,15 @@ it: {
   eventi:{ title:"Feste ed eventi", sett:"🔔 Questa settimana", cosaT:"🔍 Cosa c'è questa settimana?",
     perConc:"Per concerti, sagre e spettacoli aggiornati in tempo reale:", apriV:"apri",
     r1:"🌐 Sardegna Turismo — eventi", r2:"🏙️ Cagliari Turismo", r3:"🏛️ Comune di Uta — news",
-    cal:"Calendario tradizioni locali", inCorso:"In corso",
+    cal:"Calendario tradizioni locali", inCorso:"In corso", smCta:"📖 Programma completo →", bbCta:"🍂 Calendario completo →",
     tip:<>💡 Se il soggiorno coincide con la <strong style={{color:c.sand}}>Festa di Santa Maria</strong> (5–9 sett.) o con <strong style={{color:c.sand}}>Sant'Efisio</strong> siete fortunatissimi!</> },
+  santamaria:{ title:"Festa di Santa Maria", sub:"Uta · 5–9 settembre 2026",
+    intro:"La festa patronale più sentita di Uta: nove giorni tra riti religiosi, processioni, gruppi folk e grandi concerti in piazza.",
+    religiosoT:"⛪ Programma religioso", civileT:"🎉 Programma civile",
+    note:"Il programma può subire variazioni. Per aggiornamenti in tempo reale segui la pagina del Comune di Uta." },
+  barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
+    intro:"Da settembre a dicembre i paesi del centro Sardegna aprono le corti (cortes) delle case antiche: artigianato, sapori tipici e tradizione, un weekend alla volta. Un'ottima gita di un giorno da Uta (1–1,5 ore d'auto).",
+    note:"Date indicative — verifica sempre gli aggiornamenti su aspenuoro.it prima di partire." },
   rec:{ title:"Recensioni & Social",
     grazie:<>Grazie per aver scelto<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Una recensione o un tag sui social ci aiuta enormemente a far conoscere questo posto. Bastano due minuti — e per noi vale tantissimo.",
@@ -389,8 +396,15 @@ en: {
   eventi:{ title:"Festivals & events", sett:"🔔 This week", cosaT:"🔍 What's on this week?",
     perConc:"For up-to-date concerts, food festivals and shows:", apriV:"open",
     r1:"🌐 Sardegna Turismo — events", r2:"🏙️ Cagliari Turismo", r3:"🏛️ Uta Town Hall — news",
-    cal:"Local traditions calendar", inCorso:"Now",
+    cal:"Local traditions calendar", inCorso:"Now", smCta:"📖 Full programme →", bbCta:"🍂 Full calendar →",
     tip:<>💡 If your stay coincides with the <strong style={{color:c.sand}}>Festa di Santa Maria</strong> (5–9 Sept) or <strong style={{color:c.sand}}>Sant'Efisio</strong>, you're incredibly lucky!</> },
+  santamaria:{ title:"Feast of Santa Maria", sub:"Uta · 5–9 September 2026",
+    intro:"Uta's most beloved patronal feast: nine days of religious rites, processions, folk groups and big concerts in the square.",
+    religiosoT:"⛪ Religious programme", civileT:"🎉 Civil programme",
+    note:"The programme may change. For real-time updates, follow the Municipality of Uta's page." },
+  barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
+    intro:"From September to December, the villages of central Sardinia open the courtyards (cortes) of their old houses: crafts, local flavours and tradition, one weekend at a time. A great day trip from Uta (1–1.5 hours by car).",
+    note:"Indicative dates — always check for updates at aspenuoro.it before you go." },
   rec:{ title:"Reviews & Social",
     grazie:<>Thank you for choosing<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"A review or a tag on social media helps us enormously to spread the word about this place. It takes two minutes — and it means the world to us.",
@@ -538,8 +552,15 @@ es: {
   eventi:{ title:"Fiestas y eventos", sett:"🔔 Esta semana", cosaT:"🔍 ¿Qué hay esta semana?",
     perConc:"Para conciertos, ferias y espectáculos actualizados en tiempo real:", apriV:"abrir",
     r1:"🌐 Sardegna Turismo — eventos", r2:"🏙️ Cagliari Turismo", r3:"🏛️ Ayuntamiento de Uta — noticias",
-    cal:"Calendario de tradiciones locales", inCorso:"En curso",
+    cal:"Calendario de tradiciones locales", inCorso:"En curso", smCta:"📖 Programa completo →", bbCta:"🍂 Calendario completo →",
     tip:<>💡 Si vuestra estancia coincide con la <strong style={{color:c.sand}}>Festa di Santa Maria</strong> (5–9 sept) o con <strong style={{color:c.sand}}>Sant'Efisio</strong>, ¡tenéis muchísima suerte!</> },
+  santamaria:{ title:"Fiesta de Santa Maria", sub:"Uta · 5–9 de septiembre de 2026",
+    intro:"La fiesta patronal más querida de Uta: nueve días entre ritos religiosos, procesiones, grupos folclóricos y grandes conciertos en la plaza.",
+    religiosoT:"⛪ Programa religioso", civileT:"🎉 Programa civil",
+    note:"El programa puede sufrir variaciones. Para actualizaciones en tiempo real sigue la página del Ayuntamiento de Uta." },
+  barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
+    intro:"De septiembre a diciembre, los pueblos del centro de Cerdeña abren los patios (cortes) de las casas antiguas: artesanía, sabores típicos y tradición, un fin de semana a la vez. Una excelente excursión de un día desde Uta (1–1,5 horas en coche).",
+    note:"Fechas indicativas — comprueba siempre las actualizaciones en aspenuoro.it antes de salir." },
   rec:{ title:"Reseñas y redes",
     grazie:<>Gracias por elegir<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Una reseña o una mención en redes nos ayuda muchísimo a dar a conocer este lugar. Solo lleva dos minutos — y para nosotros vale muchísimo.",
@@ -687,8 +708,15 @@ fr: {
   eventi:{ title:"Fêtes et événements", sett:"🔔 Cette semaine", cosaT:"🔍 Quoi de neuf cette semaine ?",
     perConc:"Pour les concerts, fêtes gastronomiques et spectacles mis à jour en temps réel :", apriV:"ouvrir",
     r1:"🌐 Sardegna Turismo — événements", r2:"🏙️ Cagliari Turismo", r3:"🏛️ Mairie d'Uta — actualités",
-    cal:"Calendrier des traditions locales", inCorso:"En cours",
+    cal:"Calendrier des traditions locales", inCorso:"En cours", smCta:"📖 Programme complet →", bbCta:"🍂 Calendrier complet →",
     tip:<>💡 Si votre séjour coïncide avec la <strong style={{color:c.sand}}>Festa di Santa Maria</strong> (5–9 sept) ou avec <strong style={{color:c.sand}}>Sant'Efisio</strong>, vous avez énormément de chance !</> },
+  santamaria:{ title:"Fête de Santa Maria", sub:"Uta · 5–9 septembre 2026",
+    intro:"La fête patronale la plus attendue d'Uta : neuf jours entre rites religieux, processions, groupes folkloriques et grands concerts sur la place.",
+    religiosoT:"⛪ Programme religieux", civileT:"🎉 Programme civil",
+    note:"Le programme peut être modifié. Pour les mises à jour en temps réel, suivez la page de la Mairie d'Uta." },
+  barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
+    intro:"De septembre à décembre, les villages du centre de la Sardaigne ouvrent les cours (cortes) de leurs vieilles maisons : artisanat, saveurs locales et tradition, un week-end à la fois. Une excellente excursion d'une journée depuis Uta (1 à 1h30 de route).",
+    note:"Dates indicatives — vérifiez toujours les mises à jour sur aspenuoro.it avant de partir." },
   rec:{ title:"Avis & réseaux",
     grazie:<>Merci d'avoir choisi<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Un avis ou un tag sur les réseaux nous aide énormément à faire connaître ce lieu. Deux minutes suffisent — et pour nous, cela compte beaucoup.",
@@ -836,8 +864,15 @@ de: {
   eventi:{ title:"Feste & Veranstaltungen", sett:"🔔 Diese Woche", cosaT:"🔍 Was ist diese Woche los?",
     perConc:"Für aktuelle Konzerte, Feste und Veranstaltungen in Echtzeit:", apriV:"öffnen",
     r1:"🌐 Sardegna Turismo — Events", r2:"🏙️ Cagliari Turismo", r3:"🏛️ Rathaus Uta — News",
-    cal:"Kalender lokaler Traditionen", inCorso:"Aktuell",
+    cal:"Kalender lokaler Traditionen", inCorso:"Aktuell", smCta:"📖 Vollständiges Programm →", bbCta:"🍂 Vollständiger Kalender →",
     tip:<>💡 Wenn Ihr Aufenthalt mit der <strong style={{color:c.sand}}>Festa di Santa Maria</strong> (5.–9. Sept.) oder mit <strong style={{color:c.sand}}>Sant'Efisio</strong> zusammenfällt, haben Sie großes Glück!</> },
+  santamaria:{ title:"Fest der Santa Maria", sub:"Uta · 5.–9. September 2026",
+    intro:"Das beliebteste Patronatsfest von Uta: neun Tage mit religiösen Riten, Prozessionen, Folkloregruppen und großen Konzerten auf dem Platz.",
+    religiosoT:"⛪ Religiöses Programm", civileT:"🎉 Weltliches Programm",
+    note:"Das Programm kann sich ändern. Aktuelle Updates gibt es auf der Seite der Gemeinde Uta." },
+  barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
+    intro:"Von September bis Dezember öffnen die Dörfer Zentralsardiniens die Höfe (cortes) ihrer alten Häuser: Handwerk, typische Aromen und Tradition, jeweils ein Wochenende. Ein toller Tagesausflug ab Uta (1–1,5 Autostunden).",
+    note:"Unverbindliche Termine — bitte vor der Abfahrt immer die Aktualisierungen auf aspenuoro.it prüfen." },
   rec:{ title:"Bewertungen & Social",
     grazie:<>Danke, dass Sie sich für<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em> entschieden haben</>,
     txt:"Eine Bewertung oder ein Tag in den sozialen Medien hilft uns enorm, diesen Ort bekannt zu machen. Es dauert nur zwei Minuten — und bedeutet uns sehr viel.",
@@ -985,8 +1020,15 @@ pt: {
   eventi:{ title:"Festas e eventos", sett:"🔔 Esta semana", cosaT:"🔍 O que há esta semana?",
     perConc:"Para concertos, festivais e espetáculos atualizados em tempo real:", apriV:"abrir",
     r1:"🌐 Sardegna Turismo — eventos", r2:"🏙️ Cagliari Turismo", r3:"🏛️ Câmara de Uta — notícias",
-    cal:"Calendário de tradições locais", inCorso:"A decorrer",
+    cal:"Calendário de tradições locais", inCorso:"A decorrer", smCta:"📖 Programa completo →", bbCta:"🍂 Calendário completo →",
     tip:<>💡 Se a vossa estadia coincidir com a <strong style={{color:c.sand}}>Festa di Santa Maria</strong> (5–9 set) ou com <strong style={{color:c.sand}}>Sant'Efisio</strong>, têm imensa sorte!</> },
+  santamaria:{ title:"Festa de Santa Maria", sub:"Uta · 5–9 de setembro de 2026",
+    intro:"A festa patronal mais querida de Uta: nove dias entre ritos religiosos, procissões, grupos folclóricos e grandes concertos na praça.",
+    religiosoT:"⛪ Programa religioso", civileT:"🎉 Programa civil",
+    note:"O programa pode sofrer alterações. Para atualizações em tempo real, siga a página do Município de Uta." },
+  barbagia:{ title:"Autunno in Barbagia", sub:"Cortes Apertas 2026",
+    intro:"De setembro a dezembro, as aldeias do centro da Sardenha abrem os pátios (cortes) das casas antigas: artesanato, sabores típicos e tradição, um fim de semana de cada vez. Um ótimo passeio de um dia a partir de Uta (1–1,5 horas de carro).",
+    note:"Datas indicativas — verifica sempre as atualizações em aspenuoro.it antes de partir." },
   rec:{ title:"Avaliações & Redes",
     grazie:<>Obrigado por escolherem<br/><em style={{fontStyle:"italic",color:c.hazel}}>Corte Pintadera</em></>,
     txt:"Uma avaliação ou uma menção nas redes ajuda-nos imenso a dar a conhecer este lugar. São só dois minutos — e para nós vale muitíssimo.",
@@ -1361,6 +1403,92 @@ const EVENTI_FISSI = [
   {mese:9,giorno:9,titolo:M("Festa di Santa Maria (fine)","Feast of Santa Maria (end)","Fiesta de Santa Maria (fin)","Fête de Santa Maria (fin)","Fest der Santa Maria (Ende)","Festa de Santa Maria (fim)"),luogo:"Uta",emoji:"🎆"},
   {mese:11,giorno:21,titolo:M("Maratonina di Uta","Uta Half-Marathon","Media Maratón de Uta","Semi-marathon d'Uta","Halbmarathon von Uta","Meia Maratona de Uta"),luogo:"Uta",emoji:"🏃"},
   {mese:12,giorno:13,titolo:M("Santa Lucia","Santa Lucia","Santa Lucía","Sainte-Lucie","Santa Lucia","Santa Luzia"),luogo:"Uta",emoji:"🕯️"},
+];
+
+// ── PROGRAMMA FESTA DI SANTA MARIA (Uta, 5–9 settembre 2026) ──
+const SANTAMARIA_RELIGIOSO = [
+  {giorno:M("Sabato 29 agosto","Saturday 29 August","Sábado 29 de agosto","Samedi 29 août","Samstag, 29. August","Sábado, 29 de agosto"), voci:[
+    {ora:"20:00", testo:M("Prima novena","First novena","Primera novena","Première neuvaine","Erste Novene","Primeira novena")},
+  ]},
+  {giorno:M("Dal 30 agosto al 6 settembre","30 August – 6 September","Del 30 de agosto al 6 de septiembre","Du 30 août au 6 septembre","30. August bis 6. September","De 30 de agosto a 6 de setembro"), voci:[
+    {ora:"17:00", testo:M("Confessioni","Confessions","Confesiones","Confessions","Beichte","Confissões")},
+    {ora:"17:30", testo:M("Rosario e litanie","Rosary and litanies","Rosario y letanías","Chapelet et litanies","Rosenkranz und Litanei","Terço e ladainhas")},
+    {ora:"18:00", testo:M("Santa Messa, con predica tenuta ogni giorno da un sacerdote diverso","Holy Mass, with a homily given each day by a different priest","Santa Misa, con homilía a cargo de un sacerdote distinto cada día","Sainte Messe, avec une homélie donnée chaque jour par un prêtre différent","Heilige Messe, mit einer Predigt, die jeden Tag von einem anderen Priester gehalten wird","Santa Missa, com homilia proferida cada dia por um sacerdote diferente")},
+  ]},
+  {giorno:M("Sabato 5 settembre","Saturday 5 September","Sábado 5 de septiembre","Samedi 5 septembre","Samstag, 5. September","Sábado, 5 de setembro"), voci:[
+    {ora:"09:00", testo:M("Seconda vestizione del simulacro","Second dressing of the statue","Segunda vestición de la imagen","Deuxième habillage de la statue","Zweites Ankleiden der Statue","Segunda vestição da imagem")},
+  ]},
+  {giorno:M("Lunedì 7 settembre","Monday 7 September","Lunes 7 de septiembre","Lundi 7 septembre","Montag, 7. September","Segunda-feira, 7 de setembro"), voci:[
+    {ora:"17:30", testo:M("Santo Rosario e canto delle litanie","Holy Rosary and singing of the litanies","Santo Rosario y canto de las letanías","Saint Rosaire et chant des litanies","Heiliger Rosenkranz und Litaneigesang","Santo Terço e cântico das ladainhas")},
+    {ora:"18:00", testo:M("Santa Messa solenne presieduta da Mons. Mario Farci, Vescovo di Iglesias, seguita dalla processione con il simulacro di Santa Maria per le vie del paese, accompagnata da bande musicali e gruppi folk del territorio","Solemn Mass presided over by Mons. Mario Farci, Bishop of Iglesias, followed by the procession with the statue of Santa Maria through the village streets, accompanied by marching bands and local folk groups","Santa Misa solemne presidida por Mons. Mario Farci, obispo de Iglesias, seguida de la procesión con la imagen de Santa Maria por las calles del pueblo, acompañada de bandas de música y grupos folclóricos del territorio","Sainte Messe solennelle présidée par Mgr Mario Farci, évêque d'Iglesias, suivie de la procession avec la statue de Santa Maria dans les rues du village, accompagnée de fanfares et de groupes folkloriques locaux","Feierliche Heilige Messe unter dem Vorsitz von Mons. Mario Farci, Bischof von Iglesias, gefolgt von der Prozession mit der Statue der Santa Maria durch die Straßen des Dorfes, begleitet von Musikkapellen und lokalen Folkloregruppen","Santa Missa solene presidida por D. Mario Farci, bispo de Iglesias, seguida da procissão com a imagem de Santa Maria pelas ruas da vila, acompanhada por bandas de música e grupos folclóricos da região")},
+  ]},
+  {giorno:M("Martedì 8 settembre","Tuesday 8 September","Martes 8 de septiembre","Mardi 8 septembre","Dienstag, 8. September","Terça-feira, 8 de setembro"), voci:[
+    {ora:"07:00", testo:M("Messa dell'Aurora","Dawn Mass","Misa del Alba","Messe de l'Aurore","Frühmesse","Missa da Aurora")},
+    {ora:"08:00", testo:M("Santa Messa","Holy Mass","Santa Misa","Sainte Messe","Heilige Messe","Santa Missa")},
+    {ora:"09:00", testo:M("Santa Messa","Holy Mass","Santa Misa","Sainte Messe","Heilige Messe","Santa Missa")},
+    {ora:"10:00", testo:M("Solenne processione con il simulacro di Santa Maria per le vie del paese, accompagnata da bande musicali e gruppi folk","Solemn procession with the statue of Santa Maria through the village streets, accompanied by marching bands and folk groups","Solemne procesión con la imagen de Santa Maria por las calles del pueblo, acompañada de bandas de música y grupos folclóricos","Procession solennelle avec la statue de Santa Maria dans les rues du village, accompagnée de fanfares et de groupes folkloriques","Feierliche Prozession mit der Statue der Santa Maria durch die Straßen des Dorfes, begleitet von Musikkapellen und Folkloregruppen","Procissão solene com a imagem de Santa Maria pelas ruas da vila, acompanhada por bandas de música e grupos folclóricos")},
+    {ora:"10:15", testo:M("Santa Messa in Santuario","Holy Mass at the Sanctuary","Santa Misa en el Santuario","Sainte Messe au Sanctuaire","Heilige Messe im Heiligtum","Santa Missa no Santuário")},
+    {ora:"11:30", testo:M("Santa Messa solenne","Solemn Mass","Santa Misa solemne","Messe solennelle","Feierliche Messe","Santa Missa solene")},
+    {ora:"19:00", testo:M("Santa Messa solenne","Solemn Mass","Santa Misa solemne","Messe solennelle","Feierliche Messe","Santa Missa solene")},
+  ]},
+  {giorno:M("Mercoledì 9 settembre","Wednesday 9 September","Miércoles 9 de septiembre","Mercredi 9 septembre","Mittwoch, 9. September","Quarta-feira, 9 de setembro"), voci:[
+    {ora:"09:00", testo:M("Santa Messa","Holy Mass","Santa Misa","Sainte Messe","Heilige Messe","Santa Missa")},
+    {ora:"10:00", testo:M("Santa Messa","Holy Mass","Santa Misa","Sainte Messe","Heilige Messe","Santa Missa")},
+    {ora:"18:00", testo:M("Santa Messa","Holy Mass","Santa Misa","Sainte Messe","Heilige Messe","Santa Missa")},
+  ]},
+  {giorno:M("Dal 10 al 12 settembre","10–12 September","Del 10 al 12 de septiembre","Du 10 au 12 septembre","10. bis 12. September","De 10 a 12 de setembro"), voci:[
+    {ora:"18:00", testo:M("Santa Messa","Holy Mass","Santa Misa","Sainte Messe","Heilige Messe","Santa Missa")},
+  ]},
+  {giorno:M("Domenica 13 settembre","Sunday 13 September","Domingo 13 de septiembre","Dimanche 13 septembre","Sonntag, 13. September","Domingo, 13 de setembro"), voci:[
+    {ora:"17:00", testo:M("Festa degli animali","Blessing of the animals","Fiesta de los animales","Fête des animaux","Tiersegnung","Festa dos animais")},
+  ]},
+  {giorno:M("Lunedì 14 settembre","Monday 14 September","Lunes 14 de septiembre","Lundi 14 septembre","Montag, 14. September","Segunda-feira, 14 de setembro"), voci:[
+    {ora:"20:00", testo:M("Ultima novena","Last novena","Última novena","Dernière neuvaine","Letzte Novene","Última novena")},
+  ]},
+];
+const SANTAMARIA_CIVILE = [
+  {giorno:M("Sabato 5 settembre","Saturday 5 September","Sábado 5 de septiembre","Samedi 5 septembre","Samstag, 5. September","Sábado, 5 de setembro"), ora:"22:00",
+    testo:M('Spettacolo musicale con "Discobaylando"','Music show with "Discobaylando"','Espectáculo musical con "Discobaylando"','Spectacle musical avec "Discobaylando"','Musikshow mit "Discobaylando"','Espetáculo musical com "Discobaylando"')},
+  {giorno:M("Domenica 6 settembre","Sunday 6 September","Domingo 6 de septiembre","Dimanche 6 septembre","Sonntag, 6. September","Domingo, 6 de setembro"), ora:"22:00",
+    testo:M("Concerto Cordas et Cannas","Cordas et Cannas concert","Concierto de Cordas et Cannas","Concert de Cordas et Cannas","Konzert von Cordas et Cannas","Concerto de Cordas et Cannas")},
+  {giorno:M("Lunedì 7 settembre","Monday 7 September","Lunes 7 de septiembre","Lundi 7 septembre","Montag, 7. September","Segunda-feira, 7 de setembro"), ora:"22:00",
+    testo:M('Concerto della band "Time Out", cover ufficiale di Max Pezzali','Concert by the band "Time Out", official Max Pezzali tribute band','Concierto de la banda "Time Out", tributo oficial a Max Pezzali','Concert du groupe "Time Out", cover officiel de Max Pezzali','Konzert der Band "Time Out", offizielle Max-Pezzali-Coverband','Concerto da banda "Time Out", tributo oficial a Max Pezzali')},
+  {giorno:M("Martedì 8 settembre","Tuesday 8 September","Martes 8 de septiembre","Mardi 8 septembre","Dienstag, 8. September","Terça-feira, 8 de setembro"), ora:"21:30",
+    testo:M("Spettacolo pirotecnico a cura della ditta Piano Events","Firework display by Piano Events","Espectáculo pirotécnico a cargo de la empresa Piano Events","Spectacle pyrotechnique par la société Piano Events","Feuerwerk der Firma Piano Events","Espetáculo pirotécnico pela empresa Piano Events")},
+  {giorno:M("Martedì 8 settembre","Tuesday 8 September","Martes 8 de septiembre","Mardi 8 septembre","Dienstag, 8. September","Terça-feira, 8 de setembro"), ora:"22:30",
+    testo:M("Francesco Renga in concerto","Francesco Renga in concert","Francesco Renga en concierto","Francesco Renga en concert","Francesco Renga im Konzert","Francesco Renga em concerto")},
+  {giorno:M("Mercoledì 9 settembre","Wednesday 9 September","Miércoles 9 de septiembre","Mercredi 9 septembre","Mittwoch, 9. September","Quarta-feira, 9 de setembro"), ora:"21:00",
+    testo:M("Estrazione premi della Lotteria di Santa Maria","Prize draw of the Santa Maria Lottery","Sorteo de premios de la Lotería de Santa Maria","Tirage des lots de la Loterie de Santa Maria","Preisverlosung der Santa-Maria-Lotterie","Sorteio de prémios da Lotaria de Santa Maria")},
+  {giorno:M("Mercoledì 9 settembre","Wednesday 9 September","Miércoles 9 de septiembre","Mercredi 9 septembre","Mittwoch, 9. September","Quarta-feira, 9 de setembro"), ora:"22:00",
+    testo:M('Spettacolo musicale con il gruppo "Carovana Folk"','Music show with the group "Carovana Folk"','Espectáculo musical con el grupo "Carovana Folk"','Spectacle musical avec le groupe "Carovana Folk"','Musikshow mit der Gruppe "Carovana Folk"','Espetáculo musical com o grupo "Carovana Folk"')},
+];
+
+// ── AUTUNNO IN BARBAGIA · CORTES APERTAS 2026 ──
+const BARBAGIA_CALENDARIO = [
+  {mese:M("Settembre","September","Septiembre","Septembre","September","Setembro"), tappe:[
+    {date:"5–6", paesi:"Bitti"},
+    {date:"12–13", paesi:"Oliena"},
+    {date:"19–20", paesi:"Lodine, Sarule"},
+    {date:"26–27", paesi:"Austis, Dorgali, Orani"},
+  ]},
+  {mese:M("Ottobre","October","Octubre","Octobre","Oktober","Outubro"), tappe:[
+    {date:"3–4", paesi:"Lula, Meana Sardo, Orotelli, Sorgono"},
+    {date:"10–11", paesi:"Gavoi, Lollove, Onanì, Tonara"},
+    {date:"17–18", paesi:"Belvì, Orgosolo"},
+    {date:"24–25", paesi:"Aritzo, Olzai, Ottana"},
+    {date:M("31 ott – 1 nov","31 Oct – 1 Nov","31 oct – 1 nov","31 oct – 1 nov","31. Okt. – 1. Nov.","31 out – 1 nov"), paesi:"Desulo"},
+  ]},
+  {mese:M("Novembre","November","Noviembre","Novembre","November","Novembro"), tappe:[
+    {date:"6–7–8", paesi:"Mamoiada"},
+    {date:"7–8", paesi:"Ovodda"},
+    {date:"14–15", paesi:"Nuoro, Tiana, Ollolai"},
+    {date:"21–22", paesi:"Atzara"},
+    {date:"28–29", paesi:"Gadoni, Oniferi"},
+  ]},
+  {mese:M("Dicembre","December","Diciembre","Décembre","Dezember","Dezembro"), tappe:[
+    {date:"6–7–8", paesi:"Fonni"},
+    {date:"12–13", paesi:"Ortueri, Orune, Seulo"},
+  ]},
 ];
 
 // ══════════════════════════════════════════════
@@ -2253,6 +2381,27 @@ function Eventi({go}) {
         </div>
       )}
 
+      <div style={{display:"flex",flexDirection:"column",gap:8,marginBottom:14}}>
+        <div onClick={()=>go("santamaria")} style={{display:"flex",alignItems:"center",gap:12,padding:"14px 16px",
+          background:`linear-gradient(135deg, #3D1F10, #5a3020)`,borderRadius:14,cursor:"pointer"}}>
+          <span style={{fontSize:22}}>🌟</span>
+          <div style={{flex:1}}>
+            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:16,color:c.cream}}>{L.santamaria.title}</div>
+            <div style={{fontSize:11,color:"rgba(245,240,232,0.6)",marginTop:2}}>{L.santamaria.sub}</div>
+          </div>
+          <span style={{fontSize:11,color:c.hazel,whiteSpace:"nowrap"}}>{EV.smCta}</span>
+        </div>
+        <div onClick={()=>go("barbagia")} style={{display:"flex",alignItems:"center",gap:12,padding:"14px 16px",
+          background:c.white,border:`1px solid ${c.hazel}30`,borderRadius:14,cursor:"pointer"}}>
+          <span style={{fontSize:22}}>🍂</span>
+          <div style={{flex:1}}>
+            <div style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:16,color:c.warm}}>{L.barbagia.title}</div>
+            <div style={{fontSize:11,color:c.mastic,marginTop:2}}>{L.barbagia.sub}</div>
+          </div>
+          <span style={{fontSize:11,color:c.hazel,whiteSpace:"nowrap"}}>{EV.bbCta}</span>
+        </div>
+      </div>
+
       <Card>
         <CT text={EV.cosaT}/>
         <p style={{fontSize:12.5,color:c.mastic,lineHeight:1.6,marginBottom:6}}>{EV.perConc}</p>
@@ -2278,6 +2427,77 @@ function Eventi({go}) {
 
       <div style={{...s.darkBox,textAlign:"center",marginTop:12}}>
         <p style={{fontSize:12,color:"rgba(245,240,232,0.7)",lineHeight:1.7,margin:0}}>{EV.tip}</p>
+      </div>
+    </div>
+  </div>;
+}
+
+function SantaMaria({go}) {
+  const SM = L.santamaria;
+  return <div style={s.app}>
+    <PageHead title={SM.title} sub={SM.sub} back={()=>go("eventi")} icon={<span style={{fontSize:28}}>🌟</span>}/>
+    <div style={s.content}>
+
+      <div style={{...s.hlBox, marginBottom:16}}>
+        <p style={{fontSize:13.5, lineHeight:1.7, color:c.warm, margin:0}}>{SM.intro}</p>
+      </div>
+
+      <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.mastic,margin:"4px 0 12px",textAlign:"center"}}>{SM.religiosoT}</div>
+      {SANTAMARIA_RELIGIOSO.map((g,idx)=>(
+        <Card key={idx}>
+          <div style={{...s.cardTitle, fontSize:17, marginBottom:8}}>{tx(g.giorno)}</div>
+          {g.voci.map((v,i)=>(
+            <div key={i} style={i===g.voci.length-1?s.ruleLast:s.rule}>
+              <span style={{...s.rowValue, fontSize:13, flexShrink:0, minWidth:44}}>{v.ora}</span>
+              <span>{tx(v.testo)}</span>
+            </div>
+          ))}
+        </Card>
+      ))}
+
+      <div style={{fontSize:9,letterSpacing:"4px",textTransform:"uppercase",color:c.mastic,margin:"18px 0 12px",textAlign:"center"}}>{SM.civileT}</div>
+      <Card>
+        {SANTAMARIA_CIVILE.map((v,i)=>(
+          <div key={i} style={i===SANTAMARIA_CIVILE.length-1?s.ruleLast:s.rule}>
+            <div style={{flexShrink:0, minWidth:44}}>
+              <div style={{...s.rowValue, fontSize:13}}>{v.ora}</div>
+            </div>
+            <span><strong>{tx(v.giorno)}</strong> — {tx(v.testo)}</span>
+          </div>
+        ))}
+      </Card>
+
+      <div style={{...s.darkBox,textAlign:"center",marginTop:12}}>
+        <p style={{fontSize:12,color:"rgba(245,240,232,0.7)",lineHeight:1.7,margin:0}}>{SM.note}</p>
+      </div>
+    </div>
+  </div>;
+}
+
+function AutunnoBarbagia({go}) {
+  const BB = L.barbagia;
+  return <div style={s.app}>
+    <PageHead title={BB.title} sub={BB.sub} back={()=>go("eventi")} icon={<span style={{fontSize:28}}>🍂</span>}/>
+    <div style={s.content}>
+
+      <div style={{...s.hlBox, marginBottom:16}}>
+        <p style={{fontSize:13.5, lineHeight:1.7, color:c.warm, margin:0}}>{BB.intro}</p>
+      </div>
+
+      {BARBAGIA_CALENDARIO.map((mo,idx)=>(
+        <Card key={idx}>
+          <div style={{...s.cardTitle, fontSize:19, marginBottom:8}}>{tx(mo.mese)}</div>
+          {mo.tappe.map((t,i)=>(
+            <div key={i} style={i===mo.tappe.length-1?s.ruleLast:s.rule}>
+              <span style={{...s.rowValue, fontSize:14, flexShrink:0, minWidth:70}}>{tx(t.date)}</span>
+              <span>{t.paesi}</span>
+            </div>
+          ))}
+        </Card>
+      ))}
+
+      <div style={{...s.darkBox,textAlign:"center",marginTop:12}}>
+        <p style={{fontSize:12,color:"rgba(245,240,232,0.7)",lineHeight:1.7,margin:0}}>{BB.note}</p>
       </div>
     </div>
   </div>;
@@ -2750,7 +2970,7 @@ export default function CortePintadera() {
     home: <PH go={go} lang={lang} setLang={setLang}/>, benvenuto:<Benvenuto go={go}/>, checkin:<Checkin go={go}/>,
     wifi:<Wifi go={go}/>, appartamento:<Appartamento go={go}/>, regole:<Regole go={go}/>,
     posizione:<Posizione go={go}/>, esplorare:<Esplorare go={go}/>, ristoranti:<Ristoranti go={go}/>,
-    eventi:<Eventi go={go}/>, recensioni:<Recensioni go={go}/>, spesa:<Spesa go={go}/>,
+    eventi:<Eventi go={go}/>, santamaria:<SantaMaria go={go}/>, barbagia:<AutunnoBarbagia go={go}/>, recensioni:<Recensioni go={go}/>, spesa:<Spesa go={go}/>,
     servizi:<Servizi go={go}/>, storia:<Storia go={go}/>, faq:<FAQ go={go}/>,
     esplorare_vicino:   <EsploraCategoria tabId="vicino"   go={go}/>,
     esplorare_cagliari: <EsploraCategoria tabId="cagliari" go={go}/>,
