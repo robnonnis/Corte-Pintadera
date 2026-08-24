@@ -1471,31 +1471,66 @@ const SANTAMARIA_CIVILE = [
 // ── AUTUNNO IN BARBAGIA · CORTES APERTAS 2026 ──
 const BARBAGIA_CALENDARIO = [
   {mese:M("Settembre","September","Septiembre","Septembre","September","Setembro"), tappe:[
-    {date:"5", paesi:"Bitti"}, {date:"6", paesi:"Bitti"},
-    {date:"12", paesi:"Oliena"}, {date:"13", paesi:"Oliena"},
-    {date:"19", paesi:"Lodine, Sarule"}, {date:"20", paesi:"Lodine, Sarule"},
-    {date:"26", paesi:"Austis, Dorgali, Orani"}, {date:"27", paesi:"Austis, Dorgali, Orani"},
+    {date:"5", paesi:["Bitti"]}, {date:"6", paesi:["Bitti"]},
+    {date:"12", paesi:["Oliena"]}, {date:"13", paesi:["Oliena"]},
+    {date:"19", paesi:["Lodine","Sarule"]}, {date:"20", paesi:["Lodine","Sarule"]},
+    {date:"26", paesi:["Austis","Dorgali","Orani"]}, {date:"27", paesi:["Austis","Dorgali","Orani"]},
   ]},
   {mese:M("Ottobre","October","Octubre","Octobre","Oktober","Outubro"), tappe:[
-    {date:"3", paesi:"Lula, Meana Sardo, Orotelli, Sorgono"}, {date:"4", paesi:"Lula, Meana Sardo, Orotelli, Sorgono"},
-    {date:"10", paesi:"Gavoi, Lollove, Onanì, Tonara"}, {date:"11", paesi:"Gavoi, Lollove, Onanì, Tonara"},
-    {date:"17", paesi:"Belvì, Orgosolo"}, {date:"18", paesi:"Belvì, Orgosolo"},
-    {date:"24", paesi:"Aritzo, Olzai, Ottana"}, {date:"25", paesi:"Aritzo, Olzai, Ottana"},
-    {date:"31", paesi:"Desulo"},
+    {date:"3", paesi:["Lula","Meana Sardo","Orotelli","Sorgono"]}, {date:"4", paesi:["Lula","Meana Sardo","Orotelli","Sorgono"]},
+    {date:"10", paesi:["Gavoi","Lollove","Onanì","Tonara"]}, {date:"11", paesi:["Gavoi","Lollove","Onanì","Tonara"]},
+    {date:"17", paesi:["Belvì","Orgosolo"]}, {date:"18", paesi:["Belvì","Orgosolo"]},
+    {date:"24", paesi:["Aritzo","Olzai","Ottana"]}, {date:"25", paesi:["Aritzo","Olzai","Ottana"]},
+    {date:"31", paesi:["Desulo"]},
   ]},
   {mese:M("Novembre","November","Noviembre","Novembre","November","Novembro"), tappe:[
-    {date:"1", paesi:"Desulo"},
-    {date:"6", paesi:"Mamoiada"},
-    {date:"7", paesi:"Mamoiada, Ovodda"}, {date:"8", paesi:"Mamoiada, Ovodda"},
-    {date:"14", paesi:"Nuoro, Tiana, Ollolai"}, {date:"15", paesi:"Nuoro, Tiana, Ollolai"},
-    {date:"21", paesi:"Atzara"}, {date:"22", paesi:"Atzara"},
-    {date:"28", paesi:"Gadoni, Oniferi"}, {date:"29", paesi:"Gadoni, Oniferi"},
+    {date:"1", paesi:["Desulo"]},
+    {date:"6", paesi:["Mamoiada"]},
+    {date:"7", paesi:["Mamoiada","Ovodda"]}, {date:"8", paesi:["Mamoiada","Ovodda"]},
+    {date:"14", paesi:["Nuoro","Tiana","Ollolai"]}, {date:"15", paesi:["Nuoro","Tiana","Ollolai"]},
+    {date:"21", paesi:["Atzara"]}, {date:"22", paesi:["Atzara"]},
+    {date:"28", paesi:["Gadoni","Oniferi"]}, {date:"29", paesi:["Gadoni","Oniferi"]},
   ]},
   {mese:M("Dicembre","December","Diciembre","Décembre","Dezember","Dezembro"), tappe:[
-    {date:"6", paesi:"Fonni"}, {date:"7", paesi:"Fonni"}, {date:"8", paesi:"Fonni"},
-    {date:"12", paesi:"Ortueri, Orune, Seulo"}, {date:"13", paesi:"Ortueri, Orune, Seulo"},
+    {date:"6", paesi:["Fonni"]}, {date:"7", paesi:["Fonni"]}, {date:"8", paesi:["Fonni"]},
+    {date:"12", paesi:["Ortueri","Orune","Seulo"]}, {date:"13", paesi:["Ortueri","Orune","Seulo"]},
   ]},
 ];
+const BARBAGIA_PAESI = {
+  Bitti: M("Patria del Canto a Tenore UNESCO e del sito nuragico di Romanzesu","Home of UNESCO-listed Canto a Tenore singing and the Romanzesu nuragic site","Cuna del Canto a Tenore, Patrimonio UNESCO, y el yacimiento nurágico de Romanzesu","Patrie du Canto a Tenore, patrimoine UNESCO, et du site nuragique de Romanzesu","Heimat des UNESCO-Gesangs Canto a Tenore und der Nuraghenstätte Romanzesu","Terra do Canto a Tenore, Património UNESCO, e do sítio nurágico de Romanzesu"),
+  Oliena: M("Il Nepente, vino amato da D'Annunzio, tappeti a mano e filigrana","Nepente, the Cannonau wine loved by D'Annunzio, hand-woven rugs and filigree","El Nepente, vino amado por D'Annunzio, alfombras tejidas a mano y filigrana","Le Nepente, vin aimé par D'Annunzio, tapis tissés main et filigrane","Der Nepente, von D'Annunzio geliebter Wein, handgewebte Teppiche und Filigranschmuck","O Nepente, vinho apreciado por D'Annunzio, tapetes tecidos à mão e filigrana"),
+  Lodine: M("Piccolo borgo tra i boschi, tessitura tradizionale e cucina pastorale","A small village in the woods, traditional weaving and pastoral cuisine","Pequeño pueblo entre bosques, tejido tradicional y cocina pastoral","Petit village dans les bois, tissage traditionnel et cuisine pastorale","Kleines Dorf im Wald, traditionelle Weberei und Hirtenküche","Pequena aldeia entre bosques, tecelagem tradicional e cozinha pastoril"),
+  Sarule: M("Capitale dei tappeti sardi, tessuti a mano su telai verticali","The capital of Sardinian rugs, hand-woven on ancient vertical looms","La capital de las alfombras sardas, tejidas a mano en telares verticales","La capitale des tapis sardes, tissés main sur des métiers verticaux","Die Hauptstadt der sardischen Teppiche, handgewebt auf senkrechten Webstühlen","A capital dos tapetes sardos, tecidos à mão em teares verticais"),
+  Austis: M("Ai piedi del Gennargentu, formaggi, pane tipico e la maschera Sos Colonganos","At the foot of the Gennargentu, cheeses, bread and the Sos Colonganos mask","Al pie del Gennargentu, quesos, pan típico y la máscara Sos Colonganos","Au pied du Gennargentu, fromages, pain typique et le masque Sos Colonganos","Am Fuße des Gennargentu, Käse, typisches Brot und die Maske Sos Colonganos","Ao pé do Gennargentu, queijos, pão típico e a máscara Sos Colonganos"),
+  Dorgali: M("Oreficeria, ceramica e tessitura tra il Golfo di Orosei e il Supramonte","Goldsmithing, ceramics and weaving between the Gulf of Orosei and the Supramonte","Orfebrería, cerámica y tejido entre el Golfo de Orosei y el Supramonte","Orfèvrerie, céramique et tissage entre le golfe d'Orosei et le Supramonte","Goldschmiedekunst, Keramik und Weberei zwischen dem Golf von Orosei und dem Supramonte","Ourivesaria, cerâmica e tecelagem entre o Golfo de Orosei e o Supramonte"),
+  Orani: M("Patria degli artisti Costantino Nivola e Mario Delitala","Birthplace of artists Costantino Nivola and Mario Delitala","Cuna de los artistas Costantino Nivola y Mario Delitala","Ville natale des artistes Costantino Nivola et Mario Delitala","Geburtsort der Künstler Costantino Nivola und Mario Delitala","Terra natal dos artistas Costantino Nivola e Mario Delitala"),
+  Lula: M("Panorami sul Supramonte, cuoio, legno e formaggi lavorati a mano","Breathtaking Supramonte views, leather, wood and handmade cheeses","Vistas impresionantes del Supramonte, cuero, madera y quesos hechos a mano","Vues à couper le souffle sur le Supramonte, cuir, bois et fromages faits main","Atemberaubende Ausblicke auf den Supramonte, Leder, Holz und handgemachter Käse","Vistas deslumbrantes sobre o Supramonte, couro, madeira e queijos artesanais"),
+  "Meana Sardo": M("I pani decorati Pani Pintau e il sito archeologico di Nolza","The decorated Pani Pintau breads and the Nolza archaeological site","Los panes decorados Pani Pintau y el yacimiento arqueológico de Nolza","Les pains décorés Pani Pintau et le site archéologique de Nolza","Die verzierten Pani-Pintau-Brote und die archäologische Stätte Nolza","Os pães decorados Pani Pintau e o sítio arqueológico de Nolza"),
+  Orotelli: M("I cambales in cuoio e le maschere Thurpos, simbolo del paese","Leather cambales boots and the Thurpos masks, symbol of the village","Las botas de cuero cambales y las máscaras Thurpos, símbolo del pueblo","Les bottes en cuir cambales et les masques Thurpos, symbole du village","Die Lederstiefel Cambales und die Thurpos-Masken, Wahrzeichen des Dorfes","As botas de couro cambales e as máscaras Thurpos, símbolo da aldeia"),
+  Sorgono: M("Vino Mandrolisai DOC tra le vigne del cuore della Barbagia","Mandrolisai DOC wine among the vineyards at the heart of Barbagia","Vino Mandrolisai DOC entre los viñedos del corazón de Barbagia","Vin Mandrolisai DOC parmi les vignes au cœur de la Barbagia","Mandrolisai-DOC-Wein zwischen den Weinbergen im Herzen der Barbagia","Vinho Mandrolisai DOC entre as vinhas no coração da Barbagia"),
+  Gavoi: M("Formaggio Fiore Sardo e pane fatto a mano nelle cortes","Fiore Sardo cheese and handmade bread in the open courtyards","Queso Fiore Sardo y pan hecho a mano en las cortes abiertas","Fromage Fiore Sardo et pain fait main dans les cours ouvertes","Fiore-Sardo-Käse und handgemachtes Brot in den offenen Höfen","Queijo Fiore Sardo e pão feito à mão nos pátios abertos"),
+  Lollove: M("Borgo quasi disabitato sospeso nel tempo, tra canti e artigianato","A near-deserted village suspended in time, with song and craft","Un pueblo casi deshabitado suspendido en el tiempo, entre cantos y artesanía","Un village presque désert suspendu dans le temps, chants et artisanat","Ein fast entvölkertes, zeitlos wirkendes Dorf mit Gesang und Handwerk","Uma aldeia quase deserta suspensa no tempo, entre cantos e artesanato"),
+  "Onanì": M("Piccolo paese pastorale, sede del Festival Internazionale dell'Organetto","A tiny pastoral village, home to the International Accordion Festival","Pequeño pueblo pastoril, sede del Festival Internacional del Acordeón","Petit village pastoral, siège du Festival international de l'accordéon","Kleines Hirtendorf, Austragungsort des Internationalen Akkordeonfestivals","Pequena aldeia pastoril, sede do Festival Internacional de Acordeão"),
+  Tonara: M("Il torrone più famoso di Sardegna, campanacci e arazzi","Sardinia's most famous nougat (torrone), cowbells and tapestries","El turrón más famoso de Cerdeña, cencerros y tapices","Le nougat le plus célèbre de Sardaigne, sonnailles et tapisseries","Sardiniens berühmtester Nougat (Torrone), Kuhglocken und Wandteppiche","O torrão mais famoso da Sardenha, chocalhos e tapeçarias"),
+  "Belvì": M("Sagra delle castagne e dolci is caschettes tra i boschi","Chestnut festival and is caschettes pastries amid the woods","Fiesta de la castaña y los dulces is caschettes entre los bosques","Fête de la châtaigne et pâtisseries is caschettes au cœur des bois","Kastanienfest und die Gebäckspezialität is caschettes inmitten der Wälder","Festa da castanha e os doces is caschettes entre os bosques"),
+  Orgosolo: M("I celebri murales e il Museo del Pane Carasau","The famous murals and the Carasau Bread Museum","Los famosos murales y el Museo del Pan Carasau","Les célèbres fresques murales et le musée du pain carasau","Die berühmten Wandmalereien und das Carasau-Brot-Museum","Os famosos murais e o Museu do Pão Carasau"),
+  Aritzo: M("Capitale isolana delle castagne e della carapigna, il sorbetto tradizionale","The island's chestnut capital, home of carapigna, a traditional sorbet","La capital isleña de la castaña y de la carapigna, el sorbete tradicional","La capitale insulaire de la châtaigne et de la carapigna, le sorbet traditionnel","Die Kastanien-Hauptstadt der Insel und Heimat der Carapigna, eines traditionellen Sorbets","A capital insular da castanha e da carapigna, o sorvete tradicional"),
+  Olzai: M("Lavorazione dell'asfodelo, formaggi e antiche rievocazioni nuziali","Asphodel weaving, cheeses and re-enacted traditional weddings","Tejido de asfódelo, quesos y recreaciones de bodas tradicionales","Tissage d'asphodèle, fromages et reconstitutions de mariages traditionnels","Affodill-Flechtwerk, Käse und nachgestellte traditionelle Hochzeiten","Tecelagem de asfódelo, queijos e recriações de casamentos tradicionais"),
+  Ottana: M("Maschere in legno, miele e formaggi tra musica e artigianato","Wooden masks, honey and cheeses amid music and craft","Máscaras de madera, miel y quesos entre música y artesanía","Masques en bois, miel et fromages entre musique et artisanat","Holzmasken, Honig und Käse zwischen Musik und Handwerk","Máscaras de madeira, mel e queijos entre música e artesanato"),
+  Desulo: M("Il costume tradizionale femminile più colorato di Sardegna","Sardinia's most colourful traditional women's costume, in the Gennargentu mountains","El traje tradicional femenino más colorido de Cerdeña, en las montañas del Gennargentu","Le costume traditionnel féminin le plus coloré de Sardaigne, dans les montagnes du Gennargentu","Sardiniens buntestes traditionelles Frauenkostüm, in den Bergen des Gennargentu","O traje tradicional feminino mais colorido da Sardenha, nas montanhas do Gennargentu"),
+  Mamoiada: M("I Mamuthones e gli Issohadores, le maschere più celebri della Barbagia","The Mamuthones and Issohadores, Barbagia's most famous masks","Los Mamuthones y los Issohadores, las máscaras más famosas de Barbagia","Les Mamuthones et les Issohadores, les masques les plus célèbres de Barbagia","Die Mamuthones und Issohadores, die berühmtesten Masken der Barbagia","Os Mamuthones e os Issohadores, as máscaras mais famosas da Barbagia"),
+  Ovodda: M("Il paese dei centenari, tra maschere antiche e tradizioni secolari","The village of centenarians, with ancient masks and age-old traditions","El pueblo de los centenarios, con máscaras antiguas y tradiciones seculares","Le village des centenaires, avec ses masques anciens et traditions séculaires","Das Dorf der Hundertjährigen, mit alten Masken und jahrhundertealten Traditionen","A aldeia dos centenários, com máscaras antigas e tradições seculares"),
+  Nuoro: M("Capoluogo barbaricino, musei e velluto lavorato a mano","The Barbagia's main town, with museums and hand-worked velvet","La capital de Barbagia, con museos y terciopelo trabajado a mano","La capitale de la Barbagia, avec ses musées et son velours travaillé à la main","Die Hauptstadt der Barbagia, mit Museen und handgearbeitetem Samt","A capital da Barbagia, com museus e veludo trabalhado à mão"),
+  Tiana: M("La lavorazione dell'orbace, il tipico tessuto di lana sardo","The weaving of orbace, Sardinia's typical thick wool fabric","El tejido del orbace, el típico paño de lana sardo","Le tissage de l'orbace, le drap de laine typique sarde","Die Herstellung von Orbace, dem typischen sardischen Wollstoff","A tecelagem do orbace, o tecido de lã típico sardo"),
+  Ollolai: M("Tradizioni pastorali e cortes animate nel cuore della Barbagia","Pastoral traditions and lively courtyards at the heart of Barbagia","Tradiciones pastoriles y cortes animadas en el corazón de Barbagia","Traditions pastorales et cours animées au cœur de la Barbagia","Hirtentraditionen und lebendige Innenhöfe im Herzen der Barbagia","Tradições pastoris e pátios animados no coração da Barbagia"),
+  Atzara: M("Vino Mandrolisai e pittura costumbrista tra cantine e cesti d'asfodelo","Mandrolisai wine and costumbrista painting, among cellars and asphodel baskets","Vino Mandrolisai y pintura costumbrista, entre bodegas y cestas de asfódelo","Vin Mandrolisai et peinture costumbriste, entre caves et paniers d'asphodèle","Mandrolisai-Wein und costumbrista-Malerei, zwischen Weinkellern und Affodill-Körben","Vinho Mandrolisai e pintura costumbrista, entre adegas e cestos de asfódelo"),
+  Gadoni: M("La miniera di Funtana Raminosa e gli antichi mestieri del rame","The Funtana Raminosa copper mine and ancient copper-working crafts","La mina de cobre de Funtana Raminosa y los antiguos oficios del cobre","La mine de cuivre de Funtana Raminosa et les anciens métiers du cuivre","Die Kupfermine Funtana Raminosa und alte Kupferhandwerkskünste","A mina de cobre de Funtana Raminosa e os antigos ofícios do cobre"),
+  Oniferi: M("Oltre 40 nuraghi, domus de janas e la necropoli di Sas Concas","Over 40 nuraghes, rock-cut tombs and the Sas Concas necropolis","Más de 40 nuraghes, tumbas excavadas en roca y la necrópolis de Sas Concas","Plus de 40 nuraghes, tombes rupestres et la nécropole de Sas Concas","Über 40 Nuraghen, Felsengräber und die Nekropole Sas Concas","Mais de 40 nuraghes, túmulos escavados na rocha e a necrópole de Sas Concas"),
+  Fonni: M("Il paese più alto di Sardegna con il Santuario dei Martiri","Sardinia's highest village, with the frescoed Sanctuary of the Martyrs","El pueblo más alto de Cerdeña, con el Santuario de los Mártires decorado con frescos","Le village le plus haut de Sardaigne, avec le sanctuaire des Martyrs orné de fresques","Sardiniens höchstgelegenes Dorf mit dem freskengeschmückten Märtyrerheiligtum","A aldeia mais alta da Sardenha, com o Santuário dos Mártires decorado com afrescos"),
+  Ortueri: M("Lavorazione del sughero e dei coltelli sardi tra le vigne del Mandrolisai","Cork craftsmanship and Sardinian knives among the vineyards of the Mandrolisai","Artesanía del corcho y cuchillos sardos entre los viñedos del Mandrolisai","Artisanat du liège et couteaux sardes parmi les vignes du Mandrolisai","Korkhandwerk und sardische Messer zwischen den Weinbergen des Mandrolisai","Artesanato de cortiça e facas sardas entre as vinhas do Mandrolisai"),
+  Orune: M("Capitale del Canto a Tenore e il pozzo sacro di Su Tempiesu","A capital of Canto a Tenore singing and the sacred well of Su Tempiesu","Una capital del Canto a Tenore y el pozo sagrado de Su Tempiesu","Une capitale du Canto a Tenore et le puits sacré de Su Tempiesu","Eine Hochburg des Canto a Tenore und der heilige Brunnen Su Tempiesu","Uma capital do Canto a Tenore e o poço sagrado de Su Tempiesu"),
+  Seulo: M("Borgo della longevità, una Blue Zone del mondo, tra pani e miele","A longevity village, one of the world's Blue Zones, known for bread and honey","Pueblo de la longevidad, una de las Zonas Azules del mundo, famoso por su pan y su miel","Village de la longévité, une des Zones bleues du monde, réputé pour son pain et son miel","Ein Langlebigkeits-Dorf, eine der Blue Zones der Welt, bekannt für Brot und Honig","Aldeia da longevidade, uma das Zonas Azuis do mundo, conhecida pelo pão e mel"),
+};
 
 // ══════════════════════════════════════════════
 // ── COMPONENTI SCHERMATE ──────────────────────
@@ -2492,11 +2527,20 @@ function AutunnoBarbagia({go}) {
 
       {BARBAGIA_CALENDARIO.map((mo,idx)=>(
         <Card key={idx}>
-          <div style={{...s.cardTitle, fontSize:19, marginBottom:8}}>{tx(mo.mese)}</div>
+          <div style={{...s.cardTitle, fontSize:19, marginBottom:10}}>{tx(mo.mese)}</div>
           {mo.tappe.map((t,i)=>(
-            <div key={i} style={i===mo.tappe.length-1?s.ruleLast:s.rule}>
-              <span style={{...s.rowValue, fontSize:14, flexShrink:0, minWidth:70}}>{tx(t.date)}</span>
-              <span>{t.paesi}</span>
+            <div key={i} style={{marginBottom: i===mo.tappe.length-1?0:14, paddingBottom: i===mo.tappe.length-1?0:14,
+              borderBottom: i===mo.tappe.length-1?"none":`1px solid ${c.sand}`}}>
+              <div style={{...s.rowValue, fontSize:14, marginBottom:6}}>{tx(t.date)}</div>
+              {t.paesi.map((p,j)=>(
+                <div key={j} style={{display:"flex",gap:10,marginBottom: j===t.paesi.length-1?0:8}}>
+                  <div style={s.dot}/>
+                  <div>
+                    <div style={{fontSize:13,fontWeight:600,color:c.warm}}>{p}</div>
+                    <div style={{fontSize:12,color:c.mastic,lineHeight:1.55,marginTop:2}}>{tx(BARBAGIA_PAESI[p])}</div>
+                  </div>
+                </div>
+              ))}
             </div>
           ))}
         </Card>
